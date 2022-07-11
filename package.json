@@ -1,0 +1,19 @@
+{
+  "name": "projet-3-nolwenn-duhamel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/No0910/Projet-3-Nolwenn-Duhamel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/No0910/Projet-3-Nolwenn-Duhamel/issues"
+  },
+  "homepage": "https://github.com/No0910/Projet-3-Nolwenn-Duhamel#readme"
+}
