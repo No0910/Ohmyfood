@@ -81,7 +81,7 @@
   /*Bouton "Explorer nos restaurants*/
   .button_explorer {
     margin-top: 20px;
-    padding: 20px;
+    padding: 50px;
     border-radius: 30px;
     padding: 20px 50px;
     font-size: 1.5rem;
@@ -94,7 +94,8 @@
     background-image: linear-gradient(190deg, #9356DC 10%, #FF79DA 50%, #9356DC 100%);
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 320px;
+    height: 55px;
     margin-left: 15%;
   }
   .button_explorer button {
@@ -103,12 +104,15 @@
     align-items: center;
     background-color: transparent;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
   }
   /*Titre H2 "Fonctionnement"*/
   h2 {
-    font-size: 22px;
+    font-size: 23px;
     padding: 30px;
+    font-weight: 700;
   }
   .button_choisissez, .button_composez, .button_degustez {
     display: flex;
@@ -279,6 +283,38 @@
     color: white;
     font-size: 20px;
     width: 100%;
+  }
+  footer {
+    background-color: #353434;
+    color: white;
+    padding: 30px;
+  }
+  footer .h3_footer h3 {
+    font-family: "Shrikhand", cursive;
+    font-size: 20px;
+    height: 40px;
+    color: white;
+  }
+  footer .li-restaurant {
+    display: flex;
+  }
+  footer .icon_restaurant {
+    display: flex;
+    margin: 5px;
+    padding-top: 3px;
+    font-size: 12px;
+  }
+  footer .li-partenaire {
+    display: flex;
+  }
+  footer .icon_partenaire {
+    display: flex;
+    margin: 5px;
+    padding-top: 3px;
+    font-size: 12px;
+  }
+  footer ul li {
+    padding: 5px;
   }
 }
 
