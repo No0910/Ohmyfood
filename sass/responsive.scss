@@ -44,7 +44,7 @@ form{
   background-color:#e8e9eb;
   width:100%;
   padding: 10px;
-  box-shadow: inset 0px 3px 4px rgb(151, 151, 151);
+  box-shadow: inset 0px 3px 4px rgb(182, 180, 180);
 
   .icon_rechercher {
     height:50px;
@@ -72,8 +72,6 @@ form{
     }
   }
 }
-
-
 
 /*Titre H1 -Réservez le Menu qui vous convient-*/
 
@@ -107,21 +105,20 @@ padding-bottom:10px;
 
 .button_explorer {
   margin-top:20px;
-  padding:50px;
+  font-size: 15px;
+  padding:30px;
   border-radius: 30px;
-  padding: 20px 50px;
-  font-size: 1.5rem;
+  padding: 20px 40px;
   cursor: pointer;
   border: none;
   background: transparent;
-  transition: all .2s;
   color: #fff;
-  box-shadow: 0px -0px 0px 0px #9356DC, 0px 0px 0px 0px #99E2D0;
-  background-image: linear-gradient(190deg, #9356DC 10%, #FF79DA 50%,#9356DC 100%);
+  
+  background-image: linear-gradient(150deg, #9356DC 10%, #FF79DA 50%,#9356DC 100%);
   display: flex;
   align-items: center;
-  width:320px;
-  height:55px;
+  height:60px;
+  width:100%;
   margin-left:15%;
  
 
@@ -129,9 +126,8 @@ padding-bottom:10px;
     border:none;
     display: flex;
     align-items: center;
-    background-color: transparent;
     color:white;
-    font-size:16px;
+    font-size:13px;
     text-align: center;
     font-weight: 500;
     
@@ -148,12 +144,15 @@ h2{
   font-weight: 700;
 }
 
-
-
 /* 3 Boutons "Choisissez un restaurant"/"Composez votre menu"/"Dégustez au restaurant" */
 
 .button_choisissez, .button_composez, .button_degustez {
   display: flex;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: column;
 }
 
 .button_choisissez, .button_composez, .button_degustez {
@@ -194,7 +193,8 @@ h2{
     
     i {
       margin:10px;
-      font-size:20px;
+      padding:10px;
+      font-size:22px;
       color:rgb(85, 84, 84);
     
       &:hover{
@@ -219,13 +219,19 @@ h2{
   background-position: center;
   border-radius: 15px 15px 0 0;
   padding: 5px;
+  border:none;
   }
 
   button{
   display: flex;
-  justify-content: flex-end;
   background-color:#99E2D0;
-  color:darken(#99E2D0,50%)
+  color:darken(#99E2D0,40%);
+  font-size:15px;
+  padding:5px;
+  font-weight:500;
+  outline: none;
+  border: none;
+
   }
 
   .information_card_restaurant {
@@ -358,6 +364,7 @@ footer{
     justify-content: center;
 	  margin: 0 auto;
 	  padding: 30px 0 0 0;
+    width: 100%;
   }
 
   .noPadding {
@@ -403,11 +410,10 @@ form{
     text-indent: 10px;
     border: none;
     background-color: #e8e9eb;
-    font-size: 1em;
+    font-size: 18px;
     text-align: left;
     width:40%;
     margin: 0;
-   }
   
     &:focus-visible {
       outline:none;
@@ -416,6 +422,7 @@ form{
     &::placeholder{
       color:black;
     }
+  }
   }
 }
 
@@ -473,6 +480,145 @@ form{
     width:100%;
   }
 }
+
+/*Titre H2 "Fonctionnement" & Titre "Restaurants*/
+
+h2{
+  font-size: 25px;
+  padding:30px;
+  font-weight: 700;
+  display:flex;
+  align-items: center;
+}
+
+
+/* 3 Boutons "Choisissez un restaurant"/"Composez votre menu"/"Dégustez au restaurant" */
+
+.button_choisissez, .button_composez, .button_degustez {
+  display: flex;
+}
+
+.buttons{
+display:flex;
+}
+
+.button_choisissez, .button_composez, .button_degustez {
+   
+  button{
+    margin: auto;
+    width:90%;
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    padding:20px 40px;
+    margin-left:20px;
+    margin:15px;
+    background: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    &:hover{
+      cursor:pointer;
+      background-color: darken(white,5%);
+     }
+
+    span {
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      background:#9356dc; 
+      border: none;
+      color: #fff; 
+      text-align: center; 
+      padding: 4px 9px;
+      font-size: 14px;
+    }
+    
+    i {
+      margin:10px;
+      padding:10px;
+      font-size:22px;
+      color:rgb(85, 84, 84);
+    
+      &:hover{
+        cursor:pointer;
+        color: #9356DC;
+       }
+    }
+}
+
+}
+
+/*Les restaurants-cartes*/
+
+.card_restaurant{
+
+  img {
+  display: flex;
+  object-fit: cover;
+  height:250px;
+  width:100%;
+  background-size:cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+  padding: 5px;
+  border:none;
+  }
+
+  button{
+  display: flex;
+  background-color:#99E2D0;
+  color:darken(#99E2D0,40%);
+  font-size:15px;
+  padding:5px;
+  font-weight:500;
+  outline: none;
+  border: none;
+  }
+
+  .information_card_restaurant {
+    border-radius: 0 0 15px 15px;
+    background-color: #FFFFFF;
+    padding: 15px 0 10px 15px;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+
+
+    i{
+      font-size: 30px;
+      display: flex;
+      justify-content:flex-end;
+      margin-right:30px;
+    }
+
+    h3 {
+
+      a{
+        text-decoration: none;
+        color:black;
+        font-weight:700;
+        font-size: 22px;
+        margin:5px;
+      }
+    }
+
+  
+    p {
+      font-size:21px;
+      margin:5px;
+      font-weight: 100;
+    }
+  
+  }
+
+}
+
 
 footer{
   background-color: #353434;
