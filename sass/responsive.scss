@@ -237,11 +237,12 @@
     .card_1_2,
     .card_3_4 {
       display: flex;
+      justify-content: center;
     }
 
 
     .card_restaurant {
-      width: 25%;
+      width: 50%;
       margin: 10px;
 
       img {
@@ -573,9 +574,9 @@
     .card_1_2,
     .card_3_4 {
       display: flex;
+      flex-direction: column;
       width: 100%;
     }
-
 
     .card_restaurant {
       width: 95%;
