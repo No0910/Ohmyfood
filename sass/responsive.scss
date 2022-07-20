@@ -460,36 +460,28 @@
 
   /*Bouton "Explorer nos restaurants*/
 
-  .button_explorer {
-    margin: 30px 0 50px 20%;
+
+  .button {
+    margin: 30px auto;
     font-size: 16px;
-    padding: 30px;
     border-radius: 30px;
-    padding: 15px 40px;
+    padding: 15px 0;
     cursor: pointer;
     border: none;
-    background: transparent;
-    color: #fff;
     background: linear-gradient(-185deg, #FF79DA, #9356DC);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    display: flex;
     align-items: center;
-    height: 60px;
-    width: 60%;
-
-
-
-    button {
-      border: none;
-      display: flex;
-      align-items: center;
-      color: white;
-      font-size: 14px;
-      text-align: center;
-      font-weight: 700;
-    }
-
+    height: 55px;
+    width: 55%;
+    border: none;
+    display: flex;
+    color: white;
+    font-weight: 700;
+    white-space: nowrap;
+    justify-content: center;
   }
+
+
 
 
 
@@ -506,61 +498,65 @@
   .buttons {
     display: flex;
     flex-direction: column;
+    padding: 0 20px;
   }
 
-  .button_choisissez,
-  .button_composez,
-  .button_degustez {
+
+  .button_choix {
 
     display: flex;
     justify-content: center;
+    width: 90%;
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    padding: 20px 60px;
+    margin-left: 20%;
+    margin: 15px;
+    background: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
-    button {
-
-      width: 90%;
-      font-size: 15px;
-      font-weight: 700;
-      color: black;
-      padding: 20px 60px;
-      margin-left: 20%;
-      margin: 15px;
-      background: white;
-      outline: none;
-      border: none;
+    &:hover {
       cursor: pointer;
-      border-radius: 20px;
-      position: relative;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      background-color: darken(white, 5%);
 
-      &:hover {
-        cursor: pointer;
-        background-color: darken(white, 5%);
-      }
-
-      span {
-        height: 45px;
-        width: 45px;
-        border-radius: 50%;
-        background: #9356dc;
-        border: none;
-        color: #fff;
-        text-align: center;
-        padding: 4px 9px;
-        font-size: 14px;
-      }
-
-      i {
-        margin: 10px;
-        padding: 10px;
-        font-size: 22px;
-        color: rgb(85, 84, 84);
-
-        &:hover {
-          cursor: pointer;
-          color: #9356DC;
-        }
-      }
+       i{
+        color: #9356DC;
+       }
     }
+
+    span {
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      background: #9356dc;
+      border: none;
+      color: #fff;
+      text-align: center;
+      padding: 4px 9px;
+      font-size: 14px;
+      position: absolute;
+      left: -15px;
+      line-height: 23px;
+      top: 14px;
+    }
+
+    i {
+      margin: 10px;
+      padding: 10px;
+      font-size: 22px;
+      color: rgb(85, 84, 84);
+      position: absolute;
+      left: 30px;
+      top: -3px;
+
+    }
+
 
   }
 
@@ -580,6 +576,7 @@
 
     .card_restaurant {
       width: 95%;
+      position:relative;
 
       img {
         display: flex;
@@ -593,7 +590,7 @@
         height: 250px;
       }
 
-      button {
+      span {
         display: flex;
         background-color: #99E2D0;
         color: darken(#99E2D0, 40%);
@@ -602,6 +599,9 @@
         font-weight: 500;
         outline: none;
         border: none;
+        position: absolute;
+        top:20px;
+        right:20px;
       }
 
       .information_card_restaurant {
@@ -616,9 +616,9 @@
 
         i {
           font-size: 30px;
-          display: flex;
-          justify-content: flex-end;
           margin-right: 30px;
+          float: right;
+          margin-top: 5px;
         }
 
         h3 {
@@ -657,8 +657,7 @@
   footer {
     background-color: #353434;
     color: white;
-    padding: 25px;
-
+    padding:25px;
 
     ul {
 

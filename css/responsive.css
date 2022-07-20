@@ -371,31 +371,24 @@ ul li {
     padding-bottom: 10px;
   }
   /*Bouton "Explorer nos restaurants*/
-  .button_explorer {
-    margin: 30px 0 50px 20%;
+  .button {
+    margin: 30px auto;
     font-size: 16px;
-    padding: 30px;
     border-radius: 30px;
-    padding: 15px 40px;
+    padding: 15px 0;
     cursor: pointer;
     border: none;
-    background: transparent;
-    color: #fff;
     background: linear-gradient(-185deg, #FF79DA, #9356DC);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    display: flex;
     align-items: center;
-    height: 60px;
-    width: 60%;
-  }
-  .button_explorer button {
+    height: 55px;
+    width: 55%;
     border: none;
     display: flex;
-    align-items: center;
     color: white;
-    font-size: 14px;
-    text-align: center;
     font-weight: 700;
+    white-space: nowrap;
+    justify-content: center;
   }
   /*Titre H2 "Fonctionnement" & Titre "Restaurants*/
   h2 {
@@ -407,16 +400,11 @@ ul li {
   .buttons {
     display: flex;
     flex-direction: column;
+    padding: 0 20px;
   }
-  .button_choisissez,
-.button_composez,
-.button_degustez {
+  .button_choix {
     display: flex;
     justify-content: center;
-  }
-  .button_choisissez button,
-.button_composez button,
-.button_degustez button {
     width: 90%;
     font-size: 15px;
     font-weight: 700;
@@ -432,17 +420,16 @@ ul li {
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
-  .button_choisissez button:hover,
-.button_composez button:hover,
-.button_degustez button:hover {
+  .button_choix:hover {
     cursor: pointer;
     background-color: #f2f2f2;
   }
-  .button_choisissez button span,
-.button_composez button span,
-.button_degustez button span {
-    height: 45px;
-    width: 45px;
+  .button_choix:hover i {
+    color: #9356DC;
+  }
+  .button_choix span {
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
     background: #9356dc;
     border: none;
@@ -450,20 +437,19 @@ ul li {
     text-align: center;
     padding: 4px 9px;
     font-size: 14px;
+    position: absolute;
+    left: -15px;
+    line-height: 23px;
+    top: 14px;
   }
-  .button_choisissez button i,
-.button_composez button i,
-.button_degustez button i {
+  .button_choix i {
     margin: 10px;
     padding: 10px;
     font-size: 22px;
     color: rgb(85, 84, 84);
-  }
-  .button_choisissez button i:hover,
-.button_composez button i:hover,
-.button_degustez button i:hover {
-    cursor: pointer;
-    color: #9356DC;
+    position: absolute;
+    left: 30px;
+    top: -3px;
   }
   /*Les restaurants-cartes*/
   .cards {
@@ -479,6 +465,7 @@ ul li {
   }
   .cards .card_restaurant {
     width: 95%;
+    position: relative;
   }
   .cards .card_restaurant img {
     display: flex;
@@ -491,7 +478,7 @@ ul li {
     width: 100%;
     height: 250px;
   }
-  .cards .card_restaurant button {
+  .cards .card_restaurant span {
     display: flex;
     background-color: #99E2D0;
     color: #278870;
@@ -500,6 +487,9 @@ ul li {
     font-weight: 500;
     outline: none;
     border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
   .cards .card_restaurant .information_card_restaurant {
     border-radius: 0 0 15px 15px;
@@ -512,9 +502,9 @@ ul li {
   }
   .cards .card_restaurant .information_card_restaurant i {
     font-size: 30px;
-    display: flex;
-    justify-content: flex-end;
     margin-right: 30px;
+    float: right;
+    margin-top: 5px;
   }
   .cards .card_restaurant .information_card_restaurant h3 a {
     text-decoration: none;
