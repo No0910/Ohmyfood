@@ -88,7 +88,7 @@ h2,
 h3,
 p,
 ul li {
-  font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -115,33 +115,24 @@ h1 {
 
 /*Bouton "Explorer nos restaurants*/
 
-.button_explorer {
-    padding: 30px;
+.button {
+    margin: 30px auto;
+    font-size: 19px;
     border-radius: 30px;
-    padding: 20px 50px;
-    font-size: 1.5rem;
+    padding: 15px 0;
     cursor: pointer;
     border: none;
-    background: transparent;
-    transition: all .2s;
-    color: #fff;
-    box-shadow: 0px -0px 0px 0px #9356DC, 0px 0px 0px 0px #99E2D0;
-    background: linear-gradient( -185deg, #FF79DA,#9356DC);
+    background: linear-gradient(-185deg, #FF79DA, #9356DC);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    align-items: center;
+    height: 55px;
+    width: 35%;
+    border: none;
     display: flex;
+    color: white;
+    font-weight: 700;
+    white-space: nowrap;
     justify-content: center;
-    width: 50%;
-    margin-left: 24%;
-
-    button {
-        border: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: transparent;
-        color: white;
-        font-size: 20px;
-        width: 100%;
-    }
 }
 
 /*Titre H2 "Fonctionnement" & Titre "Restaurants*/
@@ -163,66 +154,72 @@ h2 {
 
 /* 3 Boutons "Choisissez un restaurant"/"Composez votre menu"/"Dégustez au restaurant" */
 
+
 .buttons {
     display: flex;
-    justify-content: center;
+    padding: 0 20px;
+    padding-bottom: 50px;
 }
 
-.button_choisissez,
-.button_composez,
-.button_degustez {
+
+.button_choix {
 
     display: flex;
+    justify-content: center;
+    width: 90%;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    padding: 30px 60px;
+    margin-left: 20%;
+    margin: 15px;
+    background: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
-    button {
-        width: 90%;
-        font-size: 15px;
-        font-weight: 700;
-        color: black;
-        padding: 20px 40px;
-        margin-left: 20px;
-        margin: 20px;
-        background: white;
-        outline: none;
-        border: none;
+    &:hover {
         cursor: pointer;
-        border-radius: 30px;
-        position: relative;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
-        &:hover {
-            cursor: pointer;
-            background-color: darken(white, 5%);
-        }
-
-        span {
-            height: 45px;
-            width: 45px;
-            border-radius: 50%;
-            background: #9356dc;
-            border: none;
-            color: #fff;
-            text-align: center;
-            padding: 4px 9px;
-            font-size: 14px;
-
-
-        }
+        background-color: darken(white, 5%);
 
         i {
-            margin: 10px;
-            padding: 10px;
-            font-size: 22px;
-            color: rgb(85, 84, 84);
-
-            &:hover {
-                cursor: pointer;
-                color: #9356DC;
-            }
+            color: #9356DC;
         }
     }
 
+    span {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: #9356dc;
+        border: none;
+        color: #fff;
+        text-align: center;
+        padding: 4px 9px;
+        font-size: 14px;
+        position: absolute;
+        left: -15px;
+        line-height: 23px;
+        top: 24px;
+    }
+
+    i {
+        margin: 10px;
+        padding: 10px;
+        font-size: 22px;
+        color: rgb(85, 84, 84);
+        position: absolute;
+        left: 22px;
+        top: 9px;
+
+    }
+
+
 }
+
 
 /*Les restaurants-cartes*/
 
@@ -231,8 +228,8 @@ h2 {
 
     .card_1_2,
     .card_3_4 {
-      display: flex;
-      width: 100%;
+        display: flex;
+        width: 100%;
     }
 
 
@@ -252,16 +249,21 @@ h2 {
             border: none;
         }
 
-        button {
+        span {
             display: flex;
             background-color: #99E2D0;
-            color: darken(#99E2D0, 40%);
-            font-size: 15px;
-            padding: 5px;
+            color: #278870;
+            font-size: 16px;
+            padding: 8px 12px;
             font-weight: 500;
             outline: none;
             border: none;
-        }
+            position: absolute;
+            left:230px;
+            bottom:169px;
+            font-family: "Roboto", sans-serif;
+          }
+    
 
         .information_card_restaurant {
             border-radius: 0 0 15px 15px;
@@ -308,9 +310,9 @@ footer {
     color: white;
     padding: 25px 50px 50px 50px;
 
-    .container{
+    .container {
         display: flex;
-        flex-direction: column;   
+        flex-direction: column;
         padding-top: 0;
     }
 
@@ -319,12 +321,12 @@ footer {
         font-size: 25px;
         height: 45px;
         color: white;
-        display:flex;
-        justify-content: center; 
-        padding-top:0;
+        display: flex;
+        justify-content: center;
+        padding-top: 0;
     }
 
-    ul{
+    ul {
         display: flex;
         justify-content: space-between;
         cursor: pointer;
