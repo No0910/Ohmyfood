@@ -195,8 +195,9 @@
     justify-content: center;
   }
   .cards .card_restaurant {
-    width: 50%;
+    width: 100%;
     margin: 10px;
+    position: relative;
   }
   .cards .card_restaurant img {
     display: flex;
@@ -560,6 +561,26 @@ ul li {
   }
   footer ul li {
     padding: 5px;
+  }
+  /* PARTIE PAGES MENU*/
+  .button_commander {
+    margin: 30px auto;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 15px 0;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(-185deg, #FF79DA, #9356DC);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    align-items: center;
+    height: 55px;
+    width: 55%;
+    border: none;
+    display: flex;
+    color: white;
+    font-weight: 700;
+    white-space: nowrap;
+    justify-content: center;
   }
 }
 

@@ -203,6 +203,7 @@ h2 {
 .cards .card_restaurant {
   width: 100%;
   margin: 10px;
+  position: relative;
 }
 .cards .card_restaurant img {
   display: flex;
@@ -220,11 +221,13 @@ h2 {
   background-color: #99E2D0;
   color: #278870;
   font-size: 16px;
-  padding: 8px 12px;
+  padding: 3px 5px;
   font-weight: 500;
   outline: none;
   border: none;
   position: absolute;
+  top: 17px;
+  right: 17px;
   font-family: "Roboto", sans-serif;
 }
 .cards .card_restaurant .information_card_restaurant {
@@ -235,12 +238,16 @@ h2 {
   cursor: pointer;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
+  position: relative;
 }
 .cards .card_restaurant .information_card_restaurant i {
-  font-size: 30px;
+  font-size: 28px;
   display: flex;
   justify-content: flex-end;
   margin-right: 30px;
+  position: absolute;
+  right: -9px;
+  top: 24px;
 }
 .cards .card_restaurant .information_card_restaurant h3 a {
   text-decoration: none;
