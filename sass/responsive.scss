@@ -195,9 +195,9 @@
       cursor: pointer;
       background-color: darken(white, 5%);
 
-       i{
+      i {
         color: #9356DC;
-       }
+      }
     }
 
     span {
@@ -247,7 +247,7 @@
     .card_restaurant {
       width: 100%;
       margin: 10px;
-      position:relative;
+      position: relative;
 
 
 
@@ -272,7 +272,7 @@
         font-weight: 500;
         outline: none;
         border: none;
-        position:absolute;
+        position: absolute;
         top: 20px;
         right: 20px;
 
@@ -501,7 +501,7 @@
     font-size: 26px;
     padding: 20px;
     font-weight: 700;
-    padding-top:50px;
+    padding-top: 50px;
   }
 
   /* 3 Boutons "Choisissez un restaurant"/"Composez votre menu"/"Dégustez au restaurant" */
@@ -537,9 +537,9 @@
       cursor: pointer;
       background-color: darken(white, 5%);
 
-       i{
+      i {
         color: #9356DC;
-       }
+      }
     }
 
     span {
@@ -588,7 +588,7 @@
 
     .card_restaurant {
       width: 95%;
-      position:relative;
+      position: relative;
 
       img {
         display: flex;
@@ -670,7 +670,7 @@
   footer {
     background-color: #353434;
     color: white;
-    padding:25px;
+    padding: 25px;
 
     ul {
 
@@ -717,9 +717,109 @@
 
   /* PARTIE PAGES MENU*/
 
+  /*Header*/
 
-  
+  header {
+    position: relative;
 
+    i {
+      position: absolute;
+      color: black;
+      line-height: 4;
+      font-size: 24px;
+      left: 41px;
+      top: 36px;
+    }
+
+    .i_heart {
+      position: absolute;
+      top:20px;
+    }
+
+  }
+
+  .h1_menu {
+    font-family: 'Shrikhand', cursive;
+    font-size: 33px;
+    position: relative;
+    right: 52px;
+    justify-content: left;
+    right: 30px;
+    width: 100%;
+  }
+
+
+
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+    background-color: #e8e9eb;
+    position: relative;
+
+    .menu {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .h2_menu {
+      font-weight: 500;
+      font-size:21px;
+    }
+
+    .button_menu{
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+        width: 90%;
+        font-size: 16px;
+        font-weight: 700;
+        color: black;
+        padding: 15px;
+        margin-left: 20%;
+        margin: 15px;
+        background: white;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        position: relative;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+        &:hover {
+          cursor: pointer;
+          background-color: darken(white, 5%);    
+        }
+
+        h3{
+          font-size:20px;
+          font-weight: 700;
+          position: absolute;
+          float: left;
+        }
+
+        h4{
+          font-size: 19px;
+          font-weight: 500;
+          color:#313030a6;
+          position: absolute;
+          float: left;
+          margin-top: 24px;
+
+          h5{
+           
+
+          }
+        }
+
+
+
+      }
+
+    
   .button_commander {
     margin: 30px auto;
     font-size: 16px;
@@ -742,6 +842,11 @@
 
 
 
+
+  }
+
+
+
+
+
 }
-
-

@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <title>Oh My Food</title>
     <meta name="viewport" content="width=device-width,initial scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Shrikhand&display=swap"
@@ -23,67 +23,122 @@
 
         <div class="container noPadding">
             <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
-            <div class="img_logo"><a href="index.html"><img src="images/logo/ohmyfood.png" alt="logo"></a></div>
-            <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg " alt="À la française Cité Rouge">
-            <h1>À la française</h1>
-            <i class="fa-regular fa-heart"></i>
+            <div class="img_logo"><a href="index.html"><img src="../images/logo/ohmyfood.png" alt="logo"></a></div>
+            <img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg " alt="À la française Cité Rouge">
         </div>
 
     </header>
 
-        <h2>Entrées</h2>
+    <main>
 
 
-            <h3>Tartare de poulpe acidulé</h3>
-            <p>Aux zestes d'orange</p></br>
-            <p>25€</p>
-
-            <h3>Velouté de légumes d'antan</h3>
-            <p>Carotte, panais, topinambour</p></br>
-            <p>35€</p>
-
-            <h3> Soupe à l'oignon</h3>
-            <p>Revisitée</p></br>
-            <p>20€</p>
+        <h1 class="h1_menu">À la française</h1>
+        <div class="i_heart"><i class="fa-regular fa-heart"></i></div>
 
 
-        <h2>Plats</h2>
-
-            <h3>Coquilles Saint-Jacques</h3>
-            <p>Accompagnées d'une purée de panais</p></br>
-            <p>40€</p>
-
-            <h3>Magret de canard</h3>
-            <p>Et parmentier de pommes de terre</p></br>
-            <p>35€</p>
-
-            <h3>Pigeonneau d’Ille-et-Vilaine</h3>
-            <p>Sur son lit de gnocchis aux légumes</p></br>
-            <p>44€</p>
-
-    
-        <h2>Desserts</h2>
 
 
-            <h3>Pétales de violettes glacés</h3>
-            <p>Et purée de noisettes</p></br>
-            <p>18€</p>
+        <h2 class="h2_menu">ENTRÉES</h2>
 
-            <h3>Fondant au chocolat</h3>
-            <p>Revisité</p></br>
-            <p>22€</p>
+        <div class="menu">
 
-            <h3>Millefeuille croustillant</h3>
-            <p>Myrtilles et pâte d’amande</p></br>
-            <p>23€</p>
 
-            <button type="submit" class="button_commander">Commandez</button>
+            <button type="submit" class="button_menu">
+                <h3>Tartare de poulpe acidulé</h3>
+                <h4>Aux zests d'orange</h4></br>
+                <h5>25€</h5>
+            </button>
+
+            <button type="submit" class="button_menu">
+
+                <h3>Velouté de légumes d'antan</h3>
+                <h4>Carotte, panais, topinambour</h4></br>
+                <h5>35€</h5>
+
+            </button>
+
+            <button type="submit" class="button_menu">
+
+                <h3> Soupe à l'oignon</h3>
+                <h4>Revisitée</h4>
+                <h5>20€</h5>
+
+            </button>
+
+        </div>
+
+
+
+
+        <h2 class="h2_menu">PLATS</h2>
+
+        <div class="menu">
+
+            <button type="submit" class="button_menu">
+
+                <h3>Coquilles Saint-Jacques</h3>
+                <h4>Accompagnées d'une purée de panais</h4></br>
+                <h5>40€</h5>
+            </button>
+
+
+            <button type="submit" class="button_menu">
+
+                <h3>Magret de canard</h3>
+                <h4>Et parmentier de pommes de terre</h4></br>
+                <h5>35€</h5>
+            </button>
+
+            <button type="submit" class="button_menu">
+
+                <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                <h4>Sur son lit de gnocchis aux légumes</h4></br>
+                <h5>44€</h5>
+            </button>
+
+        </div>
+
+
+        <h2 class="h2_menu">DESSERTS</h2>
+
+        <div class="menu">
+
+
+            <button type="submit" class="button_menu">
+                <h3>Pétales de violettes glacés</h3>
+                <h4>Et purée de noisettes</h4></br>
+                <h5>18€</h5>
+            </button>
+
+            <button type="submit" class="button_menu">
+
+                <h3>Fondant au chocolat</h3>
+                <h4>Revisité</h4></br>
+                <h5>22€</h5>
+            </button>
+
+            <button type="submit" class="button_menu">
+
+                <h3>Millefeuille croustillant</h3>
+                <h4>Myrtilles et pâte d’amande</h4></br>
+                <h5>23€</h5>
+            </button>
+
+        </div>
+
+
+
+        <button type="submit" class="button_commander">Commander</button>
+
+    </main>
 
     <footer>
 
         <div class="container">
 
-            <div class="h3_footer"><h3>ohmyfood</h3></div>
+            <div class="h3_footer">
+                <h3>ohmyfood</h3>
+            </div>
 
             <ul>
                 <div class="li-restaurant">
@@ -98,14 +153,14 @@
 
                 <li>Mentions légales</li>
                 <li>Contact</li>
-                
+
             </ul>
 
         </div>
 
     </footer>
-        
-   
+
+
 </body>
 
 </html>
