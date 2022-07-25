@@ -596,17 +596,18 @@ ul li {
     background-color: #e8e9eb;
     position: relative;
   }
+  main .h2_menu {
+    font-weight: 500;
+    font-size: 22px;
+    border-bottom: 4px solid #99E2D0;
+  }
   main .menu {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
   }
-  main .h2_menu {
-    font-weight: 500;
-    font-size: 21px;
-  }
-  main .button_menu {
+  main .menu .button_menu {
     display: flex;
     align-items: left;
     flex-direction: column;
@@ -614,9 +615,10 @@ ul li {
     font-size: 16px;
     font-weight: 700;
     color: black;
-    padding: 15px;
+    padding: 20px;
     margin-left: 20%;
-    margin: 15px;
+    margin: 9px;
+    height: 81px;
     background: white;
     outline: none;
     border: none;
@@ -625,23 +627,29 @@ ul li {
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
-  main .button_menu:hover {
+  main .menu .button_menu:hover {
     cursor: pointer;
     background-color: #f2f2f2;
   }
-  main .button_menu h3 {
+  main .menu .button_menu h3 {
     font-size: 20px;
     font-weight: 700;
     position: absolute;
     float: left;
   }
-  main .button_menu h4 {
+  main .menu .button_menu h4 {
     font-size: 19px;
     font-weight: 500;
     color: rgba(49, 48, 48, 0.6509803922);
     position: absolute;
     float: left;
     margin-top: 24px;
+  }
+  main .menu .button_menu h5 {
+    position: absolute;
+    float: right;
+    right: 25px;
+    top: 45px;
   }
   main .button_commander {
     margin: 30px auto;

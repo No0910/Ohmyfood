@@ -733,7 +733,7 @@
 
     .i_heart {
       position: absolute;
-      top:20px;
+      top: 20px;
     }
 
   }
@@ -758,19 +758,20 @@
     background-color: #e8e9eb;
     position: relative;
 
+    
+    .h2_menu {
+      font-weight: 500;
+      font-size: 22px;
+      border-bottom: 4px solid #99E2D0;
+    }
+
     .menu {
       display: flex;
       align-items: center;
       flex-direction: column;
       justify-content: flex-start;
-    }
 
-    .h2_menu {
-      font-weight: 500;
-      font-size:21px;
-    }
-
-    .button_menu{
+      .button_menu {
         display: flex;
         align-items: left;
         flex-direction: column;
@@ -778,9 +779,10 @@
         font-size: 16px;
         font-weight: 700;
         color: black;
-        padding: 15px;
+        padding: 20px;
         margin-left: 20%;
-        margin: 15px;
+        margin: 9px;
+        height: 81px;
         background: white;
         outline: none;
         border: none;
@@ -788,62 +790,77 @@
         border-radius: 20px;
         position: relative;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    
+
         &:hover {
           cursor: pointer;
-          background-color: darken(white, 5%);    
+          background-color: darken(white, 5%);
         }
 
-        h3{
-          font-size:20px;
+        h3 {
+          font-size: 20px;
           font-weight: 700;
           position: absolute;
           float: left;
         }
 
-        h4{
+        h4 {
           font-size: 19px;
           font-weight: 500;
-          color:#313030a6;
+          color: #313030a6;
           position: absolute;
           float: left;
           margin-top: 24px;
-
-          h5{
-           
-
-          }
         }
 
-
+        h5 {
+          position: absolute;
+          float: right;
+          right: 25px;
+          top: 45px;
+        }
 
       }
 
-    
-  .button_commander {
-    margin: 30px auto;
-    font-size: 16px;
-    border-radius: 30px;
-    padding: 15px 0;
-    cursor: pointer;
-    border: none;
-    background: linear-gradient(-185deg, #FF79DA, #9356DC);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    align-items: center;
-    height: 55px;
-    width: 55%;
-    border: none;
-    display: flex;
-    color: white;
-    font-weight: 700;
-    white-space: nowrap;
-    justify-content: center;
-  }
+
+
+    }
+
+
+    .button_commander {
+      margin: 30px auto;
+      font-size: 16px;
+      border-radius: 30px;
+      padding: 15px 0;
+      cursor: pointer;
+      border: none;
+      background: linear-gradient(-185deg, #FF79DA, #9356DC);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      align-items: center;
+      height: 55px;
+      width: 55%;
+      border: none;
+      display: flex;
+      color: white;
+      font-weight: 700;
+      white-space: nowrap;
+      justify-content: center;
+    }
 
 
 
 
   }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
