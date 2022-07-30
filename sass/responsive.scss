@@ -370,13 +370,13 @@
   header {
     position: relative;
 
-    i {
+    i.back {
       position: absolute;
       color: black;
       line-height: 4;
       font-size: 24px;
       left: 41px;
-      top: 36px;
+      top: 5px;
     }
 
     .img_logo img {
@@ -388,7 +388,7 @@
       background-size: cover;
       background-position: center;
       width: 100%;
-      height: 100%;
+      height: 74%;
       cursor: pointer;
     }
 
@@ -419,6 +419,14 @@
     width: 100%;
     position: relative;
     background-color: #f7f7f8;
+    padding:0;
+
+    &.bg_color {
+      border-radius: 30px 30px 0 0;
+      background-color: rgba(245, 245, 245);
+      position: relative;
+      top: -200px;
+    }
 
     .i_heart i {
       position: absolute;
@@ -427,11 +435,20 @@
       right: 151px;
       font-size: 30px;
     }
-    
+
     .h2_menu {
       font-weight: 500;
       font-size: 19px;
       color: #1d1d1dbb;
+    }
+
+    .sub-menu {
+      background-color: #99E2D0;
+      display:inline-block;
+      width: 49px;
+      height: 3px;
+      margin-top: -19px;
+      margin-bottom: 7px;
     }
 
     .menu {
@@ -917,16 +934,16 @@
     flex-direction: column;
     width: 100%;
     position: relative;
-    background-color:  #ffffffef;
+    background-color: #ffffffef;
 
-    &.bg_color{
-      border-radius:30px 30px 0 0;
-      background-color: #ffffffef;
+    &.bg_color {
+      border-radius: 30px 30px 0 0;
+      background-color: rgba(245, 245, 245);
       position: relative;
       top: -60px;
     }
 
-   
+
 
     .i_heart i {
       position: absolute;
@@ -936,7 +953,7 @@
       font-size: 30px;
     }
 
-    
+
     .h2_menu {
       font-weight: 500;
       font-size: 19px;
@@ -946,7 +963,7 @@
     }
 
     .sub-menu {
-      background-color:#99E2D0;
+      background-color: #99E2D0;
       display: inline-block;
       width: 49px;
       height: 3px;
