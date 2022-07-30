@@ -435,12 +435,20 @@ main {
     .h2_menu {
         font-weight: 500;
         font-size: 21px;
-        text-decoration: underline 3px solid #99E2D0;
-        text-underline-offset: 0.6rem;
         color: #1d1d1dbb;
         display: flex;
         justify-content: center;
     }
+
+    .sub-menu {
+        background-color:#99E2D0;
+        display: inline-block;
+        width: 49px;
+        height: 3px;
+        margin-left: 20px;
+        margin-top: -13px;
+        margin-bottom: 7px;
+      }
 
     .menu {
         display: flex;
