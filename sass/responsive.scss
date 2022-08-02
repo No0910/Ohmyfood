@@ -69,10 +69,11 @@
     padding: 10px;
     box-shadow: inset 0px 3px 4px rgb(151, 151, 151);
 
-    .icon_rechercher {
+    i.location {
       height: 50px;
       display: flex;
       align-items: center;
+      margin-left: 39%;
       font-size: 20px;
     }
 
@@ -84,7 +85,7 @@
       background-color: #e8e9eb;
       font-size: 18px;
       text-align: center;
-      width: 100%;
+      width: 18%;
       margin: 0;
 
       &:focus-visible {
@@ -118,6 +119,7 @@
     text-align: center;
     font-size: 20px;
     height: 40px;
+    color:#646262;
   }
 
 
@@ -312,6 +314,7 @@
           font-size: 21px;
           margin: 5px;
           font-weight: 100;
+          color:#555454;
         }
 
       }
@@ -444,11 +447,12 @@
 
     .sub-menu {
       background-color: #99E2D0;
-      display:inline-block;
-      width: 49px;
+      display: inline-block;
+      width: 48px;
       height: 3px;
       margin-top: -19px;
-      margin-bottom: 7px;
+      margin-bottom: 20px;
+      margin-left: 47%;
     }
 
     .menu {
@@ -529,7 +533,7 @@
       font-weight: 500;
       white-space: nowrap;
       justify-content: center;
-      margin-bottom: 80px;
+      margin-bottom: -100px;
     }
 
 
@@ -587,14 +591,13 @@
       justify-content: center;
       background-color: #e8e9eb;
       width: 100%;
-      padding: 10px;
+      padding: 6px;
       box-shadow: inset 0px 3px 4px rgb(182, 180, 180);
 
       i.location {
         height: 50px;
         display: flex;
         align-items: center;
-
       }
 
       input {
@@ -638,7 +641,7 @@
     justify-content: center;
     height: 50px;
     padding: 50px;
-    font-size: 30px;
+    font-size: 29px;
     font-weight: 700;
   }
 
@@ -648,9 +651,10 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     height: 40px;
     padding-bottom: 10px;
+    color:#646262;
   }
 
   /*Bouton "Explorer nos restaurants*/
@@ -835,6 +839,7 @@
           font-size: 21px;
           margin: 10px 5px 5px 5px;
           font-weight: 100;
+          color:#555454;
         }
 
 
@@ -914,6 +919,15 @@
       font-size: 24px;
       left: 20px;
       top: 0px;
+    }
+
+    .img_restaurant img{
+      object-fit: cover;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 60%;
+      cursor: pointer;
     }
 
   }

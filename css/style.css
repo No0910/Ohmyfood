@@ -45,21 +45,22 @@ form {
   padding: 10px;
   box-shadow: inset 0px 3px 4px rgb(151, 151, 151);
 }
-form .icon_rechercher {
+form i.location {
   height: 50px;
   display: flex;
   align-items: center;
-  font-size: 20px;
+  margin-left: 44%;
+  font-size: 21px;
 }
 form input {
   display: flex;
   width: 100%;
-  text-indent: 10px;
+  text-indent: 0px;
   border: none;
   background-color: #e8e9eb;
   font-size: 18px;
   text-align: center;
-  width: 100%;
+  width: 11%;
   margin: 0;
 }
 form input:focus-visible {
@@ -84,7 +85,7 @@ h1 {
   align-items: center;
   justify-content: center;
   height: 50px;
-  padding: 50px;
+  padding: 44px;
   font-size: 30px;
   font-weight: 700;
 }
@@ -96,6 +97,7 @@ h1 {
   text-align: center;
   font-size: 20px;
   height: 40px;
+  color: #646262;
 }
 
 /*Bouton "Explorer nos restaurants*/
@@ -199,6 +201,7 @@ h2 {
 .cards .card_3_4 {
   display: flex;
   width: 100%;
+  padding-bottom: 20px;
 }
 .cards .card_restaurant {
   width: 100%;
@@ -260,6 +263,7 @@ h2 {
   font-size: 21px;
   margin: 5px;
   font-weight: 100;
+  color: #555454;
 }
 
 footer {
@@ -326,7 +330,7 @@ header .img_restaurant img {
   object-fit: cover;
   background-size: cover;
   background-position: center;
-  width: 100%;
+  width: 1349px;
   height: 60%;
   cursor: pointer;
 }
@@ -345,7 +349,6 @@ header .i_heart i {
   justify-content: center;
   margin-left: 25px;
   right: 30px;
-  width: 100%;
 }
 
 main {
@@ -354,6 +357,12 @@ main {
   width: 100%;
   position: relative;
   background-color: #f7f7f8;
+}
+main.bg_color {
+  border-radius: 30px 30px 0 0;
+  background-color: rgb(245, 245, 245);
+  position: relative;
+  top: -200px;
 }
 main .i_heart i {
   position: absolute;
@@ -439,14 +448,15 @@ main .button_commander {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   align-items: center;
   height: 61px;
-  width: 43%;
+  width: 35%;
   border: none;
   display: flex;
   color: white;
   font-weight: 500;
   white-space: nowrap;
   justify-content: center;
-  margin-bottom: 80px;
+  margin-bottom: -103px;
+  margin-top: 74px;
 }
 
 /*# sourceMappingURL=style.css.map */
