@@ -1,20 +1,13 @@
-/* DESKTOP LARGE Pour ceux qui ont une résolution supérieure ou égale à 1224px */
-@media screen and (min-width:1224px) {
 
-  .container {
-    width: 1224px;
-  }
-
-}
 
 /* DESKTOP Pour ceux qui ont une résolution supérieure ou égale à 992px */
-@media screen and (min-width:992px) and (max-width:1223px) {
+@media screen and (min-width:992px){
   header {
     width: 100%;
   }
 
   .container {
-    width: 992px;
+    width: 100%;
   }
 
 }
@@ -119,7 +112,7 @@
     text-align: center;
     font-size: 20px;
     height: 40px;
-    color:#646262;
+    color: #646262;
   }
 
 
@@ -314,7 +307,7 @@
           font-size: 21px;
           margin: 5px;
           font-weight: 100;
-          color:#555454;
+          color: #555454;
         }
 
       }
@@ -370,8 +363,15 @@
 
   /*Header*/
 
+  body{
+    &.bgcolor{
+      background-color: rgba(245, 245, 245);
+    }
+  }
+
   header {
     position: relative;
+    background-color: #FFFFFF;
 
     i.back {
       position: absolute;
@@ -409,7 +409,6 @@
     right: 52px;
     justify-content: left;
     right: 30px;
-    width: 100%;
     display: flex;
     justify-content: center;
   }
@@ -422,7 +421,7 @@
     width: 100%;
     position: relative;
     background-color: #f7f7f8;
-    padding:0;
+    padding: 0;
 
     &.bg_color {
       border-radius: 30px 30px 0 0;
@@ -598,17 +597,18 @@
         height: 50px;
         display: flex;
         align-items: center;
+        margin-left: 0;
+        font-size: 19px;
       }
 
       input {
         display: flex;
         width: 100%;
-        text-indent: 10px;
         border: none;
         background-color: #e8e9eb;
         font-size: 0.9em;
         text-align: center;
-        width: 35%;
+        width: 34%;
         margin: 0;
 
         &:focus-visible {
@@ -654,7 +654,7 @@
     font-size: 20px;
     height: 40px;
     padding-bottom: 10px;
-    color:#646262;
+    color: #646262;
   }
 
   /*Bouton "Explorer nos restaurants*/
@@ -700,6 +700,7 @@
     flex-direction: column;
     padding: 0 20px;
     padding-bottom: 50px;
+    align-items: center;
   }
 
 
@@ -839,7 +840,7 @@
           font-size: 21px;
           margin: 10px 5px 5px 5px;
           font-weight: 100;
-          color:#555454;
+          color: #555454;
         }
 
 
@@ -907,10 +908,17 @@
 
   /* PARTIE PAGES MENU*/
 
+  body{
+    &.bgcolor{
+      background-color: rgba(245, 245, 245);
+    }
+  }
+
   /*Header*/
 
   header {
     position: relative;
+    background-color: #FFFFFF;
 
     i.back {
       position: absolute;
@@ -921,7 +929,7 @@
       top: 0px;
     }
 
-    .img_restaurant img{
+    .img_restaurant img {
       object-fit: cover;
       background-size: cover;
       background-position: center;
@@ -938,7 +946,6 @@
     position: relative;
     right: 52px;
     justify-content: flex-start;
-    width: 100%;
   }
 
 

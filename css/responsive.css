@@ -1,17 +1,11 @@
 @charset "UTF-8";
-/* DESKTOP LARGE Pour ceux qui ont une résolution supérieure ou égale à 1224px */
-@media screen and (min-width: 1224px) {
-  .container {
-    width: 1224px;
-  }
-}
 /* DESKTOP Pour ceux qui ont une résolution supérieure ou égale à 992px */
-@media screen and (min-width: 992px) and (max-width: 1223px) {
+@media screen and (min-width: 992px) {
   header {
     width: 100%;
   }
   .container {
-    width: 992px;
+    width: 100%;
   }
 }
 /* TABLETTE Pour ceux qui ont une résolution comprise entre 768 px et 991px */
@@ -289,8 +283,12 @@
   }
   /* PARTIE PAGES MENU*/
   /*Header*/
+  body.bgcolor {
+    background-color: rgb(245, 245, 245);
+  }
   header {
     position: relative;
+    background-color: #FFFFFF;
   }
   header i.back {
     position: absolute;
@@ -323,7 +321,6 @@
     right: 52px;
     justify-content: left;
     right: 30px;
-    width: 100%;
     display: flex;
     justify-content: center;
   }
@@ -470,16 +467,17 @@
     height: 50px;
     display: flex;
     align-items: center;
+    margin-left: 0;
+    font-size: 19px;
   }
   header form input {
     display: flex;
     width: 100%;
-    text-indent: 10px;
     border: none;
     background-color: #e8e9eb;
     font-size: 0.9em;
     text-align: center;
-    width: 35%;
+    width: 34%;
     margin: 0;
   }
   header form input:focus-visible {
@@ -550,6 +548,7 @@ ul li {
     flex-direction: column;
     padding: 0 20px;
     padding-bottom: 50px;
+    align-items: center;
   }
   .button_choix {
     display: flex;
@@ -713,9 +712,13 @@ ul li {
     padding: 5px;
   }
   /* PARTIE PAGES MENU*/
+  body.bgcolor {
+    background-color: rgb(245, 245, 245);
+  }
   /*Header*/
   header {
     position: relative;
+    background-color: #FFFFFF;
   }
   header i.back {
     position: absolute;
@@ -739,7 +742,6 @@ ul li {
     position: relative;
     right: 52px;
     justify-content: flex-start;
-    width: 100%;
   }
   main {
     display: flex;
