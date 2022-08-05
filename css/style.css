@@ -33,7 +33,7 @@ body {
   width: auto;
 }
 .img_logo img {
-  height: 40px;
+  height: 46px;
 }
 
 /*Barre de recherche*/
@@ -219,6 +219,18 @@ h2 {
   padding: 5px;
   border: none;
 }
+.cards .card_restaurant .img_position1 {
+  object-position: bottom;
+}
+.cards .card_restaurant .img_position2 {
+  object-position: center 63%;
+}
+.cards .card_restaurant .img_position3 {
+  object-position: center 97%;
+}
+.cards .card_restaurant .img_position4 {
+  object-position: center 97%;
+}
 .cards .card_restaurant span {
   display: flex;
   background-color: #99E2D0;
@@ -401,7 +413,6 @@ main .menu {
 }
 main .menu .button_menu {
   display: flex;
-  align-items: left;
   flex-direction: column;
   width: 60%;
   font-size: 16px;

@@ -37,7 +37,7 @@ body {
     width: auto;
 
     img {
-        height: 40px;
+        height: 46px;
     }
 }
 
@@ -252,6 +252,22 @@ h2 {
             padding: 5px;
             border: none;
         }
+
+        .img_position1{
+            object-position: bottom;
+          }
+    
+          .img_position2 {
+            object-position: center 63%;
+          }
+    
+          .img_position3 {
+            object-position: center 97%;
+          }
+    
+          .img_position4 {
+            object-position: center 97%;
+          }
 
         span {
             display: flex;
@@ -476,7 +492,6 @@ main {
 
         .button_menu {
             display: flex;
-            align-items: left;
             flex-direction: column;
             width: 60%;
             font-size: 16px;
