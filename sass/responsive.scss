@@ -498,6 +498,7 @@
         &:hover {
           cursor: pointer;
           background-color: darken(white, 5%);
+          box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.5);
         }
 
         h3 {
@@ -1054,6 +1055,7 @@
         &:hover {
           cursor: pointer;
           background-color: darken(white, 5%);
+          box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.5);
         }
 
         h3 {

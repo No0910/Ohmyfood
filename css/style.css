@@ -364,7 +364,7 @@ header .i_heart i {
   right: 52px;
   display: flex;
   justify-content: center;
-  margin-left: 25px;
+  margin-left: 92px;
   right: 30px;
   width: 90%;
 }
@@ -385,8 +385,8 @@ main.bg_color {
 main .i_heart i {
   position: absolute;
   float: right;
-  top: 35px;
-  right: 300px;
+  top: 27px;
+  right: 448px;
   font-size: 30px;
 }
 main .h2_menu {
@@ -433,6 +433,7 @@ main .menu .button_menu {
 main .menu .button_menu:hover {
   cursor: pointer;
   background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 main .menu .button_menu h3 {
   font-size: 20px;

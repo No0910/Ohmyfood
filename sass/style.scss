@@ -436,7 +436,7 @@ header {
     right: 52px;
     display: flex;
     justify-content: center;
-    margin-left: 25px;
+    margin-left: 92px;
     right: 30px;
     width:90%;
 }
@@ -460,8 +460,8 @@ main {
     .i_heart i {
         position: absolute;
         float: right;
-        top: 35px;
-        right: 300px;
+        top: 27px;
+        right: 448px;
         font-size: 30px;
     }
 
@@ -512,6 +512,7 @@ main {
             &:hover {
                 cursor: pointer;
                 background-color: darken(white, 5%);
+                box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.5);
             }
 
             h3 {
