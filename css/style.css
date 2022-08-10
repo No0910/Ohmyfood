@@ -412,6 +412,7 @@ main .menu {
   justify-content: center;
 }
 main .menu .button_menu {
+  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   width: 60%;

@@ -6,7 +6,8 @@
   "scripts": {
     "sass": "sass --watch ./sass/style.scss:./css/style.css",
     "responsive": "sass --watch ./sass/responsive.scss:./css/responsive.css",
-    "normalize": "sass --watch ./sass/normalize.scss:./css/normalize.css"
+    "normalize": "sass --watch ./sass/normalize.scss:./css/normalize.css",
+    "animation": "sass --watch ./sass/animation.scss:./css/animation.css"
   },
   "repository": {
     "type": "git",

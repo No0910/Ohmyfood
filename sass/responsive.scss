@@ -569,7 +569,6 @@
     padding: 0;
   }
 
-
   /*HEADER*/
 
   header {
@@ -1057,6 +1056,26 @@
           background-color: darken(white, 5%);
           box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.5);
         }
+
+        //Animation Effet fondu sur menus //
+
+        .menu{
+          animation:fadein 2s;
+        }
+
+        @keyframes fadein {
+          0% {
+          opacity:0;
+          }
+          50%{
+          opacity:0.5;
+          }
+          100% {
+          opacity:1;
+          }
+         }
+
+         //Fin de l'animation effet fondu sur menus//
 
         h3 {
           font-size: 20px;

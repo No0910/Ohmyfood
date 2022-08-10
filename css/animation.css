@@ -1,0 +1,74 @@
+/* #loading-bar-spinner.spinner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 19 !important;
+    background-color: white;
+}
+
+#loading-bar-spinner.spinner .spinner-icon {
+    width: 40px;
+    height: 40px;
+    border: solid 4px transparent;
+    border-top-color: #99E2D0;
+    border-left-color: #99E2D0;
+    border-radius: 50%;
+    animation: loading-bar-spinner 600ms linear 2s;
+
+}
+
+@keyframes loading-bar-spinner {
+    0% {
+        transform: rotate(0deg);
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+} 
+*/
+.button_menu {
+  animation: fadein 3s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.anim-color:hover {
+  transition: all 1s linear 0s;
+  background: linear-gradient(#9356DC, #ff79da);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=animation.css.map */
