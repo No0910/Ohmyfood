@@ -65,13 +65,31 @@
     }
   }
 
-  .anim-color:hover{
-    transition: all 1s linear 0s;
-    background: linear-gradient(#9356DC, #ff79da);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+ /*Animation remplissage icone coeur au hover*/
+
+
+  .i_heart i {
+    color:#333;
+    font-size:70px;
+    opacity:1;
+    transition: 0.2s ease-out;
+    
+    @media (max-width:991px){
+      font-size:26px;
+    }
+    
+   &:hover{
+      animation:0.3s ease-in-out;
+      background:linear-gradient(to top,#ff79da,#9356dc);
+      background:-webkit-linear-gradient(to top,#ff79da,#9356dc);
+      background-clip:border-box;
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      font-weight:bold;
+      display:inline-block;
+      opacity:1;
+    }
   }
 
+/* Fin Animation remplissage icone coeur au hover*/
+  
