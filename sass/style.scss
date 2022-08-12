@@ -134,6 +134,13 @@ h1 {
     font-weight: 700;
     white-space: nowrap;
     justify-content: center;
+
+    &:hover {
+        background: linear-gradient(-185deg, #d373b8, #9b6dd3);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    }
+
+
 }
 
 /*Titre H2 "Fonctionnement" & Titre "Restaurants*/
@@ -232,12 +239,21 @@ h2 {
         display: flex;
         width: 100%;
         padding-bottom: 20px;
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+            font-size: 22px;
+            width: 100%;
+            min-width: 40%;
+        }
     }
 
 
     .card_restaurant {
         width: 100%;
-        margin: 10px;
+        margin: 8px;
         position: relative;
 
         img {
@@ -252,21 +268,21 @@ h2 {
             border: none;
         }
 
-        .img_position1{
+        .img_position1 {
             object-position: bottom;
-          }
-    
-          .img_position2 {
+        }
+
+        .img_position2 {
             object-position: center 63%;
-          }
-    
-          .img_position3 {
+        }
+
+        .img_position3 {
             object-position: center 97%;
-          }
-    
-          .img_position4 {
+        }
+
+        .img_position4 {
             object-position: center 97%;
-          }
+        }
 
         span {
             display: flex;
@@ -305,23 +321,12 @@ h2 {
                 top: 24px;
             }
 
-            h3 {
-
-                a {
-                    text-decoration: none;
-                    color: black;
-                    font-weight: 700;
-                    font-size: 22px;
-                    margin: 5px;
-                }
-            }
-
-
             p {
-                font-size: 21px;
-                margin: 5px;
+                font-size: 19px;
+                margin: -1px;
                 font-weight: 100;
                 color: #555454;
+                padding-top: 8px;
             }
 
         }
@@ -354,34 +359,44 @@ footer {
         display: flex;
         justify-content: space-between;
         cursor: pointer;
+
+        li {
+            padding: 5px;
+            font-size: 17px;
+        }
+
+        .li-restaurant {
+            display: flex;
+        }
+
+        .icon_restaurant {
+            display: flex;
+            margin: 5px;
+            padding-top: 3px;
+            padding-top: 3px;
+            margin-top: -2px;
+            font-size: 16px;
+        }
+
+        .li-partenaire {
+            display: flex;
+        }
+
+        .icon_partenaire {
+            display: flex;
+            margin: 5px;
+            padding-top: 3px;
+            margin-top: -2px;
+            font-size: 16px;
+        }
+
+        li a {
+            list-style-type: none;
+            text-decoration: none;
+            color: white;
+        }
     }
 
-    .li-restaurant {
-        display: flex;
-    }
-
-    .icon_restaurant {
-        display: flex;
-        margin: 5px;
-        padding-top: 3px;
-        font-size: 12px;
-    }
-
-    .li-partenaire {
-        display: flex;
-    }
-
-    .icon_partenaire {
-        display: flex;
-        margin: 5px;
-        padding-top: 3px;
-        font-size: 12px;
-    }
-
-    ul li {
-        padding: 5px;
-        font-size: 17px;
-    }
 }
 
 
@@ -410,6 +425,7 @@ header {
         top: -2px;
     }
 
+
     .img_restaurant img {
         object-fit: cover;
         background-size: cover;
@@ -418,7 +434,6 @@ header {
         height: 60%;
         cursor: pointer;
     }
-
 
     .i_heart i {
         position: absolute;
@@ -437,7 +452,7 @@ header {
     justify-content: center;
     margin-left: 92px;
     right: 30px;
-    width:90%;
+    width: 90%;
 }
 
 
@@ -512,7 +527,7 @@ main {
             &:hover {
                 cursor: pointer;
                 background-color: darken(white, 5%);
-                box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.5);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
             }
 
             h3 {
@@ -563,6 +578,11 @@ main {
         justify-content: center;
         margin-bottom: -103px;
         margin-top: 74px;
+
+        &:hover {
+            background: linear-gradient(-185deg, #d373b8, #9b6dd3);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+        }
     }
 
 

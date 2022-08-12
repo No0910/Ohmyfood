@@ -120,6 +120,10 @@ h1 {
   white-space: nowrap;
   justify-content: center;
 }
+.button:hover {
+  background: linear-gradient(-185deg, #d373b8, #9b6dd3);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
 
 /*Titre H2 "Fonctionnement" & Titre "Restaurants*/
 h2 {
@@ -203,9 +207,18 @@ h2 {
   width: 100%;
   padding-bottom: 20px;
 }
+.cards .card_1_2 a,
+.cards .card_3_4 a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 22px;
+  width: 100%;
+  min-width: 40%;
+}
 .cards .card_restaurant {
   width: 100%;
-  margin: 10px;
+  margin: 8px;
   position: relative;
 }
 .cards .card_restaurant img {
@@ -264,18 +277,12 @@ h2 {
   right: -9px;
   top: 24px;
 }
-.cards .card_restaurant .information_card_restaurant h3 a {
-  text-decoration: none;
-  color: black;
-  font-weight: 700;
-  font-size: 22px;
-  margin: 5px;
-}
 .cards .card_restaurant .information_card_restaurant p {
-  font-size: 21px;
-  margin: 5px;
+  font-size: 19px;
+  margin: -1px;
   font-weight: 100;
   color: #555454;
+  padding-top: 8px;
 }
 
 footer {
@@ -302,27 +309,35 @@ footer ul {
   justify-content: space-between;
   cursor: pointer;
 }
-footer .li-restaurant {
-  display: flex;
-}
-footer .icon_restaurant {
-  display: flex;
-  margin: 5px;
-  padding-top: 3px;
-  font-size: 12px;
-}
-footer .li-partenaire {
-  display: flex;
-}
-footer .icon_partenaire {
-  display: flex;
-  margin: 5px;
-  padding-top: 3px;
-  font-size: 12px;
-}
 footer ul li {
   padding: 5px;
   font-size: 17px;
+}
+footer ul .li-restaurant {
+  display: flex;
+}
+footer ul .icon_restaurant {
+  display: flex;
+  margin: 5px;
+  padding-top: 3px;
+  padding-top: 3px;
+  margin-top: -2px;
+  font-size: 16px;
+}
+footer ul .li-partenaire {
+  display: flex;
+}
+footer ul .icon_partenaire {
+  display: flex;
+  margin: 5px;
+  padding-top: 3px;
+  margin-top: -2px;
+  font-size: 16px;
+}
+footer ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
 }
 
 /* PARTIE PAGES MENU*/
@@ -476,6 +491,10 @@ main .button_commander {
   justify-content: center;
   margin-bottom: -103px;
   margin-top: 74px;
+}
+main .button_commander:hover {
+  background: linear-gradient(-185deg, #d373b8, #9b6dd3);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 /*# sourceMappingURL=style.css.map */

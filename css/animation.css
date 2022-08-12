@@ -1,4 +1,4 @@
-/* #loading-bar-spinner.spinner {
+/* .spinner {
     width: 100%;
     height: 100%;
     display: flex;
@@ -7,74 +7,111 @@
     position: absolute;
     z-index: 19 !important;
     background-color: white;
-}
 
-#loading-bar-spinner.spinner .spinner-icon {
-    width: 40px;
-    height: 40px;
-    border: solid 4px transparent;
-    border-top-color: #99E2D0;
-    border-left-color: #99E2D0;
-    border-radius: 50%;
-    animation: loading-bar-spinner 600ms linear 2s;
-
-}
-
-@keyframes loading-bar-spinner {
-    0% {
-        transform: rotate(0deg);
-        transform: rotate(0deg);
-        opacity: 0;
+    .spinner-icon {
+      width: 40px;
+      height: 40px;
+      border: solid 4px transparent;
+      border-top-color: #99E2D0;
+      border-left-color: #99E2D0;
+      border-radius: 50%;
+      animation:loader-spinner 3s forwards;
+};
     }
 
-    25% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    75% {
-        opacity: 1;
-    }
-
-    100% {
-        transform: rotate(360deg);
-        transform: rotate(360deg);
-        opacity: 0;
-    }
-} 
+  }
 */
-.button_menu {
-  animation: fadein 3s;
-}
-
-@keyframes fadein {
+/*@keyframes loading-spinner {
   0% {
+    transform: rotate(0deg);
+    transform: rotate(0deg);
     opacity: 0;
   }
+
+  25% {
+    opacity: 0.25;
+  }
+
   50% {
     opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+} */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
   100% {
     opacity: 1;
   }
 }
-/*Animation remplissage icone coeur au hover*/
-.i_heart i {
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.button_menu {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.button_menu.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+.button_menu.two {
+  -webkit-animation-delay: 1.7s;
+  -moz-animation-delay: 1.7s;
+  animation-delay: 1.7s;
+}
+.button_menu.three {
+  -webkit-animation-delay: 2.6s;
+  -moz-animation-delay: 2.6s;
+  animation-delay: 2.6s;
+}
+
+.anim-gradient i {
   color: #333;
   font-size: 70px;
   opacity: 1;
-  transition: 0.2s ease-out;
+  transition: 0.3s ease-out;
+  cursor: pointer;
 }
 @media (max-width: 991px) {
-  .i_heart i {
+  .anim-gradient i {
     font-size: 26px;
   }
 }
-.i_heart i:hover {
-  animation: 0.3s ease-in-out;
+.anim-gradient i:hover {
+  animation: 1s ease-in-out;
   background: linear-gradient(to top, #ff79da, #9356dc);
   background: -webkit-linear-gradient(to top, #ff79da, #9356dc);
   background-clip: border-box;
@@ -84,7 +121,5 @@
   display: inline-block;
   opacity: 1;
 }
-
-/* Fin Animation remplissage icone coeur au hover*/
 
 /*# sourceMappingURL=animation.css.map */

@@ -1,7 +1,5 @@
-
-
 /* DESKTOP Pour ceux qui ont une résolution supérieure ou égale à 992px */
-@media screen and (min-width:992px){
+@media screen and (min-width:992px) {
   header {
     width: 100%;
   }
@@ -259,7 +257,7 @@
         border: none;
       }
 
-      .img_position1{
+      .img_position1 {
         object-position: bottom;
       }
 
@@ -379,8 +377,8 @@
 
   /*Header*/
 
-  body{
-    &.bgcolor{
+  body {
+    &.bgcolor {
       background-color: rgba(245, 245, 245);
     }
   }
@@ -498,7 +496,7 @@
         &:hover {
           cursor: pointer;
           background-color: darken(white, 5%);
-          box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
         }
 
         h3 {
@@ -550,6 +548,11 @@
       white-space: nowrap;
       justify-content: center;
       margin-bottom: -100px;
+
+      &:hover {
+        background: linear-gradient(-185deg, #d373b8, #9b6dd3);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+      }
     }
 
 
@@ -659,6 +662,7 @@
     padding: 50px;
     font-size: 29px;
     font-weight: 700;
+    margin: 20px;
   }
 
   /*Paragraphe p1 -Découvrez des restaurants d'exception, séléctionnés par nos soins.-*/
@@ -808,7 +812,7 @@
         height: 215px;
       }
 
-      .img_position1{
+      .img_position1 {
         object-position: bottom;
       }
 
@@ -847,6 +851,11 @@
         cursor: pointer;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         margin-bottom: 20px;
+
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+        }
 
 
         i {
@@ -940,8 +949,8 @@
 
   /* PARTIE PAGES MENU*/
 
-  body{
-    &.bgcolor{
+  body {
+    &.bgcolor {
       background-color: rgba(245, 245, 245);
     }
   }
@@ -1054,28 +1063,30 @@
         &:hover {
           cursor: pointer;
           background-color: darken(white, 5%);
-          box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
         }
 
         //Animation Effet fondu sur menus //
 
-        .menu{
-          animation:fadein 2s;
+        .menu {
+          animation: fadein 2s;
         }
 
         @keyframes fadein {
           0% {
-          opacity:0;
+            opacity: 0;
           }
-          50%{
-          opacity:0.5;
-          }
-          100% {
-          opacity:1;
-          }
-         }
 
-         //Fin de l'animation effet fondu sur menus//
+          50% {
+            opacity: 0.5;
+          }
+
+          100% {
+            opacity: 1;
+          }
+        }
+
+        //Fin de l'animation effet fondu sur menus//
 
         h3 {
           font-size: 20px;
@@ -1126,6 +1137,12 @@
       white-space: nowrap;
       justify-content: center;
       margin-bottom: 80px;
+
+      &:hover {
+        background: linear-gradient(-185deg, #d373b8, #9b6dd3);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+      }
+
     }
 
 
