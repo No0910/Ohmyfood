@@ -1,57 +1,83 @@
 // 1. Animation Loader spinner Page d'accueil //
 
-/* .spinner {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 19 !important;
-    background-color: white;
+.spinnerWrapper {
 
-    .spinner-icon {
-      width: 40px;
-      height: 40px;
-      border: solid 4px transparent;
-      border-top-color: #99E2D0;
-      border-left-color: #99E2D0;
-      border-radius: 50%;
-      animation:loader-spinner 3s forwards;
-};
-    }
+  margin:auto;
 
+  .spinnerOuter,
+  .spinnerMiddle {
+    background-color: transparent;
+    opacity: .9;
+    border-radius: 50px;
+    margin: 0 auto;
+    position: relative;
+    border: 5px solid #9356dc;
+    border-top: 5px solid transparent;
+    border-left: 5px solid transparent;
   }
-*/
+
+  .spinnerOuter {
+    width: 50px;
+    height: 50px;
+    -moz-animation: spin 1.1s infinite linear;
+    -webkit-animation: spin 1.1s infinite linear;
+  }
+
+  .spinnerMiddle {
+    width: 30px;
+    height: 30px;
+    top: -40px;
+    -moz-animation: spinoff 1s infinite linear;
+    -webkit-animation: spinoff 1s infinite linear;
+    border-color: #99e2d0;
+    border-top: 5px solid transparent;
+    border-left: 5px solid transparent;
+  }
+
+}
 
 
 
-/*@keyframes loading-spinner {
+@-moz-keyframes spin {
   0% {
-    transform: rotate(0deg);
-    transform: rotate(0deg);
-    opacity: 0;
-  }
-
-  25% {
-    opacity: 0.25;
-  }
-
-  50% {
-    opacity: 0.5;
-  }
-
-  75% {
-    opacity: 0.75;
+    -moz-transform: rotate(0deg);
   }
 
   100% {
-    transform: rotate(360deg);
-    transform: rotate(360deg);
-    opacity: 0;
+    -moz-transform: rotate(360deg);
   }
-} */
+}
 
+@-moz-keyframes spinoff {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(-360deg);
+  }
+}
+
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spinoff {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
 
 
 // FIN Animation Loader spinner Page d'accueil//
@@ -122,25 +148,23 @@
     -moz-animation-delay: 0.7s;
     animation-delay: 0.7s;
   }
-  
+
   &.two {
     -webkit-animation-delay: 1.7s;
     -moz-animation-delay: 1.7s;
     animation-delay: 1.7s;
   }
-  
+
   &.three {
     -webkit-animation-delay: 2.6s;
     -moz-animation-delay: 2.6s;
     animation-delay: 2.6s;
   }
-  
+
 }
 
-
-
-
 //FIN Animation Apparition progressive des menus //
+
 
 
 
@@ -183,7 +207,28 @@
 
 //4. Animation coche à droite au hover //
 
+.menu{
+  .button_menu {
+    .menu_check{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      width: 90px;
+      font-size: 25px;
+      background-color: #99E2D0;
+      height: 100%;
+      border-radius: 0 10px 10px 0px;
+    }
 
+  }
+
+}
+
+
+
+  
+  
 
 
 
