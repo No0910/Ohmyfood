@@ -252,7 +252,7 @@ h2 {
 
 
     .card_restaurant {
-        width: 100%;
+        width: 94%;
         margin: 8px;
         position: relative;
 
@@ -264,7 +264,6 @@ h2 {
             background-size: cover;
             background-position: center;
             border-radius: 15px 15px 0 0;
-            padding: 5px;
             border: none;
         }
 
@@ -307,7 +306,7 @@ h2 {
             width: 100%;
             cursor: pointer;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            margin-bottom: 20px;
+            margin-bottom: 50px;
             position: relative;
 
 
@@ -495,7 +494,7 @@ main {
         height: 3px;
         margin-left: 48%;
         margin-top: -23px;
-        margin-bottom: 7px;
+        margin-bottom: 17px;
     }
 
     .menu {
@@ -504,53 +503,84 @@ main {
         flex-direction: column;
         justify-content: center;
 
-        .button_menu {
-            font-family: 'Roboto', sans-serif;
+        .validation_menu {
+
             display: flex;
-            flex-direction: column;
-            width: 60%;
-            font-size: 16px;
-            font-weight: 700;
-            color: black;
-            padding: 20px;
-            margin-left: 20%;
-            margin: 9px;
-            height: 81px;
-            background: white;
-            outline: none;
-            border: none;
-            cursor: pointer;
-            border-radius: 20px;
-            position: relative;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            flex-direction: row;
+            width: 88%;
+            justify-content: center;
+            align-items: center;
+            margin-left: 12%;
 
-            &:hover {
-                cursor: pointer;
-                background-color: darken(white, 5%);
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-            }
-
-            h3 {
-                font-size: 20px;
+            .button_menu {
+                font-family: 'Roboto', sans-serif;
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                font-size: 16px;
                 font-weight: 700;
-                position: absolute;
-                float: left;
+                color: black;
+                padding: 20px;
+                margin-left: 30%;
+                margin: 9px;
+                height: 81px;
+                background: white;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                border-radius: 20px;
+                position: relative;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: darken(white, 5%);
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+                }
+
+                h3 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    position: absolute;
+                    float: left;
+                }
+
+                h4 {
+                    font-size: 17px;
+                    font-weight: 500;
+                    color: #313030d3;
+                    position: absolute;
+                    float: left;
+                    margin-top: 26px;
+                }
+
+                h5 {
+                    position: absolute;
+                    float: right;
+                    right: 25px;
+                    top: 45px;
+                }
+
             }
 
-            h4 {
-                font-size: 17px;
-                font-weight: 500;
-                color: #313030d3;
-                position: absolute;
-                float: left;
-                margin-top: 26px;
-            }
 
-            h5 {
-                position: absolute;
-                float: right;
-                right: 25px;
-                top: 45px;
+            .menu_check {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                width: 150px;
+                font-size: 25px;
+                background-color: #99E2D0;
+                height: 81px;
+                border-radius: 0 20px 20px 0px;
+                opacity: 0;
+
+                &:hover {
+                    opacity: 1;
+                }
+
             }
 
         }
@@ -584,8 +614,5 @@ main {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
         }
     }
-
-
-
 
 }

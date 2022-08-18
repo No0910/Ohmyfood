@@ -126,7 +126,7 @@
   }
 }
 .anim-gradient i:hover {
-  animation: 1s ease-in-out;
+  animation: 5s ease-in-out;
   background: linear-gradient(to top, #ff79da, #9356dc);
   background: -webkit-linear-gradient(to top, #ff79da, #9356dc);
   background-clip: border-box;
@@ -137,16 +137,20 @@
   opacity: 1;
 }
 
-.menu .button_menu .menu_check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  width: 90px;
-  font-size: 25px;
-  background-color: #99E2D0;
-  height: 100%;
-  border-radius: 0 10px 10px 0px;
+.menu_check {
+  transition: all 0.9s ease-in-out;
+  -webkit-transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -o-transition: all 0.9s ease-in-out;
+}
+.menu_check:hover {
+  transform: translateX(-150px);
+  -ms-transform: translateX(-150px);
+  -webkit-transform: translateX(-150px);
+}
+.menu_check:hover.rotate {
+  transition: all 0.9s ease-in-out;
+  transform: rotateX(360deg);
 }
 
 /*# sourceMappingURL=animation.css.map */
