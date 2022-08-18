@@ -127,7 +127,7 @@
 }
 
 
-.button_menu {
+.button_menu, .price_menu {
 
   opacity: 0;
 
@@ -202,34 +202,9 @@
 // FIN Animation remplissage icone coeur au hover//
 
 
+//Animation coche à droite au hover //
 
 
-
-//4. Animation coche à droite au hover //
-
-
-.menu_check {
-
-   transition: all 0.9s ease-in-out;
-
-   -webkit-transition: all 0.9s ease-in-out;
-   -moz-transition: all 0.9s ease-in-out;
-   -o-transition: all 0.9s ease-in-out;
-
-   &:hover{
-    transform: translateX(-150px);
-
-    -ms-transform: translateX(-150px); 
-    -webkit-transform: translateX(-150px);
-
-    &.rotate{
-      transition: all 0.9s ease-in-out;
-      transform: rotateX(360deg);
-     }
-   }
-
- 
-}
 
 
 
