@@ -330,8 +330,6 @@
     font-family: "Shrikhand", cursive;
     font-size: 33px;
     position: relative;
-    right: 52px;
-    justify-content: left;
     right: 30px;
     display: flex;
     justify-content: center;
@@ -633,13 +631,17 @@ ul li {
     width: 95%;
     position: relative;
   }
+  .cards .card_restaurant:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+  }
   .cards .card_restaurant img {
     display: flex;
     object-fit: cover;
     background-size: cover;
     background-position: center;
     border-radius: 15px 15px 0 0;
-    padding: 5px;
     border: none;
     width: 100%;
     height: 215px;
@@ -679,10 +681,6 @@ ul li {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
   }
-  .cards .card_restaurant .information_card_restaurant:hover {
-    cursor: pointer;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  }
   .cards .card_restaurant .information_card_restaurant i {
     font-size: 30px;
     margin-right: 30px;
@@ -698,9 +696,9 @@ ul li {
   }
   .cards .card_restaurant .information_card_restaurant p {
     font-size: 21px;
-    margin: 10px 5px 5px 5px;
     font-weight: 100;
     color: #555454;
+    margin-bottom: 15px;
   }
   /*Footer*/
   .container {
@@ -748,11 +746,14 @@ ul li {
   /* PARTIE PAGES MENU*/
   body.bgcolor {
     background-color: rgb(245, 245, 245);
+    position: relative;
+    top: 0;
   }
   /*Header*/
   header {
     position: relative;
     background-color: #FFFFFF;
+    bottom: 0;
   }
   header i.back {
     position: absolute;
@@ -774,7 +775,9 @@ ul li {
     font-family: "Shrikhand", cursive;
     font-size: 33px;
     position: relative;
-    right: 52px;
+    right: 40px;
+    padding-top: 0;
+    margin-left: 0;
     justify-content: flex-start;
   }
   main {
@@ -782,101 +785,122 @@ ul li {
     flex-direction: column;
     width: 100%;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.937254902);
+    background-color: #f7f7f8;
   }
   main.bg_color {
-    border-radius: 30px 30px 0 0;
+    border-radius: 60px 60px 0 0;
     background-color: rgb(245, 245, 245);
     position: relative;
-    top: -60px;
+    top: -80px;
   }
   main .i_heart i {
     position: absolute;
-    float: right;
-    top: 35px;
-    right: 30px;
+    top: 40px;
+    right: 60px;
     font-size: 30px;
-  }
-  main .h2_menu {
-    font-weight: 500;
-    font-size: 19px;
-    color: rgba(29, 29, 29, 0.7333333333);
-    display: flex;
-    justify-content: flex-start;
-  }
-  main .sub-menu {
-    background-color: #99E2D0;
-    display: inline-block;
-    width: 49px;
-    height: 3px;
-    margin-left: 20px;
-    margin-top: -13px;
-    margin-bottom: 7px;
   }
   main #menu {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
   }
-  main #menu .button_menu {
+  main #menu .h2_menu {
+    font-weight: 500;
+    font-size: 25px;
+    color: rgba(29, 29, 29, 0.7333333333);
+    padding-bottom: 20px;
+    display: block;
+  }
+  main #menu .h2_menu::after {
+    content: "";
+    background-color: #99E2D0;
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 5px auto;
+  }
+  main #menu .liste_menu {
+    width: 100%;
+  }
+  main #menu .liste_menu .validation_menu li {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+    margin-left: 30px;
+  }
+  main #menu .liste_menu .validation_menu li:hover {
+    cursor: pointer;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  }
+  main #menu .liste_menu .validation_menu li:hover .menu_check {
+    opacity: 1;
+    transform: translateX(-150px);
+    -ms-transform: translateX(-150px);
+    -webkit-transform: translateX(-150px);
+  }
+  main #menu .liste_menu .validation_menu li .button_menu {
+    font-family: "Roboto", sans-serif;
     display: flex;
-    align-items: left;
     flex-direction: column;
+    justify-content: center;
+    position: absolute;
     width: 90%;
     font-size: 16px;
     font-weight: 700;
     color: black;
     padding: 20px;
-    margin-left: 20%;
-    margin: 9px;
-    height: 81px;
-    background: white;
+    height: 100px;
     outline: none;
     border: none;
     cursor: pointer;
     border-radius: 20px;
-    position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
-  main #menu .button_menu:hover {
-    cursor: pointer;
-    background-color: #f2f2f2;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  main #menu .liste_menu .validation_menu li .button_menu h3 {
+    font-size: 25px;
+    font-weight: 700;
   }
-  main #menu .button_menu .menu {
-    animation: fadein 2s;
+  main #menu .liste_menu .validation_menu li .button_menu p {
+    font-size: 22px;
+    font-weight: 500;
+    color: rgba(49, 48, 48, 0.8274509804);
+    margin-top: 12px;
   }
-  @keyframes fadein {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  main #menu .button_menu h3 {
+  main #menu .liste_menu .validation_menu li .price_menu {
     font-size: 20px;
     font-weight: 700;
     position: absolute;
-    float: left;
+    top: 65px;
+    right: 40px;
   }
-  main #menu .button_menu h4 {
-    font-size: 17px;
-    font-weight: 500;
-    color: rgba(49, 48, 48, 0.8274509804);
+  main #menu .liste_menu .validation_menu li .menu_check {
     position: absolute;
-    float: left;
-    margin-top: 26px;
+    top: 0;
+    right: -150px;
+    color: white;
+    width: 150px;
+    font-size: 25px;
+    background-color: #99E2D0;
+    height: 100px;
+    border-radius: 0 20px 20px 0px;
+    opacity: 0;
+    transition: all 0.9s ease-in-out;
+    -webkit-transition: all 0.9s ease-in-out;
+    -moz-transition: all 0.9s ease-in-out;
+    -o-transition: all 0.9s ease-in-out;
   }
-  main #menu .button_menu h5 {
+  main #menu .liste_menu .validation_menu li .menu_check i {
     position: absolute;
-    float: right;
-    right: 25px;
-    top: 45px;
+    left: 60px;
+    bottom: 38px;
   }
   main .button_commander {
     margin: 30px auto;
@@ -901,6 +925,20 @@ ul li {
   main .button_commander:hover {
     background: linear-gradient(-185deg, #d373b8, #9b6dd3);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  }
+  .menu {
+    animation: fadein 2s;
+  }
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
 

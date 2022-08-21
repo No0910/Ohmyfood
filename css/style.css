@@ -343,11 +343,14 @@ footer ul li a {
 /*Header*/
 body.bgcolor {
   background-color: rgb(245, 245, 245);
+  position: relative;
+  top: -500px;
 }
 
 header {
   position: relative;
   background-color: #FFFFFF;
+  bottom: -500px;
 }
 header i.back {
   position: absolute;
@@ -435,6 +438,7 @@ main #menu .liste_menu .validation_menu {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   position: relative;
   height: 100px;
+  overflow: hidden;
 }
 main #menu .liste_menu .validation_menu:hover {
   cursor: pointer;
@@ -505,7 +509,7 @@ main #menu .liste_menu .validation_menu .menu_check i {
 
 .button_commander {
   margin: 30px auto;
-  font-size: 19px;
+  font-size: 25px;
   border-radius: 30px;
   padding: 15px 0;
   cursor: pointer;

@@ -94,8 +94,6 @@
 
 //2. Animation Apparition progressive des menus //
 
-
-
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -127,7 +125,7 @@
 }
 
 
-.button_menu, .price_menu {
+ .validation_menu {
 
   opacity: 0;
 
@@ -202,17 +200,11 @@
 // FIN Animation remplissage icone coeur au hover//
 
 
+
+
 //Animation coche à droite au hover //
 
 
-
-
-
-
-
-
-  
-  
 
 
 

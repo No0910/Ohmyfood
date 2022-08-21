@@ -85,7 +85,7 @@
     opacity: 1;
   }
 }
-.button_menu, .price_menu {
+.validation_menu {
   opacity: 0;
   -webkit-animation: fadeIn ease-in 1;
   -moz-animation: fadeIn ease-in 1;
@@ -97,17 +97,17 @@
   -moz-animation-duration: 1s;
   animation-duration: 1s;
 }
-.button_menu.one, .price_menu.one {
+.validation_menu.one {
   -webkit-animation-delay: 0.7s;
   -moz-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }
-.button_menu.two, .price_menu.two {
+.validation_menu.two {
   -webkit-animation-delay: 1.7s;
   -moz-animation-delay: 1.7s;
   animation-delay: 1.7s;
 }
-.button_menu.three, .price_menu.three {
+.validation_menu.three {
   -webkit-animation-delay: 2.6s;
   -moz-animation-delay: 2.6s;
   animation-delay: 2.6s;

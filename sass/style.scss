@@ -408,12 +408,17 @@ footer {
 body {
     &.bgcolor {
         background-color: rgba(245, 245, 245);
+        position:relative;
+        top:-500px;
     }
 }
 
 header {
     position: relative;
     background-color: #FFFFFF;
+    bottom:-500px;
+
+    
 
     i.back {
         position: absolute;
@@ -450,7 +455,7 @@ header {
     display: flex;
     justify-content: center;
     margin-left: 92px;
-    padding-top:80px;
+    padding-top: 80px;
 }
 
 
@@ -486,8 +491,8 @@ main {
             font-weight: 500;
             font-size: 30px;
             color: #1d1d1dbb;
-            padding:60px 0 60px 0;
-            display:block;
+            padding: 60px 0 60px 0;
+            display: block;
 
             &::after {
                 content: "";
@@ -513,6 +518,8 @@ main {
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
                 position: relative;
                 height: 100px;
+                overflow: hidden;
+
 
                 &:hover {
                     cursor: pointer;
@@ -545,13 +552,13 @@ main {
                     border: none;
                     cursor: pointer;
                     border-radius: 20px;
-                   
+
 
 
                     h3 {
                         font-size: 25px;
                         font-weight: 700;
-                       
+
                     }
 
                     p {
@@ -573,8 +580,8 @@ main {
 
                 .menu_check {
                     position: absolute;
-                    top:0;
-                    right:-150px;
+                    top: 0;
+                    right: -150px;
                     color: white;
                     width: 150px;
                     font-size: 25px;
@@ -588,29 +595,29 @@ main {
                     -moz-transition: all 0.9s ease-in-out;
                     -o-transition: all 0.9s ease-in-out;
 
-                    i{
+                    i {
                         position: absolute;
                         left: 60px;
                         bottom: 38px;
-                      }
                     }
-
                 }
-
 
             }
 
 
         }
 
+
     }
+
+}
 
 
 
 
 .button_commander {
     margin: 30px auto;
-    font-size: 19px;
+    font-size: 25px;
     border-radius: 30px;
     padding: 15px 0;
     cursor: pointer;
