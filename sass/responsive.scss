@@ -445,26 +445,27 @@
     .i_heart i {
       position: absolute;
       float: right;
-      top: 35px;
-      right: 151px;
-      font-size: 30px;
+      font-size: 40px;
+      bottom: 65px;
+      right: 185px;
     }
 
     .h2_menu {
       font-weight: 500;
       font-size: 19px;
       color: #1d1d1dbb;
+
+      &::after {
+        content: "";
+        background-color: #99E2D0;
+        width: 80px;
+        height: 5px;
+        display: block;
+        margin: 5px auto;
+      }
     }
 
-    .sub-menu {
-      background-color: #99E2D0;
-      display: inline-block;
-      width: 48px;
-      height: 3px;
-      margin-top: -19px;
-      margin-bottom: 20px;
-      margin-left: 47%;
-    }
+
 
     .menu {
       display: flex;
@@ -903,11 +904,6 @@
     color: white;
     padding: 25px;
 
-    ul {
-
-      display: flex;
-      flex-direction: column;
-    }
 
     .h3_footer h3 {
       font-family: 'Shrikhand', cursive;
@@ -918,30 +914,38 @@
       justify-content: flex-start;
     }
 
-    .li-restaurant {
-      display: flex;
-    }
 
-    .icon_restaurant {
-      display: flex;
-      margin: 5px;
-      padding-top: 3px;
-      font-size: 12px;
-    }
+    ul {
 
-    .li-partenaire {
       display: flex;
-    }
+      cursor: pointer;
+      flex-direction: column;
 
-    .icon_partenaire {
-      display: flex;
-      margin: 5px;
-      padding-top: 3px;
-      font-size: 12px;
-    }
 
-    ul li {
-      padding: 5px;
+      .li-restaurant {
+        display: flex;
+      }
+
+      .icon_restaurant {
+        display: flex;
+        padding-top: 3px;
+        font-size: 18px;
+      }
+
+      .li-partenaire {
+        display: flex;
+      }
+
+      .icon_partenaire {
+        display: flex;
+        padding-top: 3px;
+        font-size: 18px;
+      }
+
+      li {
+        padding: 5px;
+        font-size: px;
+      }
     }
   }
 
@@ -972,6 +976,8 @@
       top: 0px;
     }
 
+
+
     .img_restaurant img {
       object-fit: cover;
       background-size: cover;
@@ -979,21 +985,21 @@
       width: 100%;
       height: 60%;
       cursor: pointer;
+
     }
 
   }
 
   .h1_menu {
     font-family: "Shrikhand", cursive;
-    font-size: 33px;
+    font-size: 40px;
+    font-weight: 500;
     position: relative;
     right: 40px;
     padding-top: 40px;
-    margin-left: 10px;
+    margin-left: 20px;
     justify-content: flex-start;
   }
-
-
 
   main {
     display: flex;
@@ -1006,36 +1012,37 @@
       border-radius: 60px 60px 0 0;
       background-color: rgb(245, 245, 245);
       position: relative;
-      top: -80px;
+      top: -60px;
     }
 
     .i_heart i {
       position: absolute;
-      top: 40px;
+      top: 43px;
       right: 60px;
-      font-size: 30px;
+      font-size: 35px;
     }
 
-    #menu {
+
+    .menu {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      align-items: flex-start;
+      padding: 0 20px;
 
       .h2_menu {
         font-weight: 500;
-        font-size: 25px;
+        font-size: 23px;
         color: #1d1d1dbb;
-        padding-bottom: 20px;
+        padding: 0 0 20px 0;
         display: block;
 
         &::after {
           content: "";
           background-color: #99E2D0;
-          width: 80px;
-          height: 5px;
+          width: 55px;
+          height: 3px;
           display: block;
-          margin: 5px auto;
+          margin: 10px 0;
         }
       }
 
@@ -1114,9 +1121,9 @@
           .menu_check {
             position: absolute;
             top: 0;
-            right: -150px;
+            right: -200px;
             color: white;
-            width: 150px;
+            width: 200px;
             font-size: 25px;
             background-color: #99E2D0;
             height: 100px;
@@ -1145,7 +1152,7 @@
 
     .button_commander {
       margin: 30px auto;
-      font-size: 19px;
+      font-size: 22px;
       border-radius: 30px;
       padding: 15px 0;
       cursor: pointer;
@@ -1176,21 +1183,24 @@
 
   //Animation Effet fondu sur menus //
 
-  .menu {
+  .validation_menu{
     animation: fadein 2s;
   }
 
   @keyframes fadein {
     0% {
       opacity: 0;
+      margin-top : 20px;
     }
 
     50% {
       opacity: 0.5;
+      margin-top: 10px;
     }
 
     100% {
       opacity: 1;
+      margin-top : 0;
     }
   }
 

@@ -314,28 +314,23 @@ footer ul {
 }
 footer ul li {
   padding: 5px;
-  font-size: 17px;
+  font-size: 21px;
 }
 footer ul .li-restaurant {
   display: flex;
 }
 footer ul .icon_restaurant {
   display: flex;
-  margin: 5px;
-  padding-top: 3px;
-  padding-top: 3px;
-  margin-top: -2px;
-  font-size: 16px;
+  padding-right: 15px;
+  font-size: 18px;
 }
 footer ul .li-partenaire {
   display: flex;
 }
 footer ul .icon_partenaire {
   display: flex;
-  margin: 5px;
-  padding-top: 3px;
-  margin-top: -2px;
-  font-size: 16px;
+  padding-right: 15px;
+  font-size: 18px;
 }
 footer ul li a {
   list-style-type: none;
@@ -363,9 +358,9 @@ header i.back {
   top: -2px;
 }
 header .img_restaurant {
-  height: 300px;
+  height: 500px;
   cursor: pointer;
-  object-position: center;
+  object-position: center 50%;
   width: 100%;
   position: absolute;
 }
@@ -383,13 +378,14 @@ header .i_heart i {
 
 .h1_menu {
   font-family: "Shrikhand", cursive;
-  font-size: 40px;
+  font-size: 45px;
   position: relative;
   right: 52px;
   display: flex;
   justify-content: center;
   margin-left: 92px;
   padding-top: 80px;
+  font-weight: 500;
 }
 
 main {
@@ -400,16 +396,18 @@ main {
   background-color: #f7f7f8;
 }
 main.bg_color {
-  border-radius: 30px 30px 0 0;
+  border-radius: 60px 60px 0 0;
   background-color: rgb(245, 245, 245);
   position: relative;
   margin-top: 300px;
+  top: -20px;
 }
 main .i_heart i {
-  position: absolute;
-  top: 55px;
-  right: 430px;
   font-size: 40px;
+  float: right;
+  position: relative;
+  bottom: 70px;
+  right: 450px;
 }
 main .menu {
   display: flex;

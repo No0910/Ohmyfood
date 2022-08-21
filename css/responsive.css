@@ -351,23 +351,22 @@
   main .i_heart i {
     position: absolute;
     float: right;
-    top: 35px;
-    right: 151px;
-    font-size: 30px;
+    font-size: 40px;
+    bottom: 65px;
+    right: 185px;
   }
   main .h2_menu {
     font-weight: 500;
     font-size: 19px;
     color: rgba(29, 29, 29, 0.7333333333);
   }
-  main .sub-menu {
+  main .h2_menu::after {
+    content: "";
     background-color: #99E2D0;
-    display: inline-block;
-    width: 48px;
-    height: 3px;
-    margin-top: -19px;
-    margin-bottom: 20px;
-    margin-left: 47%;
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 5px auto;
   }
   main .menu {
     display: flex;
@@ -710,10 +709,6 @@ ul li {
     color: white;
     padding: 25px;
   }
-  footer ul {
-    display: flex;
-    flex-direction: column;
-  }
   footer .h3_footer h3 {
     font-family: "Shrikhand", cursive;
     font-size: 20px;
@@ -722,26 +717,30 @@ ul li {
     display: flex;
     justify-content: flex-start;
   }
-  footer .li-restaurant {
+  footer ul {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+  }
+  footer ul .li-restaurant {
     display: flex;
   }
-  footer .icon_restaurant {
+  footer ul .icon_restaurant {
     display: flex;
-    margin: 5px;
     padding-top: 3px;
-    font-size: 12px;
+    font-size: 18px;
   }
-  footer .li-partenaire {
+  footer ul .li-partenaire {
     display: flex;
   }
-  footer .icon_partenaire {
+  footer ul .icon_partenaire {
     display: flex;
-    margin: 5px;
     padding-top: 3px;
-    font-size: 12px;
+    font-size: 18px;
   }
   footer ul li {
     padding: 5px;
+    font-size: px;
   }
   /* PARTIE PAGES MENU*/
   body.bgcolor {
@@ -773,11 +772,12 @@ ul li {
   }
   .h1_menu {
     font-family: "Shrikhand", cursive;
-    font-size: 33px;
+    font-size: 40px;
+    font-weight: 500;
     position: relative;
     right: 40px;
     padding-top: 40px;
-    margin-left: 10px;
+    margin-left: 20px;
     justify-content: flex-start;
   }
   main {
@@ -791,39 +791,39 @@ ul li {
     border-radius: 60px 60px 0 0;
     background-color: rgb(245, 245, 245);
     position: relative;
-    top: -80px;
+    top: -60px;
   }
   main .i_heart i {
     position: absolute;
-    top: 40px;
+    top: 43px;
     right: 60px;
-    font-size: 30px;
+    font-size: 35px;
   }
-  main #menu {
+  main .menu {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    padding: 0 20px;
   }
-  main #menu .h2_menu {
+  main .menu .h2_menu {
     font-weight: 500;
-    font-size: 25px;
+    font-size: 23px;
     color: rgba(29, 29, 29, 0.7333333333);
-    padding-bottom: 20px;
+    padding: 0 0 20px 0;
     display: block;
   }
-  main #menu .h2_menu::after {
+  main .menu .h2_menu::after {
     content: "";
     background-color: #99E2D0;
-    width: 80px;
-    height: 5px;
+    width: 55px;
+    height: 3px;
     display: block;
-    margin: 5px auto;
+    margin: 10px 0;
   }
-  main #menu .liste_menu {
+  main .menu .liste_menu {
     width: 100%;
   }
-  main #menu .liste_menu .validation_menu li {
+  main .menu .liste_menu .validation_menu li {
     width: 90%;
     justify-content: center;
     align-items: center;
@@ -836,18 +836,18 @@ ul li {
     overflow: hidden;
     margin-left: 30px;
   }
-  main #menu .liste_menu .validation_menu li:hover {
+  main .menu .liste_menu .validation_menu li:hover {
     cursor: pointer;
     background-color: #f2f2f2;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   }
-  main #menu .liste_menu .validation_menu li:hover .menu_check {
+  main .menu .liste_menu .validation_menu li:hover .menu_check {
     opacity: 1;
     transform: translateX(-150px);
     -ms-transform: translateX(-150px);
     -webkit-transform: translateX(-150px);
   }
-  main #menu .liste_menu .validation_menu li .button_menu {
+  main .menu .liste_menu .validation_menu li .button_menu {
     font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
@@ -864,29 +864,29 @@ ul li {
     cursor: pointer;
     border-radius: 20px;
   }
-  main #menu .liste_menu .validation_menu li .button_menu h3 {
+  main .menu .liste_menu .validation_menu li .button_menu h3 {
     font-size: 25px;
     font-weight: 700;
   }
-  main #menu .liste_menu .validation_menu li .button_menu p {
+  main .menu .liste_menu .validation_menu li .button_menu p {
     font-size: 22px;
     font-weight: 500;
     color: rgba(49, 48, 48, 0.8274509804);
     margin-top: 12px;
   }
-  main #menu .liste_menu .validation_menu li .price_menu {
+  main .menu .liste_menu .validation_menu li .price_menu {
     font-size: 20px;
     font-weight: 700;
     position: absolute;
     top: 65px;
     right: 40px;
   }
-  main #menu .liste_menu .validation_menu li .menu_check {
+  main .menu .liste_menu .validation_menu li .menu_check {
     position: absolute;
     top: 0;
-    right: -150px;
+    right: -200px;
     color: white;
-    width: 150px;
+    width: 200px;
     font-size: 25px;
     background-color: #99E2D0;
     height: 100px;
@@ -897,14 +897,14 @@ ul li {
     -moz-transition: all 0.9s ease-in-out;
     -o-transition: all 0.9s ease-in-out;
   }
-  main #menu .liste_menu .validation_menu li .menu_check i {
+  main .menu .liste_menu .validation_menu li .menu_check i {
     position: absolute;
     left: 60px;
     bottom: 38px;
   }
   main .button_commander {
     margin: 30px auto;
-    font-size: 19px;
+    font-size: 22px;
     border-radius: 30px;
     padding: 15px 0;
     cursor: pointer;
@@ -926,18 +926,21 @@ ul li {
     background: linear-gradient(-185deg, #d373b8, #9b6dd3);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
   }
-  .menu {
+  .validation_menu {
     animation: fadein 2s;
   }
   @keyframes fadein {
     0% {
       opacity: 0;
+      margin-top: 20px;
     }
     50% {
       opacity: 0.5;
+      margin-top: 10px;
     }
     100% {
       opacity: 1;
+      margin-top: 0;
     }
   }
 }
