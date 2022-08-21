@@ -855,7 +855,7 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         margin-bottom: 20px;
 
-       
+
 
         i {
           font-size: 30px;
@@ -951,8 +951,8 @@
   body {
     &.bgcolor {
       background-color: rgba(245, 245, 245);
-      position:relative;
-      top:0;
+      position: relative;
+      top: 0;
     }
   }
 
@@ -961,7 +961,7 @@
   header {
     position: relative;
     background-color: #FFFFFF;
-    bottom:0;
+    bottom: 0;
 
     i.back {
       position: absolute;
@@ -988,8 +988,8 @@
     font-size: 33px;
     position: relative;
     right: 40px;
-    padding-top:0;
-    margin-left:0;
+    padding-top: 40px;
+    margin-left: 10px;
     justify-content: flex-start;
   }
 
@@ -1192,6 +1192,6 @@
     100% {
       opacity: 1;
     }
-  }  
+  }
 
 }
