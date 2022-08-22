@@ -1,32 +1,39 @@
 @charset "UTF-8";
+
 /* DESKTOP Pour ceux qui ont une résolution supérieure ou égale à 992px */
 @media screen and (min-width: 992px) {
   header {
     width: 100%;
   }
+
   .container {
     width: 100%;
   }
 }
+
 /* TABLETTE Pour ceux qui ont une résolution comprise entre 768 px et 991px */
 @media screen and (min-width: 768px) and (max-width: 991px) {
   header {
     width: 100%;
   }
+
   body {
     font-family: "Roboto", sans-serif;
     padding: 0;
     margin: 0;
   }
+
   .container {
     justify-content: space-around;
     max-width: 991px;
     margin: 0 auto;
     padding: 20px 0 0 0;
   }
+
   .noPadding {
     padding: 0;
   }
+
   /*logo OHMYFOOD*/
   .img_logo {
     display: flex;
@@ -34,9 +41,11 @@
     padding: 30px 0 30px 0;
     width: auto;
   }
+
   .img_logo img {
     height: 30px;
   }
+
   /*Barre de recherche*/
   form {
     display: flex;
@@ -46,6 +55,7 @@
     padding: 10px;
     box-shadow: inset 0px 3px 4px rgb(151, 151, 151);
   }
+
   form i.location {
     height: 50px;
     display: flex;
@@ -53,6 +63,7 @@
     margin-left: 39%;
     font-size: 20px;
   }
+
   form input {
     display: flex;
     width: 100%;
@@ -64,12 +75,15 @@
     width: 18%;
     margin: 0;
   }
+
   form input:focus-visible {
     outline: none;
   }
+
   form input::placeholder {
     color: black;
   }
+
   /*Titre H1 -Réservez le Menu qui vous convient-*/
   h1 {
     display: flex;
@@ -80,6 +94,7 @@
     font-size: 30px;
     font-weight: 700;
   }
+
   /*Paragraphe p1 -Découvrez des restaurants d'exception, séléctionnés par nos soins.-*/
   .p1 {
     display: flex;
@@ -89,6 +104,7 @@
     height: 40px;
     color: #646262;
   }
+
   /*Bouton "Explorer nos restaurants*/
   .button_explorer {
     padding: 30px;
@@ -107,6 +123,7 @@
     width: 50%;
     margin-left: 24%;
   }
+
   .button_explorer button {
     border: none;
     display: flex;
@@ -117,6 +134,7 @@
     font-size: 20px;
     width: 100%;
   }
+
   /*Titre H2 "Fonctionnement" & Titre "Restaurants*/
   h2 {
     font-size: 25px;
@@ -125,12 +143,14 @@
     display: flex;
     align-items: center;
   }
+
   /* 3 Boutons "Choisissez un restaurant"/"Composez votre menu"/"Dégustez au restaurant" */
   .buttons {
     display: flex;
     padding: 0 20px;
     padding-bottom: 30px;
   }
+
   .button_choix {
     display: flex;
     justify-content: center;
@@ -150,13 +170,16 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     white-space: normal;
   }
+
   .button_choix:hover {
     cursor: pointer;
     background-color: #f2f2f2;
   }
+
   .button_choix:hover i {
     color: #9356DC;
   }
+
   .button_choix span {
     height: 30px;
     width: 30px;
@@ -172,6 +195,7 @@
     line-height: 23px;
     top: 35px;
   }
+
   .button_choix i {
     margin: 10px;
     padding: 10px;
@@ -181,21 +205,25 @@
     left: 14px;
     top: 19px;
   }
+
   /*Les restaurants-cartes*/
   .cards {
     display: flex;
     flex-direction: column;
   }
+
   .cards .card_1_2,
-.cards .card_3_4 {
+  .cards .card_3_4 {
     display: flex;
     justify-content: center;
   }
+
   .cards .card_restaurant {
     width: 100%;
     margin: 10px;
     position: relative;
   }
+
   .cards .card_restaurant img {
     display: flex;
     object-fit: cover;
@@ -207,18 +235,23 @@
     padding: 5px;
     border: none;
   }
+
   .cards .card_restaurant .img_position1 {
     object-position: bottom;
   }
+
   .cards .card_restaurant .img_position2 {
     object-position: center 61%;
   }
+
   .cards .card_restaurant .img_position3 {
     object-position: center 97%;
   }
+
   .cards .card_restaurant .img_position4 {
     object-position: center 97%;
   }
+
   .cards .card_restaurant span {
     display: flex;
     background-color: #99E2D0;
@@ -232,6 +265,7 @@
     top: 20px;
     right: 20px;
   }
+
   .cards .card_restaurant .information_card_restaurant {
     border-radius: 0 0 15px 15px;
     background-color: #FFFFFF;
@@ -241,12 +275,14 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
   }
+
   .cards .card_restaurant .information_card_restaurant i {
     font-size: 30px;
     margin-right: 30px;
     float: right;
     margin-top: 5px;
   }
+
   .cards .card_restaurant .information_card_restaurant h3 a {
     text-decoration: none;
     color: black;
@@ -254,54 +290,65 @@
     font-size: 22px;
     margin: 5px;
   }
+
   .cards .card_restaurant .information_card_restaurant p {
     font-size: 21px;
     margin: 5px;
     font-weight: 100;
     color: #555454;
   }
+
   footer {
     background-color: #353434;
     color: white;
     padding: 30px;
     display: flex;
   }
+
   footer .h3_footer h3 {
     font-family: "Shrikhand", cursive;
     font-size: 20px;
     height: 40px;
     color: white;
   }
+
   footer .li-restaurant {
     display: flex;
   }
+
   footer .icon_restaurant {
     display: flex;
     margin: 5px;
     padding-top: 3px;
     font-size: 12px;
   }
+
   footer .li-partenaire {
     display: flex;
   }
+
   footer .icon_partenaire {
     display: flex;
     margin: 5px;
     padding-top: 3px;
     font-size: 12px;
   }
+
   footer ul li {
     padding: 5px;
   }
+
   /* PARTIE PAGES MENU*/
   /*Header*/
   body.bgcolor {
     background-color: rgb(245, 245, 245);
   }
+
   header {
     position: relative;
     background-color: #FFFFFF;
   }
+
   header i.back {
     position: absolute;
     color: black;
@@ -310,9 +357,11 @@
     left: 41px;
     top: 5px;
   }
+
   header .img_logo img {
     height: 37px;
   }
+
   header .img_restaurant img {
     object-fit: cover;
     background-size: cover;
@@ -321,11 +370,13 @@
     height: 74%;
     cursor: pointer;
   }
+
   header .logo_img {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .h1_menu {
     font-family: "Shrikhand", cursive;
     font-size: 33px;
@@ -334,6 +385,7 @@
     display: flex;
     justify-content: center;
   }
+
   main {
     display: flex;
     flex-direction: column;
@@ -342,12 +394,14 @@
     background-color: #f7f7f8;
     padding: 0;
   }
+
   main.bg_color {
     border-radius: 30px 30px 0 0;
     background-color: rgb(245, 245, 245);
     position: relative;
     top: -200px;
   }
+
   main .i_heart i {
     position: absolute;
     float: right;
@@ -355,11 +409,13 @@
     bottom: 65px;
     right: 185px;
   }
+
   main .h2_menu {
     font-weight: 500;
     font-size: 19px;
     color: rgba(29, 29, 29, 0.7333333333);
   }
+
   main .h2_menu::after {
     content: "";
     background-color: #99E2D0;
@@ -368,12 +424,14 @@
     display: block;
     margin: 5px auto;
   }
+
   main .menu {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
   }
+
   main .menu .button_menu {
     display: flex;
     align-items: left;
@@ -393,17 +451,20 @@
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
+
   main .menu .button_menu:hover {
     cursor: pointer;
     background-color: #f2f2f2;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   }
+
   main .menu .button_menu h3 {
     font-size: 20px;
     font-weight: 700;
     position: absolute;
     float: left;
   }
+
   main .menu .button_menu h4 {
     font-size: 17px;
     font-weight: 500;
@@ -412,12 +473,14 @@
     float: left;
     margin-top: 26px;
   }
+
   main .menu .button_menu h5 {
     position: absolute;
     float: right;
     right: 25px;
     top: 45px;
   }
+
   main .button_commander {
     margin: 30px auto;
     font-size: 19px;
@@ -438,16 +501,19 @@
     justify-content: center;
     margin-bottom: -100px;
   }
+
   main .button_commander:hover {
     background: linear-gradient(-185deg, #d373b8, #9b6dd3);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
   }
 }
+
 /* MOBILE Pour ceux qui ont une résolution inférieure ou égale à 768 pixels */
 @media screen and (max-width: 767px) {
   .noPadding {
     padding: 0;
   }
+
   /*HEADER*/
   header {
     display: flex;
@@ -457,18 +523,22 @@
     /*logo OHMYFOOD*/
     /*Barre de recherche*/
   }
+
   header .container {
     width: 100%;
   }
+
   header .img_logo {
     display: flex;
     justify-content: center;
     padding: 30px 0 10px 0;
     width: auto;
   }
+
   header .img_logo img {
     height: 35px;
   }
+
   header form {
     display: flex;
     justify-content: center;
@@ -477,6 +547,7 @@
     padding: 6px;
     box-shadow: inset 0px 3px 4px rgb(182, 180, 180);
   }
+
   header form i.location {
     height: 50px;
     display: flex;
@@ -484,6 +555,7 @@
     margin-left: 0;
     font-size: 19px;
   }
+
   header form input {
     display: flex;
     width: 100%;
@@ -494,21 +566,25 @@
     width: 34%;
     margin: 0;
   }
+
   header form input:focus-visible {
     outline: none;
   }
+
   header form input::placeholder {
     color: black;
   }
+
   /*Titre H1 -Réservez le Menu qui vous convient-*/
   h1,
-.p1,
-h2,
-h3,
-p,
-ul li {
+  .p1,
+  h2,
+  h3,
+  p,
+  ul li {
     font-family: "Roboto", sans-serif;
   }
+
   h1 {
     display: flex;
     align-items: center;
@@ -520,6 +596,7 @@ ul li {
     font-weight: 700;
     margin: 20px;
   }
+
   /*Paragraphe p1 -Découvrez des restaurants d'exception, séléctionnés par nos soins.-*/
   .p1 {
     display: flex;
@@ -530,6 +607,7 @@ ul li {
     padding-bottom: 10px;
     color: #646262;
   }
+
   /*Bouton "Explorer nos restaurants*/
   .button {
     margin: 30px auto;
@@ -550,6 +628,7 @@ ul li {
     white-space: nowrap;
     justify-content: center;
   }
+
   /*Titre H2 "Fonctionnement" & Titre "Restaurants*/
   h2 {
     font-size: 26px;
@@ -557,6 +636,7 @@ ul li {
     font-weight: 700;
     padding-top: 50px;
   }
+
   /* 3 Boutons "Choisissez un restaurant"/"Composez votre menu"/"Dégustez au restaurant" */
   .buttons {
     display: flex;
@@ -565,6 +645,7 @@ ul li {
     padding-bottom: 50px;
     align-items: center;
   }
+
   .button_choix {
     display: flex;
     justify-content: center;
@@ -583,13 +664,16 @@ ul li {
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
+
   .button_choix:hover {
     cursor: pointer;
     background-color: #f2f2f2;
   }
+
   .button_choix:hover i {
     color: #9356DC;
   }
+
   .button_choix span {
     height: 30px;
     width: 30px;
@@ -605,6 +689,7 @@ ul li {
     line-height: 23px;
     top: 24px;
   }
+
   .button_choix i {
     margin: 10px;
     padding: 10px;
@@ -614,27 +699,32 @@ ul li {
     left: 22px;
     top: 9px;
   }
+
   /*Les restaurants-cartes*/
   .cards {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
+
   .cards .card_1_2,
-.cards .card_3_4 {
+  .cards .card_3_4 {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
+
   .cards .card_restaurant {
     width: 95%;
     position: relative;
   }
+
   .cards .card_restaurant:hover {
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     border-radius: 15px;
   }
+
   .cards .card_restaurant img {
     display: flex;
     object-fit: cover;
@@ -645,18 +735,23 @@ ul li {
     width: 100%;
     height: 215px;
   }
+
   .cards .card_restaurant .img_position1 {
     object-position: bottom;
   }
+
   .cards .card_restaurant .img_position2 {
     object-position: center 61%;
   }
+
   .cards .card_restaurant .img_position3 {
     object-position: center 97%;
   }
+
   .cards .card_restaurant .img_position4 {
     object-position: center 97%;
   }
+
   .cards .card_restaurant span {
     display: flex;
     background-color: #99E2D0;
@@ -671,6 +766,7 @@ ul li {
     right: 20px;
     font-family: "Roboto", sans-serif;
   }
+
   .cards .card_restaurant .information_card_restaurant {
     border-radius: 0 0 15px 15px;
     background-color: #FFFFFF;
@@ -680,12 +776,14 @@ ul li {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
   }
+
   .cards .card_restaurant .information_card_restaurant i {
     font-size: 30px;
     margin-right: 30px;
     float: right;
     margin-top: 5px;
   }
+
   .cards .card_restaurant .information_card_restaurant h3 a {
     text-decoration: none;
     color: black;
@@ -693,22 +791,26 @@ ul li {
     font-size: 22px;
     margin: 5px;
   }
+
   .cards .card_restaurant .information_card_restaurant p {
     font-size: 21px;
     font-weight: 100;
     color: #555454;
     margin-bottom: 15px;
   }
+
   /*Footer*/
   .container {
     display: flex;
     flex-direction: column;
   }
+
   footer {
     background-color: #353434;
     color: white;
     padding: 25px;
   }
+
   footer .h3_footer h3 {
     font-family: "Shrikhand", cursive;
     font-size: 20px;
@@ -717,43 +819,52 @@ ul li {
     display: flex;
     justify-content: flex-start;
   }
+
   footer ul {
     display: flex;
     cursor: pointer;
     flex-direction: column;
   }
+
   footer ul .li-restaurant {
     display: flex;
   }
+
   footer ul .icon_restaurant {
     display: flex;
     padding-top: 3px;
     font-size: 18px;
   }
+
   footer ul .li-partenaire {
     display: flex;
   }
+
   footer ul .icon_partenaire {
     display: flex;
     padding-top: 3px;
     font-size: 18px;
   }
+
   footer ul li {
     padding: 5px;
     font-size: px;
   }
+
   /* PARTIE PAGES MENU*/
   body.bgcolor {
     background-color: rgb(245, 245, 245);
     position: relative;
     top: 0;
   }
+
   /*Header*/
   header {
     position: relative;
     background-color: #FFFFFF;
     bottom: 0;
   }
+
   header i.back {
     position: absolute;
     color: black;
@@ -762,6 +873,7 @@ ul li {
     left: 20px;
     top: 0px;
   }
+
   header .img_restaurant img {
     object-fit: cover;
     background-size: cover;
@@ -770,6 +882,7 @@ ul li {
     height: 60%;
     cursor: pointer;
   }
+
   .h1_menu {
     font-family: "Shrikhand", cursive;
     font-size: 40px;
@@ -780,6 +893,7 @@ ul li {
     margin-left: 20px;
     justify-content: flex-start;
   }
+
   main {
     display: flex;
     flex-direction: column;
@@ -787,24 +901,28 @@ ul li {
     position: relative;
     background-color: #f7f7f8;
   }
+
   main.bg_color {
     border-radius: 60px 60px 0 0;
     background-color: rgb(245, 245, 245);
     position: relative;
     top: -60px;
   }
+
   main .i_heart i {
     position: absolute;
     top: 43px;
     right: 60px;
     font-size: 35px;
   }
+
   main .menu {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0 20px;
   }
+
   main .menu .h2_menu {
     font-weight: 500;
     font-size: 23px;
@@ -812,6 +930,7 @@ ul li {
     padding: 0 0 20px 0;
     display: block;
   }
+
   main .menu .h2_menu::after {
     content: "";
     background-color: #99E2D0;
@@ -820,9 +939,11 @@ ul li {
     display: block;
     margin: 10px 0;
   }
+
   main .menu .liste_menu {
     width: 100%;
   }
+
   main .menu .liste_menu .validation_menu li {
     width: 90%;
     justify-content: center;
@@ -836,17 +957,20 @@ ul li {
     overflow: hidden;
     margin-left: 30px;
   }
+
   main .menu .liste_menu .validation_menu li:hover {
     cursor: pointer;
     background-color: #f2f2f2;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   }
+
   main .menu .liste_menu .validation_menu li:hover .menu_check {
     opacity: 1;
     transform: translateX(-150px);
     -ms-transform: translateX(-150px);
     -webkit-transform: translateX(-150px);
   }
+
   main .menu .liste_menu .validation_menu li .button_menu {
     font-family: "Roboto", sans-serif;
     display: flex;
@@ -864,16 +988,19 @@ ul li {
     cursor: pointer;
     border-radius: 20px;
   }
+
   main .menu .liste_menu .validation_menu li .button_menu h3 {
     font-size: 25px;
     font-weight: 700;
   }
+
   main .menu .liste_menu .validation_menu li .button_menu p {
     font-size: 22px;
     font-weight: 500;
     color: rgba(49, 48, 48, 0.8274509804);
     margin-top: 12px;
   }
+
   main .menu .liste_menu .validation_menu li .price_menu {
     font-size: 20px;
     font-weight: 700;
@@ -881,6 +1008,7 @@ ul li {
     top: 65px;
     right: 40px;
   }
+
   main .menu .liste_menu .validation_menu li .menu_check {
     position: absolute;
     top: 0;
@@ -897,11 +1025,13 @@ ul li {
     -moz-transition: all 0.9s ease-in-out;
     -o-transition: all 0.9s ease-in-out;
   }
+
   main .menu .liste_menu .validation_menu li .menu_check i {
     position: absolute;
     left: 60px;
     bottom: 38px;
   }
+
   main .button_commander {
     margin: 30px auto;
     font-size: 22px;
@@ -922,22 +1052,27 @@ ul li {
     justify-content: center;
     margin-bottom: 80px;
   }
+
   main .button_commander:hover {
     background: linear-gradient(-185deg, #d373b8, #9b6dd3);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
   }
+
   .validation_menu {
     animation: fadein 2s;
   }
+
   @keyframes fadein {
     0% {
       opacity: 0;
       margin-top: 20px;
     }
+
     50% {
       opacity: 0.5;
       margin-top: 10px;
     }
+
     100% {
       opacity: 1;
       margin-top: 0;

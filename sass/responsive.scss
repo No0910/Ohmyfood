@@ -1077,6 +1077,49 @@
               -webkit-transform: translateX(-150px);
             }
 
+            i {
+              position: relative;
+              left: 60px;
+              bottom: 38px;
+              animation: all rotation 0.9s;
+            
+
+              @-webkit-keyframes rotation {
+                0% {
+                  transform: rotateZ(0deg);
+                }
+  
+                100% {
+                  transform: rotateZ(70deg);
+                  color:red;
+                }
+              }
+  
+              @-moz-keyframes rotation {
+                0% {
+                  transform: rotateZ(0deg);
+                }
+  
+                100% {
+                  transform: rotateZ(70deg);
+                  color:red;
+                }
+              }
+  
+              @keyframes rotation {
+                0% {
+                  transform: rotateZ(0deg);
+                }
+  
+                100% {
+                  transform: rotateZ(70deg);
+                  color:red;
+                }
+              }
+           
+            }
+
+
           }
 
           .button_menu {
@@ -1135,11 +1178,8 @@
             -moz-transition: all 0.9s ease-in-out;
             -o-transition: all 0.9s ease-in-out;
 
-            i {
-              position: absolute;
-              left: 60px;
-              bottom: 38px;
-            }
+           
+
           }
 
         }
@@ -1183,14 +1223,14 @@
 
   //Animation Effet fondu sur menus //
 
-  .validation_menu{
+  .validation_menu {
     animation: fadein 2s;
   }
 
   @keyframes fadein {
     0% {
       opacity: 0;
-      margin-top : 20px;
+      margin-top: 20px;
     }
 
     50% {
@@ -1200,7 +1240,7 @@
 
     100% {
       opacity: 1;
-      margin-top : 0;
+      margin-top: 0;
     }
   }
 
