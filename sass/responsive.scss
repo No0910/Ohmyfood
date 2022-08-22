@@ -1077,49 +1077,44 @@
               -webkit-transform: translateX(-150px);
             }
 
-            i {
+            i.fa-circle-check {
               position: relative;
               left: 60px;
               bottom: 38px;
-              animation: all rotation 0.9s;
-            
+              animation: rotation 0.9s forwards;
+
 
               @-webkit-keyframes rotation {
                 0% {
-                  transform: rotateZ(0deg);
+                  transform: rotate(0deg);
                 }
-  
+
                 100% {
-                  transform: rotateZ(70deg);
-                  color:red;
+                  transform: rotate(360deg);
                 }
               }
-  
+
               @-moz-keyframes rotation {
                 0% {
-                  transform: rotateZ(0deg);
+                  transform: rotate(0deg);
                 }
-  
+
                 100% {
-                  transform: rotateZ(70deg);
-                  color:red;
+                  transform: rotate(360deg);
                 }
               }
-  
+
               @keyframes rotation {
                 0% {
-                  transform: rotateZ(0deg);
+                  transform: rotate(0deg);
                 }
-  
+
                 100% {
-                  transform: rotateZ(70deg);
-                  color:red;
+                  transform: rotate(360deg);
                 }
               }
-           
+
             }
-
-
           }
 
           .button_menu {
@@ -1177,8 +1172,6 @@
             -webkit-transition: all 0.9s ease-in-out;
             -moz-transition: all 0.9s ease-in-out;
             -o-transition: all 0.9s ease-in-out;
-
-           
 
           }
 

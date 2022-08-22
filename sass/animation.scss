@@ -1,18 +1,25 @@
 // 1. Animation Loader spinner Page d'accueil //
 
-/*
+
 
 .spinnerWrapper {
-
-  margin:auto;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(119, 122, 122, 0.7);
+  z-index: 10;
+  left: 0;
+  top: 0;
+  padding-top: 25%;
+  padding-left: 48%;
+  position:absolute;
 
   .spinnerOuter,
   .spinnerMiddle {
     background-color: transparent;
     opacity: .9;
     border-radius: 50px;
-    margin: 0 auto;
-    position: relative;
+    
+    position: absolute;
     border: 5px solid #9356dc;
     border-top: 5px solid transparent;
     border-left: 5px solid transparent;
@@ -85,13 +92,6 @@
 // FIN Animation Loader spinner Page d'accueil//
 
 
-*/
-
-
-
-
-
-
 
 
 //2. Animation Apparition progressive des menus //
@@ -99,51 +99,51 @@
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
-    margin-top:20px;
+    margin-top: 20px;
   }
 
   100% {
     opacity: 1;
-    margin-top:0;
+    margin-top: 0;
   }
 }
 
 @-moz-keyframes fadeIn {
   0% {
     opacity: 0;
-    margin-top:20px;
+    margin-top: 20px;
   }
 
   100% {
     opacity: 1;
-    margin-top:0;
+    margin-top: 0;
   }
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    margin-top:20px;
+    margin-top: 20px;
   }
 
   100% {
     opacity: 1;
-    margin-top:0;
+    margin-top: 0;
   }
 }
 
 
- .validation_menu {
+.validation_menu {
 
   opacity: 0;
-  
+
   -webkit-animation: fadeIn ease-in 1s;
   -moz-animation: fadeIn ease-in 1s;
-   animation: fadeIn ease-in 1s;
+  animation: fadeIn ease-in 1s;
 
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
-   animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
@@ -185,15 +185,16 @@
   color: #333;
   font-size: 70px;
   opacity: 1;
-  transition: 0.3s ease-out;
   cursor: pointer;
+  transition: 0.2s ease-out;
 
   @media (max-width:991px) {
     font-size: 26px;
   }
 
   &:hover {
-    animation: 5s ease-in-out;
+    animation: 0.3s ease-in-out;
+    animation-delay: 1s;
     background: linear-gradient(to top, #ff79da, #9356dc);
     background: -webkit-linear-gradient(to top, #ff79da, #9356dc);
     background-clip: border-box;
