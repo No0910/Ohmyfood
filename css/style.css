@@ -433,7 +433,7 @@ main .menu .h2_menu::after {
 main .menu .liste_menu {
   width: 50%;
 }
-main .menu .liste_menu .validation_menu {
+main .menu .liste_menu li.validation_menu {
   width: auto;
   justify-content: center;
   align-items: center;
@@ -445,18 +445,48 @@ main .menu .liste_menu .validation_menu {
   height: 100px;
   overflow: hidden;
 }
-main .menu .liste_menu .validation_menu:hover {
+main .menu .liste_menu li.validation_menu:hover {
   cursor: pointer;
   background-color: #f2f2f2;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
-main .menu .liste_menu .validation_menu:hover .menu_check {
+main .menu .liste_menu li.validation_menu:hover .menu_check {
   opacity: 1;
   transform: translateX(-150px);
   -ms-transform: translateX(-150px);
   -webkit-transform: translateX(-150px);
 }
-main .menu .liste_menu .validation_menu .button_menu {
+main .menu .liste_menu li.validation_menu:hover i {
+  position: absolute;
+  left: 60px;
+  bottom: 38px;
+  animation: rotation 1.2s forwards 0.2s;
+}
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+main .menu .liste_menu li.validation_menu .button_menu {
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
@@ -472,25 +502,28 @@ main .menu .liste_menu .validation_menu .button_menu {
   border: none;
   cursor: pointer;
   border-radius: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-main .menu .liste_menu .validation_menu .button_menu h3 {
+main .menu .liste_menu li.validation_menu .button_menu h3 {
   font-size: 25px;
   font-weight: 700;
 }
-main .menu .liste_menu .validation_menu .button_menu p {
+main .menu .liste_menu li.validation_menu .button_menu p {
   font-size: 22px;
   font-weight: 500;
   color: rgba(49, 48, 48, 0.8274509804);
   margin-top: 12px;
 }
-main .menu .liste_menu .validation_menu .price_menu {
+main .menu .liste_menu li.validation_menu .price_menu {
   font-size: 20px;
   font-weight: 700;
   position: absolute;
   top: 65px;
   right: 40px;
 }
-main .menu .liste_menu .validation_menu .menu_check {
+main .menu .liste_menu li.validation_menu .menu_check {
   position: absolute;
   top: 0;
   right: -150px;
@@ -506,7 +539,7 @@ main .menu .liste_menu .validation_menu .menu_check {
   -moz-transition: all 0.9s ease-in-out;
   -o-transition: all 0.9s ease-in-out;
 }
-main .menu .liste_menu .validation_menu .menu_check i {
+main .menu .liste_menu li.validation_menu i {
   position: absolute;
   left: 60px;
   bottom: 38px;

@@ -369,24 +369,24 @@ footer {
 
         .li-restaurant {
             display: flex;
-          }
-      
-          .icon_restaurant {
+        }
+
+        .icon_restaurant {
             display: flex;
-            padding-right:15px;
+            padding-right: 15px;
             font-size: 18px;
-      
-          }
-      
-          .li-partenaire {
+
+        }
+
+        .li-partenaire {
             display: flex;
-          }
-      
-          .icon_partenaire {
+        }
+
+        .icon_partenaire {
             display: flex;
-            padding-right:15px;
+            padding-right: 15px;
             font-size: 18px;
-          }
+        }
 
         li a {
             list-style-type: none;
@@ -460,7 +460,7 @@ header {
     margin-left: 92px;
     padding-top: 80px;
     font-weight: 500;
-} 
+}
 
 
 
@@ -515,7 +515,7 @@ main {
 
             width: 50%;
 
-            .validation_menu {
+            li.validation_menu {
                 width: auto;
                 justify-content: center;
                 align-items: center;
@@ -541,6 +541,47 @@ main {
                         -webkit-transform: translateX(-150px);
                     }
 
+                    i {
+                        position: absolute;
+                        left: 60px;
+                        bottom: 38px;
+                        animation: rotation 1.2s forwards 0.2s;
+
+
+                        @-webkit-keyframes rotation {
+                            0% {
+                                transform: rotate(0deg);
+                            }
+
+                            100% {
+                                transform: rotate(360deg);
+                            }
+                        }
+
+                        @-moz-keyframes rotation {
+                            0% {
+                                transform: rotate(0deg);
+                            }
+
+                            100% {
+                                transform: rotate(360deg);
+                            }
+                        }
+
+                        @keyframes rotation {
+                            0% {
+                                transform: rotate(0deg);
+                            }
+
+                            100% {
+                                transform: rotate(360deg);
+                            }
+                        }
+
+                    }
+
+
+
                 }
 
                 .button_menu {
@@ -559,7 +600,9 @@ main {
                     border: none;
                     cursor: pointer;
                     border-radius: 20px;
-
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
 
 
                     h3 {
@@ -601,12 +644,12 @@ main {
                     -webkit-transition: all 0.9s ease-in-out;
                     -moz-transition: all 0.9s ease-in-out;
                     -o-transition: all 0.9s ease-in-out;
+                }
 
-                    i {
-                        position: absolute;
-                        left: 60px;
-                        bottom: 38px;
-                    }
+                i {
+                    position: absolute;
+                    left: 60px;
+                    bottom: 38px;
                 }
 
             }
@@ -618,8 +661,6 @@ main {
     }
 
 }
-
-
 
 
 .button_commander {

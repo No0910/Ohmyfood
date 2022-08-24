@@ -823,7 +823,7 @@ ul li {
   main .menu .liste_menu {
     width: 100%;
   }
-  main .menu .liste_menu .validation_menu li {
+  main .menu .liste_menu li .validation_menu {
     width: 90%;
     justify-content: center;
     align-items: center;
@@ -836,48 +836,18 @@ ul li {
     overflow: hidden;
     margin-left: 30px;
   }
-  main .menu .liste_menu .validation_menu li:hover {
+  main .menu .liste_menu li .validation_menu:hover {
     cursor: pointer;
     background-color: #f2f2f2;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   }
-  main .menu .liste_menu .validation_menu li:hover .menu_check {
+  main .menu .liste_menu li .validation_menu:hover .menu_check {
     opacity: 1;
     transform: translateX(-150px);
     -ms-transform: translateX(-150px);
     -webkit-transform: translateX(-150px);
   }
-  main .menu .liste_menu .validation_menu li:hover i.fa-circle-check {
-    position: relative;
-    left: 60px;
-    bottom: 38px;
-    animation: rotation 0.9s forwards;
-  }
-  @-webkit-keyframes rotation {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  @-moz-keyframes rotation {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes rotation {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  main .menu .liste_menu .validation_menu li .button_menu {
+  main .menu .liste_menu .button_menu {
     font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
@@ -894,24 +864,24 @@ ul li {
     cursor: pointer;
     border-radius: 20px;
   }
-  main .menu .liste_menu .validation_menu li .button_menu h3 {
+  main .menu .liste_menu .button_menu h3 {
     font-size: 25px;
     font-weight: 700;
   }
-  main .menu .liste_menu .validation_menu li .button_menu p {
+  main .menu .liste_menu .button_menu p {
     font-size: 22px;
     font-weight: 500;
     color: rgba(49, 48, 48, 0.8274509804);
     margin-top: 12px;
   }
-  main .menu .liste_menu .validation_menu li .price_menu {
+  main .menu .liste_menu .price_menu {
     font-size: 20px;
     font-weight: 700;
     position: absolute;
     top: 65px;
     right: 40px;
   }
-  main .menu .liste_menu .validation_menu li .menu_check {
+  main .menu .liste_menu .menu_check {
     position: absolute;
     top: 0;
     right: -200px;
@@ -927,7 +897,7 @@ ul li {
     -moz-transition: all 0.9s ease-in-out;
     -o-transition: all 0.9s ease-in-out;
   }
-  main .button_commander {
+  .button_commander {
     margin: 30px auto;
     font-size: 22px;
     border-radius: 30px;
@@ -947,26 +917,27 @@ ul li {
     justify-content: center;
     margin-bottom: 80px;
   }
-  main .button_commander:hover {
+  .button_commander:hover {
     background: linear-gradient(-185deg, #d373b8, #9b6dd3);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
   }
-  .validation_menu {
-    animation: fadein 2s;
+}
+.validation_menu {
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    margin-top: 20px;
   }
-  @keyframes fadein {
-    0% {
-      opacity: 0;
-      margin-top: 20px;
-    }
-    50% {
-      opacity: 0.5;
-      margin-top: 10px;
-    }
-    100% {
-      opacity: 1;
-      margin-top: 0;
-    }
+  50% {
+    opacity: 0.5;
+    margin-top: 10px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
   }
 }
 
