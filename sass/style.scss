@@ -123,14 +123,13 @@ h1 {
     margin: 30px auto;
     font-size: 19px;
     border-radius: 30px;
-    padding: 15px 0;
+    padding: 15px;
     cursor: pointer;
     border: none;
     background: linear-gradient(-185deg, #FF79DA, #9356DC);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     align-items: center;
     height: 55px;
-    width: 35%;
     border: none;
     display: flex;
     color: white;
@@ -168,6 +167,7 @@ h2 {
 
 .buttons {
     display: flex;
+    flex-direction: column;
     padding: 0 20px;
     padding-bottom: 50px;
 }
@@ -177,13 +177,11 @@ h2 {
 
     display: flex;
     justify-content: center;
-    width: 90%;
     font-size: 16px;
     font-weight: 700;
     color: black;
     padding: 30px 60px;
-    margin-left: 20%;
-    margin: 15px;
+    margin: 15px 0 0 15px;
     background: white;
     outline: none;
     border: none;
@@ -214,7 +212,7 @@ h2 {
         position: absolute;
         left: -15px;
         line-height: 23px;
-        top: 24px;
+        top: calc( 50% - 15px);
     }
 
     i {
@@ -236,27 +234,19 @@ h2 {
 
 .cards {
     display: flex;
+    flex-direction: column;
+    margin: 0 20px;
 
-    .card_1_2,
-    .card_3_4 {
-        display: flex;
-        width: 100%;
-        padding-bottom: 20px;
-
-        a {
+    a {
             text-decoration: none;
             color: black;
             font-weight: 700;
             font-size: 22px;
-            width: 100%;
-            min-width: 40%;
+            flex: 1 1 50%;
         }
-    }
 
 
     .card_restaurant {
-        width: 94%;
-        margin: 8px;
         position: relative;
 
         img {
@@ -339,7 +329,7 @@ h2 {
 footer {
     background-color: #353434;
     color: white;
-    padding: 25px 50px 50px 50px;
+    padding: 25px 20px 50px 20px;
 
     .container {
         display: flex;
@@ -353,12 +343,12 @@ footer {
         height: 54px;
         color: white;
         display: flex;
-        justify-content: center;
         padding-top: 0;
     }
 
     ul {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
 
@@ -582,6 +572,7 @@ main {
 
 
 
+
                 }
 
                 .button_menu {
@@ -600,15 +591,26 @@ main {
                     border: none;
                     cursor: pointer;
                     border-radius: 20px;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
+
+                    &:hover h3{
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        transition: width 1s;
+                    }
+
+                    &:hover p{
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        transition: width 1s;
+                    }
+                 
 
 
                     h3 {
                         font-size: 25px;
                         font-weight: 700;
-
                     }
 
                     p {
