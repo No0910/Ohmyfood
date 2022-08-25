@@ -63,13 +63,8 @@
   }
   /*Titre H1 -Réservez le Menu qui vous convient-*/
   h1 {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    height: 50px;
-    padding: 50px;
     font-size: 30px;
-    font-weight: 700;
   }
   /*Paragraphe p1 -Découvrez des restaurants d'exception, séléctionnés par nos soins.-*/
   .p1 {
@@ -153,8 +148,8 @@
     font-size: 22px;
     color: rgb(85, 84, 84);
     position: absolute;
-    left: 14px;
-    top: 19px;
+    left: 22px;
+    top: calc(50% - 30px);
   }
   /*Les restaurants-cartes*/
   .cards {

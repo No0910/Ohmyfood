@@ -37,7 +37,7 @@ header .img_logo {
   width: auto;
 }
 header .img_logo img {
-  height: 46px;
+  height: 38px;
 }
 
 /*Barre de recherche*/
@@ -53,7 +53,7 @@ form i.location {
   height: 50px;
   display: flex;
   align-items: center;
-  margin-left: 44%;
+  margin-left: 30%;
   font-size: 21px;
 }
 form input {
@@ -63,9 +63,8 @@ form input {
   border: none;
   background-color: #e8e9eb;
   font-size: 18px;
-  text-align: center;
-  width: 11%;
-  margin: 0;
+  text-align: start;
+  margin-left: 15px;
 }
 form input:focus-visible {
   outline: none;
@@ -86,11 +85,9 @@ ul li {
 
 h1 {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  padding: 44px;
-  font-size: 30px;
+  text-align: center;
+  padding: 45px 45px 0 45px;
+  font-size: 27px;
   font-weight: 700;
 }
 
@@ -102,6 +99,7 @@ h1 {
   font-size: 20px;
   height: 40px;
   color: #646262;
+  padding: 30px;
 }
 
 /*Bouton "Explorer nos restaurants*/
@@ -196,7 +194,7 @@ h2 {
   color: rgb(85, 84, 84);
   position: absolute;
   left: 22px;
-  top: 9px;
+  top: calc(50% - 30px);
 }
 
 /*Les restaurants-cartes*/
@@ -368,14 +366,12 @@ header .i_heart i {
 
 .h1_menu {
   font-family: "Shrikhand", cursive;
-  font-size: 45px;
+  font-size: 38px;
   position: relative;
-  right: 52px;
   display: flex;
-  justify-content: center;
-  margin-left: 92px;
-  padding-top: 80px;
+  padding-top: 45px;
   font-weight: 500;
+  right: 15px;
 }
 
 main {
@@ -393,11 +389,11 @@ main.bg_color {
   top: -20px;
 }
 main .i_heart i {
-  font-size: 40px;
+  font-size: 36px;
   float: right;
   position: relative;
-  bottom: 70px;
-  right: 450px;
+  right: 35px;
+  bottom: 47px;
 }
 main .menu {
   display: flex;
