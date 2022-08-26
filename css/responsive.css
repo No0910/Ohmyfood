@@ -121,45 +121,23 @@ footer ul .icon_partenaire {
 
 /* PARTIE PAGES MENU*/
 /*Header*/
-body.bgcolor {
-  background-color: rgb(245, 245, 245);
-}
-
-header {
-  position: relative;
-  background-color: #FFFFFF;
-}
-header i.back {
-  position: absolute;
-  color: black;
-  line-height: 4;
-  font-size: 24px;
-  left: 41px;
-  top: 5px;
-}
-header .img_logo img {
-  height: 37px;
-}
-header .img_restaurant img {
-  object-fit: cover;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 74%;
-  cursor: pointer;
-}
 header .logo_img {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+header .img_logo {
+  position: relative;
+}
+header .img_logo img {
+  height: 37px;
+}
+header .img_restaurant img {
+  height: 74%;
+}
 
 .h1_menu {
-  font-family: "Shrikhand", cursive;
   font-size: 33px;
-  position: relative;
-  right: 30px;
-  display: flex;
   justify-content: center;
 }
 
@@ -292,6 +270,11 @@ main .button_commander:hover {
   }
   footer {
     padding: 25px 20px 30px 20px;
+  }
+  /*Partie Page Menu*/
+  /*Header*/
+  .header_page_menu .img_restaurant img {
+    height: 51%;
   }
 }
 

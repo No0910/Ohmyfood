@@ -104,264 +104,240 @@
     gap: 10px;
   }
 
-    a {
-      flex-basis: 40%;
-    }
-
-    .card_restaurant {
-
-
-      span {
-        font-size: 15px;
-        padding: 5px;
-        top: 20px;
-        right: 20px;
-      }
-
-      .information_card_restaurant {
-        margin-bottom: 20px;
-
-
-        i {
-          font-size: 26px;
-          top: calc(60% - 20px);
-          right: -20px;
-        }
-
-        p {
-          font-size: 18px;
-        }
-
-      }
-
-    }
+  a {
+    flex-basis: 40%;
   }
 
-  footer {
-
-    padding: 25px 20px 40px 20px;
+  .card_restaurant {
 
 
-    
-
-    .h3_footer h3 {
-      font-size: 20px;
-      height: 40px;
+    span {
+      font-size: 15px;
+      padding: 5px;
+      top: 20px;
+      right: 20px;
     }
 
-    ul {
+    .information_card_restaurant {
+      margin-bottom: 20px;
 
-      align-items: center;
-      text-align: center;
 
-      li{
-        line-height: 1.5;
-        font-size:17px;
+      i {
+        font-size: 26px;
+        top: calc(60% - 20px);
+        right: -20px;
       }
 
-      .icon_restaurant {
-        margin: 0px;
-        padding-top: 0px;
-      }
-
-      .icon_partenaire {
-        margin: 0px;
-        padding-top: 0px;
+      p {
+        font-size: 18px;
       }
 
     }
 
   }
+}
 
+footer {
 
+  padding: 25px 20px 40px 20px;
 
-
-  /* PARTIE PAGES MENU*/
-
-  /*Header*/
-
-  body {
-    &.bgcolor {
-      background-color: rgba(245, 245, 245);
-    }
+  .h3_footer h3 {
+    font-size: 20px;
+    height: 40px;
   }
 
-  header {
-    position: relative;
-    background-color: #FFFFFF;
+  ul {
 
-    i.back {
-      position: absolute;
-      color: black;
-      line-height: 4;
-      font-size: 24px;
-      left: 41px;
-      top: 5px;
+    align-items: center;
+    text-align: center;
+
+    li {
+      line-height: 1.5;
+      font-size: 17px;
     }
 
-    .img_logo img {
-      height: 37px;
+    .icon_restaurant {
+      margin: 0px;
+      padding-top: 0px;
     }
 
-    .img_restaurant img {
-      object-fit: cover;
-      background-size: cover;
-      background-position: center;
-      width: 100%;
-      height: 74%;
-      cursor: pointer;
+    .icon_partenaire {
+      margin: 0px;
+      padding-top: 0px;
     }
 
-    .logo_img {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
   }
 
-  .h1_menu {
-    font-family: 'Shrikhand', cursive;
-    font-size: 33px;
-    position: relative;
-    right: 30px;
-    display: flex;
-    justify-content: center;
-  }
+}
 
 
 
 
-  main {
+/* PARTIE PAGES MENU*/
+
+/*Header*/
+
+
+
+header {
+
+  .logo_img {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    align-items: center;
+  }
+ 
+  .img_logo{
     position: relative;
-    background-color: #f7f7f8;
-    padding: 0;
+  }
 
-    &.bg_color {
-      border-radius: 30px 30px 0 0;
-      background-color: rgba(245, 245, 245);
-      position: relative;
-      top: -200px;
+  .img_logo img {
+    height: 37px;
+  }
+
+  .img_restaurant img {
+    height: 74%;
+  }
+
+}
+
+
+.h1_menu {
+  font-size: 33px;
+  justify-content: center;
+}
+
+
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  background-color: #f7f7f8;
+  padding: 0;
+
+  &.bg_color {
+    border-radius: 30px 30px 0 0;
+    background-color: rgba(245, 245, 245);
+    position: relative;
+    top: -200px;
+  }
+
+  .i_heart i {
+    position: absolute;
+    float: right;
+    font-size: 40px;
+    bottom: 65px;
+    right: 185px;
+  }
+
+  .h2_menu {
+    font-weight: 500;
+    font-size: 19px;
+    color: #1d1d1dbb;
+
+    &::after {
+      content: "";
+      background-color: #99E2D0;
+      width: 80px;
+      height: 5px;
+      display: block;
+      margin: 5px auto;
     }
-
-    .i_heart i {
-      position: absolute;
-      float: right;
-      font-size: 40px;
-      bottom: 65px;
-      right: 185px;
-    }
-
-    .h2_menu {
-      font-weight: 500;
-      font-size: 19px;
-      color: #1d1d1dbb;
-
-      &::after {
-        content: "";
-        background-color: #99E2D0;
-        width: 80px;
-        height: 5px;
-        display: block;
-        margin: 5px auto;
-      }
-    }
-
-
-
-    .menu {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: flex-start;
-
-      .button_menu {
-        display: flex;
-        align-items: left;
-        flex-direction: column;
-        width: 65%;
-        font-size: 16px;
-        font-weight: 700;
-        color: black;
-        padding: 20px;
-        margin: 9px;
-        height: 81px;
-        background: white;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        border-radius: 20px;
-        position: relative;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
-        &:hover {
-          cursor: pointer;
-          background-color: darken(white, 5%);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-        }
-
-        h3 {
-          font-size: 20px;
-          font-weight: 700;
-          position: absolute;
-          float: left;
-        }
-
-        h4 {
-          font-size: 17px;
-          font-weight: 500;
-          color: #313030d3;
-          position: absolute;
-          float: left;
-          margin-top: 26px;
-        }
-
-        h5 {
-          position: absolute;
-          float: right;
-          right: 25px;
-          top: 45px;
-        }
-
-      }
-
-
-
-    }
-
-
-    .button_commander {
-      margin: 30px auto;
-      font-size: 19px;
-      border-radius: 30px;
-      padding: 15px 0;
-      cursor: pointer;
-      border: none;
-      background: linear-gradient(-185deg, #FF79DA, #9356DC);
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      align-items: center;
-      height: 61px;
-      width: 30%;
-      border: none;
-      display: flex;
-      color: white;
-      font-weight: 500;
-      white-space: nowrap;
-      justify-content: center;
-      margin-bottom: -100px;
-
-      &:hover {
-        background: linear-gradient(-185deg, #d373b8, #9b6dd3);
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-      }
-    }
-
   }
 
 
 
+  .menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .button_menu {
+      display: flex;
+      align-items: left;
+      flex-direction: column;
+      width: 65%;
+      font-size: 16px;
+      font-weight: 700;
+      color: black;
+      padding: 20px;
+      margin: 9px;
+      height: 81px;
+      background: white;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      border-radius: 20px;
+      position: relative;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+      &:hover {
+        cursor: pointer;
+        background-color: darken(white, 5%);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+      }
+
+      h3 {
+        font-size: 20px;
+        font-weight: 700;
+        position: absolute;
+        float: left;
+      }
+
+      h4 {
+        font-size: 17px;
+        font-weight: 500;
+        color: #313030d3;
+        position: absolute;
+        float: left;
+        margin-top: 26px;
+      }
+
+      h5 {
+        position: absolute;
+        float: right;
+        right: 25px;
+        top: 45px;
+      }
+
+    }
+
+
+
+  }
+
+
+  .button_commander {
+    margin: 30px auto;
+    font-size: 19px;
+    border-radius: 30px;
+    padding: 15px 0;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(-185deg, #FF79DA, #9356DC);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    align-items: center;
+    height: 61px;
+    width: 30%;
+    border: none;
+    display: flex;
+    color: white;
+    font-weight: 500;
+    white-space: nowrap;
+    justify-content: center;
+    margin-bottom: -100px;
+
+    &:hover {
+      background: linear-gradient(-185deg, #d373b8, #9b6dd3);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+
+}
 
 
 
@@ -374,7 +350,7 @@
 
   //Logo Ohmyfood//
 
-  header{
+  header {
     .img_logo img {
       height: 46px;
     }
@@ -402,8 +378,21 @@
 
   //Footer//
 
-  footer{
+  footer {
     padding: 25px 20px 30px 20px;
 
   }
+
+
+  /*Partie Page Menu*/
+
+  /*Header*/
+
+  .header_page_menu{
+    .img_restaurant img {
+      height: 51%;
+    }
+  }
+
+
 }
