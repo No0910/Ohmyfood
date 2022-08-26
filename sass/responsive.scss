@@ -26,10 +26,6 @@
   /*logo OHMYFOOD*/
 
   .img_logo {
-    display: flex;
-    justify-content: center;
-    padding: 30px 0 30px 0;
-    width: auto;
 
     img {
       height: 30px;
@@ -41,39 +37,18 @@
   /*Barre de recherche*/
 
   form {
-    display: flex;
-    justify-content: left;
-    background-color: #e8e9eb;
-    width: 100%;
     padding: 10px;
-    box-shadow: inset 0px 3px 4px rgb(151, 151, 151);
 
     i.location {
-      height: 50px;
-      display: flex;
-      align-items: center;
       margin-left: 39%;
       font-size: 20px;
     }
 
     input {
-      display: flex;
-      width: 100%;
       text-indent: 10px;
-      border: none;
-      background-color: #e8e9eb;
-      font-size: 18px;
       text-align: center;
       width: 18%;
       margin: 0;
-
-      &:focus-visible {
-        outline: none;
-      }
-
-      &::placeholder {
-        color: black;
-      }
     }
   }
 
@@ -85,47 +60,12 @@
   }
 
 
-  /*Paragraphe p1 -Découvrez des restaurants d'exception, séléctionnés par nos soins.-*/
-
-  .p1 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 20px;
-    height: 40px;
-    color: #646262;
-  }
-
-
   /*Bouton "Explorer nos restaurants*/
 
-  .button_explorer {
-    padding: 30px;
-    border-radius: 30px;
-    padding: 20px 50px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    border: none;
-    background: transparent;
-    transition: all .2s;
-    color: #fff;
-    box-shadow: 0px -0px 0px 0px #9356DC, 0px 0px 0px 0px #99E2D0;
-    background: linear-gradient(-185deg, #FF79DA, #9356DC);
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    margin-left: 24%;
-
-    button {
-      border: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: transparent;
-      color: white;
-      font-size: 20px;
-      width: 100%;
-    }
+  .button {
+    height: 60px;
+    width: 40%;
+    font-weight: 500;
   }
 
   /*Titre H2 "Fonctionnement" & Titre "Restaurants*/
@@ -146,47 +86,13 @@
     padding-bottom: 30px;
   }
 
-
   .button_choix {
-
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    font-size: 14px;
-    font-weight: 700;
-    color: black;
-    padding: 30px 60px;
+    width: 100%;
+    font-size: 15px;
     margin-left: 20%;
-    margin: 13px;
-    background: white;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-    position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    white-space: normal;
-
-    &:hover {
-      cursor: pointer;
-      background-color: darken(white, 5%);
-
-      i {
-        color: #9356DC;
-      }
-    }
-
-    i {
-      margin: 10px;
-      padding: 10px;
-      font-size: 22px;
-      color: rgb(85, 84, 84);
-      position: absolute;
-      left: 22px;
-      top: calc(50% - 30px);
-    }
-
-
+    margin: 10px;
+    font-weight: 600;
+    padding-right: 31px;
   }
 
 
@@ -196,89 +102,34 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
+  }
 
     a {
       flex-basis: 40%;
     }
+
     .card_restaurant {
-      position: relative;
 
-      img {
-        display: flex;
-        object-fit: cover;
-        height: 250px;
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-        border-radius: 15px 15px 0 0;
-        border: none;
-      }
-
-      .img_position1 {
-        object-position: bottom;
-      }
-
-      .img_position2 {
-        object-position: center 61%;
-      }
-
-      .img_position3 {
-        object-position: center 97%;
-      }
-
-      .img_position4 {
-        object-position: center 97%;
-      }
 
       span {
-        display: flex;
-        background-color: #99E2D0;
-        color: darken(#99E2D0, 40%);
         font-size: 15px;
         padding: 5px;
-        font-weight: 500;
-        outline: none;
-        border: none;
-        position: absolute;
         top: 20px;
         right: 20px;
-
       }
 
       .information_card_restaurant {
-        border-radius: 0 0 15px 15px;
-        background-color: #FFFFFF;
-        padding: 15px 0 10px 15px;
-        width: 100%;
-        cursor: pointer;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         margin-bottom: 20px;
 
 
         i {
-          font-size: 30px;
-          margin-right: 30px;
-          float: right;
-          margin-top: 5px;
+          font-size: 26px;
+          top: calc(60% - 20px);
+          right: -20px;
         }
-
-        h3 {
-
-          a {
-            text-decoration: none;
-            color: black;
-            font-weight: 700;
-            font-size: 22px;
-            margin: 5px;
-          }
-        }
-
 
         p {
-          font-size: 21px;
-          margin: 5px;
-          font-weight: 100;
-          color: #555454;
+          font-size: 18px;
         }
 
       }
@@ -287,44 +138,39 @@
   }
 
   footer {
-    background-color: #353434;
-    color: white;
-    padding: 30px;
-    display: flex;
 
+    padding: 25px 20px 40px 20px;
+
+
+    
 
     .h3_footer h3 {
-      font-family: 'Shrikhand', cursive;
       font-size: 20px;
       height: 40px;
-      color: white;
     }
 
-    .li-restaurant {
-      display: flex;
+    ul {
+
+      align-items: center;
+      text-align: center;
+
+      li{
+        line-height: 1.5;
+        font-size:17px;
+      }
+
+      .icon_restaurant {
+        margin: 0px;
+        padding-top: 0px;
+      }
+
+      .icon_partenaire {
+        margin: 0px;
+        padding-top: 0px;
+      }
+
     }
 
-    .icon_restaurant {
-      display: flex;
-      margin: 5px;
-      padding-top: 3px;
-      font-size: 12px;
-    }
-
-    .li-partenaire {
-      display: flex;
-    }
-
-    .icon_partenaire {
-      display: flex;
-      margin: 5px;
-      padding-top: 3px;
-      font-size: 12px;
-    }
-
-    ul li {
-      padding: 5px;
-    }
   }
 
 
@@ -381,6 +227,7 @@
     display: flex;
     justify-content: center;
   }
+
 
 
 
@@ -511,47 +358,52 @@
       }
     }
 
-
-
-
   }
 
 
 
 
-}
+
 
 
 
 /* DESKTOP uniquement */
 @media screen and (min-width:992px) {
-  .cards {
-    gap: 20px;
-    a {
-    flex-basis: 20%;
+
+  /*PAGE D'ACCUEIL*/
+
+  //Logo Ohmyfood//
+
+  header{
+    .img_logo img {
+      height: 46px;
     }
   }
-}
 
-//Animation Effet fondu sur menus //
+  //Bouton "Explorer nos restaurants"//
 
-.validation_menu {
-  animation: fadein 2s;
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-    margin-top: 20px;
+  .button {
+    width: 25%;
   }
 
-  50% {
-    opacity: 0.5;
-    margin-top: 10px;
+  .button_choix {
+    font-size: 16px;
   }
 
-  100% {
-    opacity: 1;
-    margin-top: 0;
+  //Cards des restaurants//
+
+  .cards {
+    gap: 20px;
+
+    a {
+      flex-basis: 20%;
+    }
+  }
+
+  //Footer//
+
+  footer{
+    padding: 25px 20px 30px 20px;
+
   }
 }

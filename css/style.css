@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*Propriétés CSS applicables à toute la page*/
+/*Propriétés CSS applicables à toute la page MOBILE FIRST*/
 * {
   box-sizing: border-box;
   /* box-sizing est appliqué à tous les éléments */
@@ -46,7 +46,7 @@ form {
   justify-content: left;
   background-color: #e8e9eb;
   width: 100%;
-  padding: 10px;
+  padding: 4px;
   box-shadow: inset 0px 3px 4px rgb(151, 151, 151);
 }
 form i.location {
@@ -104,10 +104,10 @@ h1 {
 
 /*Bouton "Explorer nos restaurants*/
 .button {
+  width: 65%;
   margin: 30px auto;
-  font-size: 19px;
+  font-size: 18px;
   border-radius: 30px;
-  padding: 15px;
   cursor: pointer;
   border: none;
   background: linear-gradient(-185deg, #FF79DA, #9356DC);
@@ -117,7 +117,7 @@ h1 {
   border: none;
   display: flex;
   color: white;
-  font-weight: 700;
+  font-weight: 600;
   white-space: nowrap;
   justify-content: center;
 }
@@ -164,6 +164,7 @@ h2 {
   border-radius: 20px;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  white-space: normal;
 }
 .button_choix:hover {
   cursor: pointer;
@@ -212,6 +213,12 @@ h2 {
 }
 .cards .card_restaurant {
   position: relative;
+}
+.cards .card_restaurant:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
 }
 .cards .card_restaurant img {
   display: flex;
@@ -268,12 +275,20 @@ h2 {
   right: -9px;
   top: 24px;
 }
+.cards .card_restaurant .information_card_restaurant h3 {
+  font-size: 20px;
+}
+.cards .card_restaurant .information_card_restaurant h3 a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 22px;
+}
 .cards .card_restaurant .information_card_restaurant p {
   font-size: 19px;
-  margin: -1px;
   font-weight: 100;
   color: #555454;
-  padding-top: 8px;
+  padding-top: 12px;
 }
 
 footer {
@@ -281,10 +296,11 @@ footer {
   color: white;
   padding: 25px 20px 50px 20px;
 }
-footer .container {
+footer .container_footer {
   display: flex;
   flex-direction: column;
-  padding-top: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 footer .h3_footer h3 {
   font-family: "Shrikhand", cursive;
@@ -295,35 +311,33 @@ footer .h3_footer h3 {
   padding-top: 0;
 }
 footer ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   cursor: pointer;
+  align-items: flex-start;
+  text-align: start;
 }
 footer ul li {
   padding: 5px;
   font-size: 21px;
-}
-footer ul .li-restaurant {
   display: flex;
-}
-footer ul .icon_restaurant {
-  display: flex;
-  padding-right: 15px;
-  font-size: 18px;
-}
-footer ul .li-partenaire {
-  display: flex;
-}
-footer ul .icon_partenaire {
-  display: flex;
-  padding-right: 15px;
-  font-size: 18px;
 }
 footer ul li a {
   list-style-type: none;
   text-decoration: none;
   color: white;
+}
+footer ul .li-restaurant {
+  display: flex;
+}
+footer ul .li-restaurant .icon_restaurant {
+  margin-right: 16px;
+  font-size: 18px;
+}
+footer ul .li-partenaire {
+  display: flex;
+}
+footer ul .li-partenaire .icon_partenaire {
+  margin-right: 10px;
+  font-size: 18px;
 }
 
 /* PARTIE PAGES MENU*/
