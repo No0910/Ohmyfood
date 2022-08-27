@@ -411,20 +411,18 @@ main .i_heart i {
 main .menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
 }
-main .menu .h2_menu_entrees {
+main .menu .h2_menu {
   font-weight: 400;
   font-size: 25px;
   color: rgba(29, 29, 29, 0.7333333333);
   display: flex;
   flex-direction: column;
   position: relative;
-  right: 169px;
   padding-bottom: 40px;
 }
-main .menu .h2_menu_entrees::after {
+main .menu .h2_menu::after {
   content: "";
   background-color: #99E2D0;
   width: 60px;
@@ -432,47 +430,6 @@ main .menu .h2_menu_entrees::after {
   display: flex;
   margin: 8px auto;
   position: relative;
-  right: 21px;
-}
-main .menu .h2_menu_plats {
-  font-weight: 400;
-  font-size: 25px;
-  color: rgba(29, 29, 29, 0.7333333333);
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  right: 181px;
-  padding-bottom: 40px;
-}
-main .menu .h2_menu_plats::after {
-  content: "";
-  background-color: #99E2D0;
-  width: 60px;
-  height: 3px;
-  display: flex;
-  margin: 8px auto;
-  position: relative;
-  right: 7px;
-}
-main .menu .h2_menu_desserts {
-  font-weight: 400;
-  font-size: 25px;
-  color: rgba(29, 29, 29, 0.7333333333);
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  right: 159px;
-  padding-bottom: 40px;
-}
-main .menu .h2_menu_desserts::after {
-  content: "";
-  background-color: #99E2D0;
-  width: 60px;
-  height: 3px;
-  display: flex;
-  margin: 8px auto;
-  position: relative;
-  right: 28px;
 }
 main .menu .liste_menu {
   width: 90%;
@@ -488,6 +445,7 @@ main .menu .liste_menu li.validation_menu {
   position: relative;
   height: 100px;
   overflow: hidden;
+  margin: 0 auto 34px auto;
 }
 main .menu .liste_menu li.validation_menu:hover {
   cursor: pointer;
@@ -495,10 +453,17 @@ main .menu .liste_menu li.validation_menu:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 main .menu .liste_menu li.validation_menu:hover .menu_check {
-  opacity: 1;
-  transform: translateX(-150px);
-  -ms-transform: translateX(-150px);
-  -webkit-transform: translateX(-150px);
+  animation: translation 1s linear forwards;
+}
+@keyframes translation {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-150px);
+  }
 }
 main .menu .liste_menu li.validation_menu:hover i {
   position: absolute;
@@ -530,6 +495,23 @@ main .menu .liste_menu li.validation_menu:hover i {
     transform: rotate(360deg);
   }
 }
+main .menu .liste_menu li.validation_menu:hover .price_menu {
+  animation: translation 1s linear forwards;
+}
+@keyframes translation {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-150px);
+  }
+}
+main .menu .liste_menu li.validation_menu:hover .button_menu {
+  width: 60% p;
+  width-width: 60%;
+}
 main .menu .liste_menu li.validation_menu .button_menu {
   font-family: "Roboto", sans-serif;
   display: flex;
@@ -546,16 +528,17 @@ main .menu .liste_menu li.validation_menu .button_menu {
   border: none;
   cursor: pointer;
   border-radius: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 1;
 }
 main .menu .liste_menu li.validation_menu .button_menu:hover h3 {
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
   transition: width 1s;
 }
 main .menu .liste_menu li.validation_menu .button_menu:hover p {
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
   transition: width 1s;
 }
@@ -568,6 +551,7 @@ main .menu .liste_menu li.validation_menu .button_menu p {
   font-weight: 500;
   color: rgba(49, 48, 48, 0.8274509804);
   margin-top: 12px;
+  width: 100%;
 }
 main .menu .liste_menu li.validation_menu .price_menu {
   font-size: 20px;

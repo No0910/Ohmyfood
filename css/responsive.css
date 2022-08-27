@@ -163,18 +163,12 @@
     right: 100px;
   }
   main .menu {
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
   }
-  main .menu .h2_menu_entrees,
-main .menu .h2_menu_plats,
-main .menu .h2_menu_desserts {
+  main .menu .h2_menu {
     font-size: 27px;
     padding-bottom: 0;
-    right: 0;
-  }
-  main .menu .h2_menu_entrees::after,
-main .menu .h2_menu_plats::after,
-main .menu .h2_menu_desserts::after {
     right: 0;
   }
   main .menu .button_menu {

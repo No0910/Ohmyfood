@@ -495,10 +495,9 @@ main {
     .menu {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
 
-        .h2_menu_entrees {
+        .h2_menu{
 
             font-weight: 400;
             font-size: 25px;
@@ -506,7 +505,6 @@ main {
             display: flex;
             flex-direction: column;
             position: relative;
-            right: 169px;
             padding-bottom: 40px;
 
             &::after {
@@ -517,57 +515,9 @@ main {
                 display: flex;
                 margin: 8px auto;
                 position: relative;
-                right: 21px;
+              
             }
         }
-
-        .h2_menu_plats {
-
-            font-weight: 400;
-            font-size: 25px;
-            color: rgba(29, 29, 29, 0.7333333333);
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            right: 181px;
-            padding-bottom: 40px;
-
-            &::after {
-                content: "";
-                background-color: #99E2D0;
-                width: 60px;
-                height: 3px;
-                display: flex;
-                margin: 8px auto;
-                position: relative;
-                right: 7px;
-            }
-        }
-
-        .h2_menu_desserts {
-
-            font-weight: 400;
-            font-size: 25px;
-            color: rgba(29, 29, 29, 0.7333333333);
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            right: 159px;
-            padding-bottom: 40px;
-
-            &::after {
-                content: "";
-                background-color: #99E2D0;
-                width: 60px;
-                height: 3px;
-                display: flex;
-                margin: 8px auto;
-                position: relative;
-                right: 28px;
-            }
-        }
-
-
 
         .liste_menu {
 
@@ -584,6 +534,7 @@ main {
                 position: relative;
                 height: 100px;
                 overflow: hidden;
+                margin: 0 auto 34px auto;
 
 
                 &:hover {
@@ -592,11 +543,19 @@ main {
                     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 
                     .menu_check {
-                        opacity: 1;
-                        transform: translateX(-150px);
+                        animation: translation 1s linear forwards;
 
-                        -ms-transform: translateX(-150px);
-                        -webkit-transform: translateX(-150px);
+                        @keyframes translation{
+                            0%{
+                                opacity: 1;
+                                transform:translateX(0);
+                            }
+                            100%{
+                                opacity: 1;
+                                transform: translateX(-150px);
+                            }
+
+                        }
                     }
 
                     i {
@@ -638,6 +597,33 @@ main {
 
                     }
 
+                    .price_menu {
+                        animation: translation 1s linear forwards;
+
+                        @keyframes translation{
+                            0%{
+                                opacity: 1;
+                                transform:translateX(0);
+                            }
+                            100%{
+                                opacity: 1;
+                                transform: translateX(-150px);
+                            }
+
+                        }
+
+                    }
+
+                    .button_menu{
+                        width:60%
+
+                        p {
+                            width: 60%;
+                        }
+                    }
+
+
+
                 }
 
                 .button_menu {
@@ -656,17 +642,19 @@ main {
                     border: none;
                     cursor: pointer;
                     border-radius: 20px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    line-height: 1;
 
+                
                     &:hover h3 {
                         overflow: hidden;
-                        white-space: nowrap;
                         text-overflow: ellipsis;
                         transition: width 1s;
                     }
 
                     &:hover p {
                         overflow: hidden;
-                        white-space: nowrap;
                         text-overflow: ellipsis;
                         transition: width 1s;
                     }
@@ -683,6 +671,7 @@ main {
                         font-weight: 500;
                         color: #313030d3;
                         margin-top: 12px;
+                        width: 100%;
                     }
 
                 }
