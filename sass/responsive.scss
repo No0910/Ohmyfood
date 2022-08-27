@@ -102,14 +102,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 25px;
-  }
 
-  a {
-    flex-basis: 40%;
+    a {
+      flex-basis: 40%;
+    }
   }
 
   .card_restaurant {
-
 
     span {
       font-size: 15px;
@@ -120,7 +119,6 @@
 
     .information_card_restaurant {
       margin-bottom: 20px;
-
 
       i {
         font-size: 26px;
@@ -145,7 +143,7 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-  }
+    }
 
     .h3_footer h3 {
       font-size: 20px;
@@ -155,11 +153,12 @@
     ul {
 
       align-items: center;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
 
       li {
         line-height: 1.5;
-        font-size: 17px;
+        font-size: 19px;
       }
 
       .icon_restaurant {
@@ -183,9 +182,11 @@
 
   /*Header*/
 
+  .header_page_menu {
 
-
-  header {
+    i.back {
+      top: -10px;
+    }
 
     .logo_img {
       display: flex;
@@ -208,139 +209,55 @@
   }
 
 
-  .h1_menu {
-    font-size: 33px;
-    justify-content: center;
-  }
-
-
-
-
   main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    position: relative;
-    background-color: #f7f7f8;
     padding: 0;
 
     &.bg_color {
       border-radius: 30px 30px 0 0;
-      background-color: rgba(245, 245, 245);
-      position: relative;
       top: -200px;
     }
 
+    .liste_menu {
+      padding-top: 30px;
+    }
+
+    .h1_menu {
+      font-size: 33px;
+      justify-content: center;
+      padding-top: 35px;
+      right: 0;
+    }
+
     .i_heart i {
-      position: absolute;
-      float: right;
       font-size: 40px;
-      bottom: 65px;
-      right: 185px;
+      right: 100px;
     }
-
-    .h2_menu {
-      font-weight: 500;
-      font-size: 19px;
-      color: #1d1d1dbb;
-
-      &::after {
-        content: "";
-        background-color: #99E2D0;
-        width: 80px;
-        height: 5px;
-        display: block;
-        margin: 5px auto;
-      }
-    }
-
-
 
     .menu {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
       justify-content: flex-start;
 
-      .button_menu {
-        display: flex;
-        align-items: left;
-        flex-direction: column;
-        width: 65%;
-        font-size: 16px;
-        font-weight: 700;
-        color: black;
-        padding: 20px;
-        margin: 9px;
-        height: 81px;
-        background: white;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        border-radius: 20px;
-        position: relative;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      .h2_menu_entrees,
+      .h2_menu_plats,
+      .h2_menu_desserts {
+        font-size: 27px;
+        padding-bottom: 0;
+        right: 0;
 
-        &:hover {
-          cursor: pointer;
-          background-color: darken(white, 5%);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-        }
-
-        h3 {
-          font-size: 20px;
-          font-weight: 700;
-          position: absolute;
-          float: left;
-        }
-
-        h4 {
-          font-size: 17px;
-          font-weight: 500;
-          color: #313030d3;
-          position: absolute;
-          float: left;
-          margin-top: 26px;
-        }
-
-        h5 {
-          position: absolute;
-          float: right;
-          right: 25px;
-          top: 45px;
+        &::after {
+          right: 0;
         }
 
       }
 
-
-
+      .button_menu {
+        align-items: left;
+        height: 100px;
+      }
     }
 
-
     .button_commander {
-      margin: 30px auto;
-      font-size: 19px;
-      border-radius: 30px;
-      padding: 15px 0;
-      cursor: pointer;
-      border: none;
-      background: linear-gradient(-185deg, #FF79DA, #9356DC);
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      align-items: center;
-      height: 61px;
-      width: 30%;
-      border: none;
-      display: flex;
-      color: white;
-      font-weight: 500;
-      white-space: nowrap;
-      justify-content: center;
-      margin-bottom: -100px;
-
-      &:hover {
-        background: linear-gradient(-185deg, #d373b8, #9b6dd3);
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-      }
+      font-size: 22px;
+      top: 85px;
     }
 
   }
@@ -387,6 +304,12 @@
   footer {
     padding: 25px 20px 30px 20px;
 
+    ul {
+      li {
+        font-size: 20px;
+      }
+    }
+
   }
 
 
@@ -395,10 +318,44 @@
   /*Header*/
 
   .header_page_menu {
+    i.back {
+      font-size: 37px;
+      top: -23px;
+    }
+
+    .img_logo img {
+      height: 43px;
+    }
+
     .img_restaurant img {
       height: 51%;
     }
   }
 
+  main {
+    .h1_menu {
+      font-size: 39px;
+    }
 
+    .menu {
+
+      .h2_menu_entrees,
+      .h2_menu_plats,
+      .h2_menu_desserts {
+        font-size: 29px;
+        padding: 30px;
+      }
+
+      .liste_menu {
+        width: 70%;
+      }
+    }
+
+    .button_commander {
+      height: 80px;
+      font-size: 25px;
+    }
+  }
 }
+
+

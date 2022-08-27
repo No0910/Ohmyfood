@@ -209,7 +209,7 @@ h2 {
   color: black;
   font-weight: 700;
   font-size: 22px;
-  flex: 1 1 40%;
+  flex: 1 1 50%;
 }
 .cards .card_restaurant {
   position: relative;
@@ -355,9 +355,9 @@ body.bgcolor_page_menu {
   position: absolute;
   color: black;
   line-height: 4;
-  font-size: 24px;
+  font-size: 30px;
   left: 41px;
-  top: 5px;
+  top: -8px;
 }
 .header_page_menu .img_logo {
   position: relative;
@@ -377,22 +377,6 @@ body.bgcolor_page_menu {
   height: 100%;
   cursor: pointer;
 }
-.header_page_menu .i_heart i {
-  position: absolute;
-  top: 20px;
-  float: inline-start;
-}
-
-.h1_menu {
-  font-family: "Shrikhand", cursive;
-  font-size: 38px;
-  display: flex;
-  justify-content: flex-start;
-  position: relative;
-  padding-top: 45px;
-  font-weight: 500;
-  right: 15px;
-}
 
 main {
   display: flex;
@@ -407,12 +391,22 @@ main.bg_color {
   position: relative;
   top: -80px;
 }
+main .h1_menu {
+  font-family: "Shrikhand", cursive;
+  font-size: 38px;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  padding-top: 45px;
+  font-weight: 500;
+  right: 15px;
+}
 main .i_heart i {
-  font-size: 36px;
   float: right;
   position: relative;
+  font-size: 36px;
   right: 35px;
-  bottom: 47px;
+  bottom: 40px;
 }
 main .menu {
   display: flex;
@@ -420,23 +414,68 @@ main .menu {
   align-items: center;
   justify-content: center;
 }
-main .menu .h2_menu {
-  font-weight: 500;
-  font-size: 30px;
+main .menu .h2_menu_entrees {
+  font-weight: 400;
+  font-size: 25px;
   color: rgba(29, 29, 29, 0.7333333333);
-  padding: 60px 0 60px 0;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 169px;
+  padding-bottom: 40px;
 }
-main .menu .h2_menu::after {
+main .menu .h2_menu_entrees::after {
   content: "";
   background-color: #99E2D0;
-  width: 80px;
-  height: 5px;
-  display: block;
-  margin: 5px auto;
+  width: 60px;
+  height: 3px;
+  display: flex;
+  margin: 8px auto;
+  position: relative;
+  right: 21px;
+}
+main .menu .h2_menu_plats {
+  font-weight: 400;
+  font-size: 25px;
+  color: rgba(29, 29, 29, 0.7333333333);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 181px;
+  padding-bottom: 40px;
+}
+main .menu .h2_menu_plats::after {
+  content: "";
+  background-color: #99E2D0;
+  width: 60px;
+  height: 3px;
+  display: flex;
+  margin: 8px auto;
+  position: relative;
+  right: 7px;
+}
+main .menu .h2_menu_desserts {
+  font-weight: 400;
+  font-size: 25px;
+  color: rgba(29, 29, 29, 0.7333333333);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 159px;
+  padding-bottom: 40px;
+}
+main .menu .h2_menu_desserts::after {
+  content: "";
+  background-color: #99E2D0;
+  width: 60px;
+  height: 3px;
+  display: flex;
+  margin: 8px auto;
+  position: relative;
+  right: 28px;
 }
 main .menu .liste_menu {
-  width: 50%;
+  width: 90%;
 }
 main .menu .liste_menu li.validation_menu {
   width: auto;
@@ -558,28 +597,28 @@ main .menu .liste_menu li.validation_menu i {
   left: 60px;
   bottom: 38px;
 }
-
-.button_commander {
+main .button_commander {
   margin: 30px auto;
-  font-size: 25px;
-  border-radius: 30px;
+  font-size: 23px;
+  border-radius: 40px;
   padding: 15px 0;
   cursor: pointer;
   border: none;
   background: linear-gradient(-185deg, #FF79DA, #9356DC);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   align-items: center;
-  height: 61px;
-  width: 35%;
+  height: 70px;
+  width: 50%;
   border: none;
   display: flex;
   color: white;
-  font-weight: 500;
+  font-weight: 400;
   white-space: nowrap;
   justify-content: center;
-  margin-top: 20px;
+  position: relative;
+  top: 30px;
 }
-.button_commander:hover {
+main .button_commander:hover {
   background: linear-gradient(-185deg, #d373b8, #9b6dd3);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
