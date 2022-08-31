@@ -1,4 +1,4 @@
-/*Propriétés CSS applicables à toute la page MOBILE FIRST*/
+/*Propriétés CSS applicables à toute la page -- MOBILE FIRST*/
 
 * {
     box-sizing: border-box;
@@ -521,7 +521,8 @@ main {
 
         .liste_menu {
 
-            width: 90%;
+            width: 95%;
+            margin: 0px 0px 10px 10px;
 
             li.validation_menu {
                 width: auto;
@@ -615,13 +616,22 @@ main {
                     }
 
                     .button_menu{
-                        width:60%
+                        width: 50%;
 
+                        h3 {
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            transition: width 1s;
+                        }
+    
                         p {
-                            width: 60%;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            transition: width 1s;
                         }
                     }
-
 
 
                 }
@@ -645,39 +655,23 @@ main {
                     white-space: nowrap;
                     overflow: hidden;
                     line-height: 1;
-
-                
-                    &:hover h3 {
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        transition: width 1s;
-                    }
-
-                    &:hover p {
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        transition: width 1s;
-                    }
-
-
+                    
 
                     h3 {
-                        font-size: 25px;
+                        font-size: 20px;
                         font-weight: 700;
                     }
 
                     p {
-                        font-size: 22px;
-                        font-weight: 500;
-                        color: #313030d3;
+                        font-size: 19px;
+                        font-weight: 400;
                         margin-top: 12px;
-                        width: 100%;
                     }
 
                 }
 
                 .price_menu {
-                    font-size: 20px;
+                    font-size: 18px;
                     font-weight: 700;
                     position: absolute;
                     top: 65px;
@@ -717,7 +711,7 @@ main {
 
     .button_commander {
         margin: 30px auto;
-        font-size: 23px;
+        font-size: 22px;
         border-radius: 40px;
         padding: 15px 0;
         cursor: pointer;
