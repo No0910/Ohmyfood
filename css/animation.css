@@ -155,7 +155,7 @@
   }
 }
 .anim-gradient i:hover {
-  animation: 1s ease-in-out;
+  animation: 1.5s ease-in-out;
   animation-delay: 1s;
   background: linear-gradient(to top, #ff79da, #9356dc);
   background: -webkit-linear-gradient(to top, #ff79da, #9356dc);

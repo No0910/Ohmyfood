@@ -358,6 +358,7 @@ body.bgcolor_page_menu {
   font-size: 30px;
   left: 41px;
   top: -8px;
+  z-index: 100;
 }
 .header_page_menu .img_logo {
   position: relative;
@@ -401,12 +402,27 @@ main .h1_menu {
   font-weight: 500;
   right: 15px;
 }
-main .i_heart i {
-  float: right;
+main .i_heart {
   position: relative;
-  font-size: 36px;
-  right: 35px;
-  bottom: 40px;
+}
+main .i_heart i.color {
+  position: absolute;
+  font-size: 25px;
+  background: linear-gradient(to top, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 1s;
+}
+main .i_heart i.color:hover {
+  opacity: 1;
+}
+main .i_heart i.normal {
+  position: absolute;
+  font-size: 25px;
+  z-index: 1;
 }
 main .menu {
   display: flex;

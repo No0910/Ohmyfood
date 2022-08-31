@@ -11,26 +11,26 @@
   top: 0;
   position: fixed;
   transform: scale(0);
-; 
+  ;
   animation: loader 2.5s forwards;
 
   @keyframes loader {
-    0%{
-     transform:scale(1)
+    0% {
+      transform: scale(1)
     }
 
-    80%{
-    transform: scale(1);
-    opacity: 1;
+    80% {
+      transform: scale(1);
+      opacity: 1;
     }
 
-    100%{
-    transform: scale(0);
-    opacity: 0;
+    100% {
+      transform: scale(0);
+      opacity: 0;
     }
   }
 
-  
+
   .spinnerOuter,
   .spinnerMiddle {
     background-color: transparent;
@@ -40,7 +40,7 @@
     border: 5px solid #9356dc;
     border-top: 5px solid transparent;
     border-left: 5px solid transparent;
-    
+
   }
 
   .spinnerOuter {
@@ -203,40 +203,32 @@
 //3. Animation remplissage progressif Icône coeur au hover//
 
 
-.anim-gradient i {
-  color: #333;
-  font-size: 70px;
-  opacity: 1;
-  cursor: pointer;
-  transition: 0.5s ease-out;
+.anim-gradient {
 
-  @media (max-width:991px) {
-    font-size: 26px;
-  }
-
-  &:hover {
-    animation: 1s ease-in-out;
-    animation-delay: 1s;
-    background: linear-gradient(to top, #ff79da, #9356dc);
-    background: -webkit-linear-gradient(to top, #ff79da, #9356dc);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    display: inline-block;
+  i {
+    color: #333;
+    font-size: 70px;
     opacity: 1;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+
+    @media (max-width:991px) {
+      font-size: 26px;
+    }
+
+    &:hover {
+      animation: 1.5s ease-in-out;
+      animation-delay: 1s;
+      background: linear-gradient(to top, #ff79da, #9356dc);
+      background: -webkit-linear-gradient(to top, #ff79da, #9356dc);
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+      display: inline-block;
+      opacity: 1;
+    }
   }
 }
 
 // FIN Animation remplissage icone coeur au hover//
-
-
-
-
-//Animation coche à droite au hover //
-
-
-
-
-
-//FIN Animation coche à droite au hover //

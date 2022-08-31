@@ -428,6 +428,7 @@ body {
         font-size: 30px;
         left: 41px;
         top: -8px;
+        z-index: 100;
     }
 
     .img_logo {
@@ -484,12 +485,36 @@ main {
     }
 
 
-    .i_heart i {
-        float: right;
+    .i_heart {
+
         position: relative;
-        font-size: 36px;
-        right: 35px;
-        bottom: 40px;
+
+        i {
+
+            &.color {
+                position: absolute;
+                font-size: 25px;
+                background: linear-gradient(to top, #ff79da, #9356dc);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                z-index: 2;
+                opacity: 0;
+                transition: opacity 1s;
+        
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        
+            &.normal {
+                position: absolute;
+                font-size: 25px;
+                z-index: 1;
+            }
+
+          
+        }
     }
 
     .menu {
@@ -497,7 +522,7 @@ main {
         flex-direction: column;
         align-items: flex-start;
 
-        .h2_menu{
+        .h2_menu {
 
             font-weight: 400;
             font-size: 25px;
@@ -515,7 +540,7 @@ main {
                 display: flex;
                 margin: 8px auto;
                 position: relative;
-              
+
             }
         }
 
@@ -546,12 +571,13 @@ main {
                     .menu_check {
                         animation: translation 1s linear forwards;
 
-                        @keyframes translation{
-                            0%{
+                        @keyframes translation {
+                            0% {
                                 opacity: 1;
-                                transform:translateX(0);
+                                transform: translateX(0);
                             }
-                            100%{
+
+                            100% {
                                 opacity: 1;
                                 transform: translateX(-150px);
                             }
@@ -601,12 +627,13 @@ main {
                     .price_menu {
                         animation: translation 1s linear forwards;
 
-                        @keyframes translation{
-                            0%{
+                        @keyframes translation {
+                            0% {
                                 opacity: 1;
-                                transform:translateX(0);
+                                transform: translateX(0);
                             }
-                            100%{
+
+                            100% {
                                 opacity: 1;
                                 transform: translateX(-150px);
                             }
@@ -615,7 +642,7 @@ main {
 
                     }
 
-                    .button_menu{
+                    .button_menu {
                         width: 50%;
 
                         h3 {
@@ -624,7 +651,7 @@ main {
                             text-overflow: ellipsis;
                             transition: width 1s;
                         }
-    
+
                         p {
                             overflow: hidden;
                             white-space: nowrap;
@@ -655,7 +682,7 @@ main {
                     white-space: nowrap;
                     overflow: hidden;
                     line-height: 1;
-                    
+
 
                     h3 {
                         font-size: 20px;
