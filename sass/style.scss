@@ -471,56 +471,87 @@ main {
         background-color: rgb(245, 245, 245);
         position: relative;
         top: -80px;
+        padding: 45px 45px 0 45px;
     }
 
-    .h1_menu {
+    h1 {
         font-family: "Shrikhand", cursive;
-        font-size: 38px;
         display: flex;
-        justify-content: flex-start;
-        position: relative;
-        padding-top: 45px;
-        font-weight: 500;
-        right: 15px;
-    }
+        text-align: center;
+        padding: 0;
+        font-size: 30px;
+        font-weight: 700;
 
+
+        .h1_menu {
+            font-size: 38px;
+            display: flex;
+            justify-content: flex-start;
+            position: relative;
+            padding-top: 0;
+            font-weight: 500;
+            right: 0;
+
+        }
+    }
 
     .i_heart {
 
-        position: relative;
+        position: absolute;
+        right: 0;
+        width: 30px;
 
         i {
 
+            &.normal {
+                position: absolute;
+                font-size: 30px;
+                right: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 25px;
+                width: 25px;
+                z-index: 1;
+            }
+
             &.color {
                 position: absolute;
+                font-size: 30px;
+                right: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 font-size: 25px;
+                width: 25px;
+                z-index: 2;
                 background: linear-gradient(to top, #ff79da, #9356dc);
                 -webkit-background-clip: text;
                 background-clip: text;
                 color: transparent;
-                z-index: 2;
                 opacity: 0;
                 transition: opacity 1s;
-        
+
                 &:hover {
                     opacity: 1;
                 }
             }
-        
-            &.normal {
-                position: absolute;
-                font-size: 25px;
-                z-index: 1;
-            }
 
-          
+
+
+
         }
     }
+
+
+
 
     .menu {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+
+
 
         .h2_menu {
 
@@ -530,7 +561,10 @@ main {
             display: flex;
             flex-direction: column;
             position: relative;
-            padding-bottom: 40px;
+            padding-bottom: 0px;
+            margin: 0px 0px 2px 0px;
+            padding-left: 0;
+
 
             &::after {
                 content: "";
@@ -540,14 +574,14 @@ main {
                 display: flex;
                 margin: 8px auto;
                 position: relative;
-
+                margin-left: 0;
             }
         }
 
         .liste_menu {
 
             width: 95%;
-            margin: 0px 0px 10px 10px;
+            margin: 0;
 
             li.validation_menu {
                 width: auto;
@@ -657,6 +691,7 @@ main {
                             white-space: nowrap;
                             text-overflow: ellipsis;
                             transition: width 1s;
+                            padding-bottom: 2px;
                         }
                     }
 
