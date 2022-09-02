@@ -219,11 +219,12 @@
   main .h1_menu {
     font-size: 39px;
   }
-  main .menu .h2_menu_entrees,
-main .menu .h2_menu_plats,
-main .menu .h2_menu_desserts {
+  main .menu .h2_menu {
     font-size: 29px;
     padding: 30px;
+  }
+  main .menu .h2_menu::after {
+    margin-left: 50%;
   }
   main .menu .liste_menu {
     width: 70%;

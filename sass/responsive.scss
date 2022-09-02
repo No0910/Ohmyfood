@@ -327,17 +327,21 @@
   }
 
   main {
+
     .h1_menu {
       font-size: 39px;
     }
 
     .menu {
 
-      .h2_menu_entrees,
-      .h2_menu_plats,
-      .h2_menu_desserts {
+      .h2_menu {
         font-size: 29px;
         padding: 30px;
+
+        &::after {
+          margin-left: 50%;
+      }
+
       }
 
       .liste_menu {
