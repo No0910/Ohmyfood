@@ -35,11 +35,11 @@ header {
     .img_logo {
         display: flex;
         justify-content: center;
-        padding: 35px 0 45px 0;
+        padding: 20px 0 15px 0;
         width: auto;
 
         img {
-            height: 38px;
+            height: 33px;
         }
     }
 }
@@ -121,7 +121,7 @@ h1 {
 .button {
     width: 65%;
     margin: 30px auto;
-    font-size: 18px;
+    font-size: 17px;
     border-radius: 30px;
     cursor: pointer;
     border: none;
@@ -257,7 +257,7 @@ h2 {
         img {
             display: flex;
             object-fit: cover;
-            height: 250px;
+            height: 195px;
             width: 100%;
             background-size: cover;
             background-position: center;
@@ -286,7 +286,7 @@ h2 {
             background-color: #99E2D0;
             color: darken(#99E2D0, 40%);
             font-size: 16px;
-            padding: 3px 5px;
+            padding: 8px 11px;
             font-weight: 500;
             outline: none;
             border: none;
@@ -304,7 +304,7 @@ h2 {
             width: 100%;
             cursor: pointer;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            margin-bottom: 50px;
+            margin-bottom: 45px;
             position: relative;
 
             h3 {
@@ -323,7 +323,7 @@ h2 {
                 font-size: 19px;
                 font-weight: 100;
                 color: #555454;
-                padding-top: 12px;
+                padding-top: 7px;
             }
 
             .i_heart {
@@ -365,7 +365,7 @@ footer {
 
         li {
             padding: 5px;
-            font-size: 15px;
+            font-size: 17px;
             display: flex;
 
             a {
@@ -418,9 +418,9 @@ body {
         position: absolute;
         color: black;
         line-height: 4;
-        font-size: 30px;
+        font-size: 23px;
         left: 30px;
-        top: -3px;
+        top: -10px;
         z-index: 100;
     }
 
@@ -430,7 +430,7 @@ body {
 
 
     .img_restaurant {
-        height: 400px;
+        height: 377px;
         cursor: pointer;
         object-position: center 50%;
         width: 100%;
@@ -442,7 +442,7 @@ body {
         background-position: center;
         object-fit: cover;
         width: 100%;
-        height: 100%;
+        height: 80%;
         cursor: pointer;
     }
 
@@ -463,7 +463,7 @@ main {
         border-radius: 50px 50px 0 0;
         background-color: rgb(245, 245, 245);
         position: relative;
-        top: -80px;
+        top: -135px;
         padding: 40px 20px 0 20px;
     }
 
@@ -491,7 +491,7 @@ main {
     .i_heart {
 
         position: absolute;
-        right: 0;
+        right: 10px;
         width: 30px;
 
         i {
@@ -549,13 +549,13 @@ main {
         .h2_menu {
 
             font-weight: 400;
-            font-size: 15px;
+            font-size: 16px;
             color: rgba(29, 29, 29, 0.7333333333);
             display: flex;
             flex-direction: column;
             position: relative;
             padding-bottom: 0px;
-            margin: 0px 0px 2px 0px;
+            margin: 0px 0px 10px 0px;
             padding-left: 0;
 
 
@@ -726,11 +726,11 @@ main {
                 }
 
                 .price_menu {
-                    font-size: 14px;
+                    font-size: 15px;
                     font-weight: 700;
                     position: absolute;
-                    top: 46px;
-                    right: 40px;
+                    top: 50px;
+                    right: 30px;
                     line-height: 0;
                 }
 
@@ -742,7 +742,7 @@ main {
                     width: 70px;
                     font-size: 25px;
                     background-color: #99E2D0;
-                    height: 70px;
+                    height: 100%;
                     border-radius: 0 20px 20px 0px;
                     opacity: 0;
                     transition: all 0.9s ease-in-out;
@@ -766,7 +766,7 @@ main {
     }
 
     .button_commander {
-        margin: 20px auto;
+        margin: 0px auto;
         font-size: 15px;
         border-radius: 40px;
         cursor: pointer;
@@ -775,11 +775,11 @@ main {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         align-items: center;
         height: 50px;
-        width: 50%;
+        width: 53%;
         border: none;
         display: flex;
         color: white;
-        font-weight: 500;
+        font-weight: 600;
         white-space: nowrap;
         justify-content: center;
         position: relative;

@@ -83,13 +83,11 @@
     top: 20px;
     right: 20px;
   }
-  .card_restaurant .information_card_restaurant {
-    margin-bottom: 20px;
-  }
-  .card_restaurant .information_card_restaurant i {
+  .card_restaurant .information_card_restaurant .i_heart {
     font-size: 26px;
     top: calc(60% - 20px);
-    right: -20px;
+    right: 0;
+    margin-top: 28px;
   }
   .card_restaurant .information_card_restaurant p {
     font-size: 18px;
@@ -113,7 +111,7 @@
   }
   footer ul li {
     line-height: 1.5;
-    font-size: 19px;
+    font-size: 17px;
   }
   footer ul .icon_restaurant {
     margin: 0px;
@@ -149,34 +147,51 @@
     border-radius: 30px 30px 0 0;
     top: -200px;
   }
-  main .liste_menu {
-    padding-top: 30px;
-  }
   main .h1_menu {
     font-size: 33px;
-    justify-content: center;
-    padding-top: 35px;
-    right: 0;
   }
   main .i_heart i {
-    font-size: 40px;
-    right: 100px;
+    font-size: 30px;
+  }
+  main .i_heart i.normal {
+    font-size: 30px;
+    width: 30px;
+  }
+  main .i_heart i.color {
+    font-size: 30px;
+    width: 30px;
   }
   main .menu {
     align-items: center;
     justify-content: center;
   }
   main .menu .h2_menu {
-    font-size: 27px;
+    font-size: 23px;
     padding-bottom: 0;
     right: 0;
   }
-  main .menu .button_menu {
+  main .menu .h2_menu::after {
+    margin-left: auto;
+  }
+  main .menu .liste_menu {
+    padding-top: 30px;
+  }
+  main .menu .liste_menu li .validation_menu {
+    height: 80px;
+  }
+  main .menu .liste_menu li .validation_menu .button_menu {
     align-items: left;
     height: 100px;
   }
+  main .menu .liste_menu li .validation_menu .button_menu h3 {
+    font-size: 18px;
+  }
+  main .menu .liste_menu li .validation_menu .button_menu p {
+    font-size: 16px;
+  }
   main .button_commander {
-    font-size: 22px;
+    font-size: 19px;
+    font-weight: 500;
     top: 85px;
   }
 }
@@ -187,7 +202,7 @@
     height: 46px;
   }
   .button {
-    width: 25%;
+    width: 35%;
   }
   .button_choix {
     font-size: 16px;
@@ -198,8 +213,11 @@
   .cards a {
     flex-basis: 20%;
   }
+  .cards .card_restaurant .information_card_restaurant .i_heart {
+    top: calc(60% - 30px);
+  }
   footer {
-    padding: 25px 20px 30px 20px;
+    padding: 40px 20px 40px 20px;
   }
   footer ul li {
     font-size: 20px;
@@ -208,30 +226,40 @@
   /*Header*/
   .header_page_menu i.back {
     font-size: 37px;
-    top: -23px;
+    top: -32px;
   }
   .header_page_menu .img_logo img {
     height: 43px;
   }
   .header_page_menu .img_restaurant img {
-    height: 51%;
+    height: 65%;
+  }
+  main.bg_color {
+    top: -175px;
   }
   main .h1_menu {
     font-size: 39px;
   }
+  main .i_heart {
+    right: 200px;
+  }
   main .menu .h2_menu {
-    font-size: 29px;
+    font-size: 24px;
     padding: 30px;
   }
   main .menu .h2_menu::after {
-    margin-left: 50%;
+    margin-left: auto;
   }
   main .menu .liste_menu {
     width: 70%;
   }
   main .button_commander {
-    height: 80px;
-    font-size: 25px;
+    height: 60px;
+    width: 45%;
+    font-size: 19px;
+  }
+  footer ul li {
+    font-size: 16px;
   }
 }
 

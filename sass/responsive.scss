@@ -118,12 +118,12 @@
     }
 
     .information_card_restaurant {
-      margin-bottom: 20px;
 
-      i {
+      .i_heart {
         font-size: 26px;
         top: calc(60% - 20px);
-        right: -20px;
+        right: 0;
+        margin-top: 28px;
       }
 
       p {
@@ -158,7 +158,7 @@
 
       li {
         line-height: 1.5;
-        font-size: 19px;
+        font-size: 17px;
       }
 
       .icon_restaurant {
@@ -217,40 +217,65 @@
       top: -200px;
     }
 
-    .liste_menu {
-      padding-top: 30px;
-    }
-
     .h1_menu {
       font-size: 33px;
-      justify-content: center;
-      padding-top: 35px;
-      right: 0;
     }
 
-    .i_heart i {
-      font-size: 40px;
-      right: 100px;
+    .i_heart {
+      i {
+        font-size: 30px;
+
+        &.normal {
+          font-size: 30px;
+          width:30px;
+        }
+
+        &.color {
+          font-size: 30px;
+          width:30px;
+        }
+      }
     }
 
     .menu {
       align-items: center;
       justify-content: center;
 
-      .h2_menu{
-        font-size: 27px;
+      .h2_menu {
+        font-size: 23px;
         padding-bottom: 0;
         right: 0;
+
+        &::after {
+          margin-left: auto;
+        }
       }
 
-      .button_menu {
-        align-items: left;
-        height: 100px;
+      .liste_menu {
+        padding-top: 30px;
+
+        li .validation_menu {
+          height: 80px;
+
+          .button_menu {
+            align-items: left;
+            height: 100px;
+
+            h3 {
+              font-size: 18px;
+            }
+
+            p {
+              font-size: 16px;
+            }
+          }
+        }
       }
     }
 
     .button_commander {
-      font-size: 22px;
+      font-size: 19px;
+      font-weight: 500;
       top: 85px;
     }
 
@@ -276,7 +301,7 @@
   //Bouton "Explorer nos restaurants"//
 
   .button {
-    width: 25%;
+    width: 35%;
   }
 
   .button_choix {
@@ -291,12 +316,21 @@
     a {
       flex-basis: 20%;
     }
+
+    .card_restaurant {
+      .information_card_restaurant {
+        .i_heart {
+          top: calc(60% - 30px);
+        }
+      }
+
+    }
   }
 
   //Footer//
 
   footer {
-    padding: 25px 20px 30px 20px;
+    padding: 40px 20px 40px 20px;
 
     ul {
       li {
@@ -314,7 +348,7 @@
   .header_page_menu {
     i.back {
       font-size: 37px;
-      top: -23px;
+      top: -32px;
     }
 
     .img_logo img {
@@ -322,25 +356,33 @@
     }
 
     .img_restaurant img {
-      height: 51%;
+      height: 65%;
     }
   }
 
   main {
 
+    &.bg_color{
+      top: -175px;
+    }
+
     .h1_menu {
       font-size: 39px;
+    }
+
+    .i_heart{
+      right: 200px;
     }
 
     .menu {
 
       .h2_menu {
-        font-size: 29px;
+        font-size: 24px;
         padding: 30px;
 
         &::after {
-          margin-left: 50%;
-      }
+          margin-left: auto;
+        }
 
       }
 
@@ -350,10 +392,20 @@
     }
 
     .button_commander {
-      height: 80px;
-      font-size: 25px;
+      height: 60px;
+      width: 45%;
+      font-size: 19px;
     }
+
+  }
+
+  footer {
+
+    ul {
+      li {
+        font-size: 16px;
+      }
+    }
+
   }
 }
-
-
