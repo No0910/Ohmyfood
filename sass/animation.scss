@@ -187,6 +187,11 @@ li.validation_menu {
     animation-delay: 1.2s;
   }
 
+  &.four {
+    -webkit-animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+  }
 }
 
 //FIN Animation Apparition progressive des menus //

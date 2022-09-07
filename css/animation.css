@@ -147,5 +147,10 @@ li.validation_menu.three {
   -moz-animation-delay: 1.2s;
   animation-delay: 1.2s;
 }
+li.validation_menu.four {
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
 
 /*# sourceMappingURL=animation.css.map */
