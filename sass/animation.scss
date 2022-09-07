@@ -1,7 +1,5 @@
 // 1. Animation Loader spinner Page d'accueil //
 
-
-
 .spinnerWrapper {
   width: 100%;
   height: 100%;
@@ -11,7 +9,6 @@
   top: 0;
   position: fixed;
   transform: scale(0);
-  ;
   animation: loader 2.5s forwards;
 
   @keyframes loader {
@@ -30,7 +27,6 @@
     }
   }
 
-
   .spinnerOuter,
   .spinnerMiddle {
     background-color: transparent;
@@ -40,7 +36,6 @@
     border: 5px solid #9356dc;
     border-top: 5px solid transparent;
     border-left: 5px solid transparent;
-
   }
 
   .spinnerOuter {
@@ -57,7 +52,6 @@
     height: 30px;
     top: calc(50% - 15px);
     left: calc(50% - 15px);
-
     -moz-animation: spinoff 1s infinite linear;
     -webkit-animation: spinoff 1s infinite linear;
     border-color: #99e2d0;
@@ -66,8 +60,6 @@
   }
 
 }
-
-
 
 @-moz-keyframes spin {
   0% {
@@ -121,72 +113,78 @@
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
-    margin-top: 20px;
+    position:relative;
+    top:20px;
   }
 
   100% {
     opacity: 1;
-    margin-top: 0;
+    position:relative;
+    top:0px;
   }
 }
 
 @-moz-keyframes fadeIn {
   0% {
     opacity: 0;
-    margin-top: 20px;
+    position:relative;
+    top:20px;
   }
 
   100% {
     opacity: 1;
-    margin-top: 0;
+    position:relative;
+    top:0px;
   }
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    margin-top: 20px;
+    position:relative;
+    top:20px;
   }
 
   100% {
     opacity: 1;
-    margin-top: 0;
+    position:relative;
+    top:0px;
   }
 }
 
 
-.validation_menu {
+li.validation_menu {
 
   opacity: 0;
 
-  -webkit-animation: fadeIn ease-in 1s;
-  -moz-animation: fadeIn ease-in 1s;
-  animation: fadeIn ease-in 1s;
+  -webkit-animation: fadeIn ease-in 1.2s;
+  -moz-animation: fadeIn ease-in 1.2s;
+  animation: fadeIn ease-in 1.2s;
 
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 1.2s;
+  -moz-animation-duration: 1.2s;
+  animation-duration: 1.2s;
 
   &.one {
-    -webkit-animation-delay: 0.25s;
-    -moz-animation-delay: 0.25s;
-    animation-delay: 0.25s;
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
   }
 
   &.two {
-    -webkit-animation-delay: 0.75s;
-    -moz-animation-delay: 0.75;
-    animation-delay: 0.75s;
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    animation-delay: 0.8s;
   }
 
   &.three {
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    animation-delay: 1s;
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    animation-delay: 1.2s;
   }
 
 }

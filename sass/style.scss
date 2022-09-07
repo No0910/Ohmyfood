@@ -530,9 +530,6 @@ main {
                 }
             }
 
-
-
-
         }
     }
 
@@ -543,6 +540,7 @@ main {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        box-sizing: border-box ;
 
 
 
@@ -596,7 +594,7 @@ main {
                     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 
                     .menu_check {
-                        animation: translation 1s linear forwards;
+                        animation: translation 0.7s linear forwards;
 
                         @keyframes translation {
                             0% {
@@ -616,9 +614,8 @@ main {
                         position: absolute;
                         left: 23px;
                         bottom: 25px;
-                        animation: rotation 0.6s forwards 0.5s;
-
-
+                        animation: rotation 0.5s forwards 0.5s;
+                     
                         @-webkit-keyframes rotation {
                             0% {
                                 transform: rotate(0deg);
@@ -652,7 +649,8 @@ main {
                     }
 
                     .price_menu {
-                        animation: translation 1s linear forwards;
+                        animation: translation 0.7s linear forwards;
+                        right: 0;
 
                         @keyframes translation {
                             0% {
@@ -676,15 +674,16 @@ main {
                             overflow: hidden;
                             white-space: nowrap;
                             text-overflow: ellipsis;
-                            transition: width 1s;
+                            width: 130px;
+
                         }
 
                         p {
                             overflow: hidden;
                             white-space: nowrap;
                             text-overflow: ellipsis;
-                            transition: width 1s;
-                            padding-bottom: 2px;
+                            width: 130px;
+
                         }
                     }
 
@@ -709,18 +708,24 @@ main {
                     border-radius: 20px;
                     white-space: nowrap;
                     overflow: hidden;
-                    line-height: 1;
+                    line-height: 25px;
 
 
                     h3 {
                         font-size: 17px;
                         font-weight: 700;
+                        margin: 0;
+                        width: 270px;
+                        transition: width 0.8s;
                     }
 
                     p {
                         font-size: 14px;
                         font-weight: 400;
                         margin-top: 7px;
+                        transition: width 0.8s;
+                        margin: 0;
+                        width: 270px;
                     }
 
                 }
@@ -745,11 +750,11 @@ main {
                     height: 100%;
                     border-radius: 0 20px 20px 0px;
                     opacity: 0;
-                    transition: all 0.9s ease-in-out;
+                    transition: all 0.7s ease-in-out;
 
-                    -webkit-transition: all 0.9s ease-in-out;
-                    -moz-transition: all 0.9s ease-in-out;
-                    -o-transition: all 0.9s ease-in-out;
+                    -webkit-transition: all 0.7s ease-in-out;
+                    -moz-transition: all 0.7s ease-in-out;
+                    -o-transition: all 0.7s ease-in-out;
                 }
 
                 i {
@@ -784,6 +789,7 @@ main {
         justify-content: center;
         position: relative;
         top: 30px;
+        opacity: 1;
 
 
         &:hover {
