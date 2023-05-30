@@ -83,5 +83,5 @@ Une version en ligne est directement accessible à l'adresse : [Ohmyfood]
 
 Sinon, vous pouvez cloner le projet
 ```terminal
-git clone 
+git clone https://github.com/No0910/ohmyfood.git
 ```
