@@ -80,7 +80,7 @@ des points de suspension. Un exemple de l’effet attendu est fourni.
 
 ## Installation
 ---
-Une version en ligne est directement accessible à l'adresse : [Ohmyfood]
+Une version en ligne est directement accessible à l'adresse : [Ohmyfood](https://nd-ohmyfood.netlify.app/)
 
 Sinon, vous pouvez cloner le projet
 ```terminal
