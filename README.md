@@ -55,6 +55,7 @@ des points de suspension. Un exemple de l’effet attendu est fourni.
 ---
 - [HTML] - Version 5
 - [CSS] - Version 3
+- [SCSS]
 - [VScode] - Editeur de code
 - [FontAwesome] - Bibliothèque d'icônes
 - [GoogleFonts] - Bibliothèque de polices
